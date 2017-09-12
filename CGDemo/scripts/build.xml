@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<project name="reports.sample" default="main" basedir=".">
+
+
+	<target name="clean">
+		<delete dir="${test.report.dir}/html" />
+	</target>
+
+	<target name="makedir">
+		<mkdir dir="${test.report.dir}/html" />
+	</target>
+
+
+	<target name="report" depends="clean, makedir">
+	
+		<junitreport todir="${test.report.dir}">
+			<fileset dir="${test.report.dir}">
+				<include name="*.xml" />
+			</fileset>
+			<report todir="${test.report.dir}/html" />
+		</junitreport>
+	</target>
+	
+
+	<target name="main" depends="report">
+		<description>Main target</description>
+	</target>
+
+</project>
