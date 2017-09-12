@@ -39,10 +39,10 @@
       <hashTree>
         <WmServiceInvokeSampler guiclass="WmServiceInvokeSamplerGui" testclass="WmServiceInvokeSampler" testname="AgentBenefit.util:readAgentListFromFile(00000001)" enabled="true">
           <stringProp name="TestPlan.comments">WebMethods Service Invocation</stringProp>
-          <stringProp name="HTTPSampler.proxyHost">${__P(hostname,localhost)}</stringProp>
-          <stringProp name="HTTPSampler.domain">${__P(hostname,localhost)}</stringProp>
-          <stringProp name="HTTPSampler.proxyPort">${__P(port,5555)}</stringProp>
-          <stringProp name="HTTPSampler.port">${__P(port,5555)}</stringProp>
+          <stringProp name="HTTPSampler.proxyHost">104.156.225.88</stringProp>
+          <stringProp name="HTTPSampler.domain">104.156.225.88</stringProp>
+          <stringProp name="HTTPSampler.proxyPort">1111</stringProp>
+          <stringProp name="HTTPSampler.port">1111</stringProp>
           <stringProp name="HTTPSampler.proxyUser">${__P(username,Administrator)}</stringProp>
           <stringProp name="HTTPSampler.proxyPass">${__P(password,manage)}</stringProp>
           <stringProp name="WmSampler.serviceInputType">IData XML Content</stringProp>
@@ -133,7 +133,7 @@
             <boolProp name="XPathExtractor.namespace">false</boolProp>
           </XPathExtractor>
           <hashTree/>
-          <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View results (Request &amp; Response)" enabled="true">
+          <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View results (Request &amp; Response)" enabled="false">
             <boolProp name="ResultCollector.error_logging">false</boolProp>
             <objProp>
               <name>saveConfig</name>
@@ -161,6 +161,40 @@
                 <assertionsResultsToSave>0</assertionsResultsToSave>
                 <bytes>true</bytes>
                 <threadCounts>true</threadCounts>
+              </value>
+            </objProp>
+            <stringProp name="filename">results.jtl</stringProp>
+          </ResultCollector>
+          <hashTree/>
+          <ResultCollector guiclass="TableVisualizer" testclass="ResultCollector" testname="View Results in Table" enabled="true">
+            <boolProp name="ResultCollector.error_logging">false</boolProp>
+            <objProp>
+              <name>saveConfig</name>
+              <value class="SampleSaveConfiguration">
+                <time>true</time>
+                <latency>true</latency>
+                <timestamp>true</timestamp>
+                <success>true</success>
+                <label>true</label>
+                <code>true</code>
+                <message>true</message>
+                <threadName>true</threadName>
+                <dataType>true</dataType>
+                <encoding>false</encoding>
+                <assertions>true</assertions>
+                <subresults>true</subresults>
+                <responseData>false</responseData>
+                <samplerData>false</samplerData>
+                <xml>true</xml>
+                <fieldNames>true</fieldNames>
+                <responseHeaders>false</responseHeaders>
+                <requestHeaders>false</requestHeaders>
+                <responseDataOnError>false</responseDataOnError>
+                <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+                <assertionsResultsToSave>0</assertionsResultsToSave>
+                <bytes>true</bytes>
+                <threadCounts>true</threadCounts>
+                <idleTime>true</idleTime>
               </value>
             </objProp>
             <stringProp name="filename">results.jtl</stringProp>
