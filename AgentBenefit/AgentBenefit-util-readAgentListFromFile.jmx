@@ -45,25 +45,20 @@
           <stringProp name="HTTPSampler.port">${__P(port,5555)}</stringProp>
           <stringProp name="HTTPSampler.proxyUser">${__P(username,Administrator)}</stringProp>
           <stringProp name="HTTPSampler.proxyPass">${__P(password,manage)}</stringProp>
-		  <stringProp name="WmSampler.serviceInputType">IData XML Content</stringProp>
-		  <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-          <stringProp name="HTTPSampler.response_timeout"></stringProp>
-          <stringProp name="HTTPSampler.protocol"></stringProp>
-          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="WmSampler.serviceInputType">IData XML Content</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
           <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
           <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
-		  <boolProp name="HTTPSampler.monitor">false</boolProp>          
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
           <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
-          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
-			  <elementProp name="fileContent" elementType="HTTPArgument">
-                 <boolProp name="HTTPArgument.always_encode">true</boolProp>
-                 <stringProp name="Argument.name">fileContent</stringProp>
-                 <stringProp name="Argument.value">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+              <elementProp name="fileContent" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">fileContent</stringProp>
+                <stringProp name="Argument.value">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 
 &lt;IDataXMLCoder version=&quot;1.0&quot;&gt;
   &lt;record javaclass=&quot;com.wm.data.ISMemDataImpl&quot;&gt;
@@ -71,29 +66,27 @@
   &lt;/record&gt;
 &lt;/IDataXMLCoder&gt;
 </stringProp>
-                 <stringProp name="Argument.metadata">=</stringProp>
-                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
               </elementProp>
               <elementProp name="serviceName" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.name">serviceName</stringProp>
                 <stringProp name="Argument.value">AgentBenefit.util:readAgentListFromFile</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                <stringProp name="Argument.name">serviceName</stringProp>
               </elementProp>
-<!-- :mockedServices: -->	
-			  <elementProp name="monitoredServices" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.name">monitoredServices</stringProp>
-                <stringProp name="Argument.value"><!-- :monitoredServicesList: --></stringProp>
+              <elementProp name="uuid" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">uuid</stringProp>
+                <stringProp name="Argument.value">74-E6-E2-28-DA-AD:4C-BB-58-3F-F5-B1</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
-                <boolProp name="HTTPArgument.use_equals">true</boolProp>
               </elementProp>
             </collectionProp>
           </elementProp>
         </WmServiceInvokeSampler>
         <hashTree>
-		   <XPathExtractor guiclass="XPathExtractorGui" testclass="XPathExtractor" testname="XPath Extractor" enabled="true">
+          <XPathExtractor guiclass="XPathExtractorGui" testclass="XPathExtractor" testname="XPath Extractor" enabled="true">
             <stringProp name="XPathExtractor.default"></stringProp>
             <stringProp name="XPathExtractor.refname">innerInvokes</stringProp>
             <stringProp name="XPathExtractor.xpathQuery">/document/innerInvokes</stringProp>
@@ -101,7 +94,7 @@
             <boolProp name="XPathExtractor.tolerant">false</boolProp>
             <boolProp name="XPathExtractor.namespace">false</boolProp>
           </XPathExtractor>
-		  <hashTree/>
+          <hashTree/>
           <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Check the IS response" enabled="true">
             <collectionProp name="Asserion.test_strings">
               <stringProp name="49586">200</stringProp>
@@ -131,7 +124,6 @@
             <boolProp name="XPath.namespace">false</boolProp>
           </XPathAssertion>
           <hashTree/>
-<!-- :Assertions: -->
           <XPathExtractor guiclass="XPathExtractorGui" testclass="XPathExtractor" testname="Extract XPath" enabled="true">
             <stringProp name="XPathExtractor.default">no.publish.context.id</stringProp>
             <stringProp name="XPathExtractor.refname">publishContextID</stringProp>
@@ -160,7 +152,7 @@
                 <subresults>true</subresults>
                 <responseData>false</responseData>
                 <samplerData>false</samplerData>
-                <xml>false</xml>
+                <xml>true</xml>
                 <fieldNames>false</fieldNames>
                 <responseHeaders>false</responseHeaders>
                 <requestHeaders>false</requestHeaders>
@@ -171,13 +163,11 @@
                 <threadCounts>true</threadCounts>
               </value>
             </objProp>
-            <stringProp name="filename"></stringProp>
+            <stringProp name="filename">results.jtl</stringProp>
           </ResultCollector>
           <hashTree/>
-		 </hashTree>
-<!-- :HTTP Samplers: -->
-<!-- :PUBLISH STATE Assertions: -->
-       </hashTree>
+        </hashTree>
+      </hashTree>
     </hashTree>
   </hashTree>
 </jmeterTestPlan>
