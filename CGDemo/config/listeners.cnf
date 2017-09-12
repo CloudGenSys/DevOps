@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <record name="listeners" javaclass="com.wm.util.Values">
+    <record name="FilePollingListener:C:\SoftwareAG\SUT\Monitoring" javaclass="com.wm.util.Values">
+      <value name="port">C:\SoftwareAG\SUT\Monitoring</value>
+      <value name="protocol">FilePolling</value>
+      <value name="pkg">CGDemo</value>
+      <value name="enabled">true</value>
+      <value name="key">FilePollingListener:C:\SoftwareAG\SUT\Monitoring</value>
+      <value name="portAlias">FilePolling</value>
+      <value name="portDescription">FilePolling using object</value>
+      <value name="factoryKey">webMethods/FilePolling</value>
+      <value name="configURL">/WmFlatFile/configFilePolling.dsp</value>
+      <value name="provider">webMethods</value>
+      <value name="monitorDir">C:\SoftwareAG\SUT\Monitoring</value>
+      <value name="recursive">no</value>
+      <value name="clusterEnabled">no</value>
+      <value name="cleanupAtStartup">yes</value>
+      <value name="runUser">Administrator</value>
+      <value name="processingService">CGDemo.FilePolling:FilePollingwithObject</value>
+      <value name="filePollingInterval">5</value>
+      <value name="logMinMessage">no</value>
+      <value name="NFSDirectories">no</value>
+      <value name="cleanUpFileAge">7</value>
+      <value name="cleanUpInterval">24</value>
+      <value name="maxThreads">10</value>
+      <value name="maxFilesPerCycle">-1</value>
+      <value name="lockFileExtension">.lock</value>
+    </record>
+    <record name="EmailListener:imaps:WMTest2016@gmail.com@imap.gmail.com" javaclass="com.wm.util.Values">
+      <value name="port">-1</value>
+      <value name="protocol">Email</value>
+      <value name="pkg">CGDemo</value>
+      <value name="enabled">false</value>
+      <value name="key">EmailListener:imaps:WMTest2016@gmail.com@imap.gmail.com</value>
+      <value name="portAlias">Email</value>
+      <value name="portDescription">Email</value>
+      <value name="factoryKey">webMethods/Email</value>
+      <value name="configURL">/WmRoot/configEmail.dsp</value>
+      <value name="provider">webMethods</value>
+      <value name="host">imap.gmail.com</value>
+      <value name="user">WMTest2016@gmail.com</value>
+      <value name="type">imap</value>
+      <value name="interval">10</value>
+      <value name="num_threads">0</value>
+      <value name="server_port">993</value>
+      <value name="gservice"></value>
+      <value name="dservice"></value>
+      <value name="remove">yes</value>
+      <value name="bad_remove">yes</value>
+      <value name="break_mmsg">yes</value>
+      <value name="urlEncodedBody">yes</value>
+      <value name="includeHdrs">no</value>
+      <value name="reply">no</value>
+      <value name="replyonerr">no</value>
+      <value name="multithread">no</value>
+      <value name="logout">no</value>
+      <value name="authorize">no</value>
+      <value name="runuser">Administrator</value>
+      <value name="tlsSettings">Implicit</value>
+      <value name="trustStore"></value>
+      <value name="handle">wm.is.admin.listenMgr.EmailListener:imaps:WMTest2016@gmail.com@imap.gmail.com</value>
+    </record>
+  </record>
+  <record name="access" javaclass="com.wm.util.Values">
+    <record name="FilePollingListener:C:\SoftwareAG\SUT\Monitoring" javaclass="com.wm.util.Values">
+      <null name="home"/>
+      <value name="default">include</value>
+      <record name="nodes" javaclass="com.wm.util.StringSet">
+        <list name="elements">
+        </list>
+      </record>
+      <value name="key">FilePollingListener:C:\SoftwareAG\SUT\Monitoring</value>
+    </record>
+    <record name="EmailListener:imaps:WMTest2016@gmail.com@imap.gmail.com" javaclass="com.wm.util.Values">
+      <null name="home"/>
+      <value name="default">include</value>
+      <record name="nodes" javaclass="com.wm.util.StringSet">
+        <list name="elements">
+        </list>
+      </record>
+      <value name="key">EmailListener:imaps:WMTest2016@gmail.com@imap.gmail.com</value>
+    </record>
+  </record>
+</Values>
