@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:testSuite xmlns:ns2="com.syteleo.sut.model.persist">
+    <id></id>
+    <name>Parse Date</name>
+    <serviceUnderTest>AgentBenefit.util:parseDate</serviceUnderTest>
+    <description>Tests for the java service parseDate</description>
+    <testGroup>
+        <testDetails>
+            <id>2654dddc-7183-47ca-bac9-328f3d99205c</id>
+            <name>Format dd.MM.yyyy</name>
+            <ignored>false</ignored>
+            <description>Valid format</description>
+            <pipelineInfo>
+                <externalFilePath></externalFilePath>
+                <name>Date String 05.12.2014</name>
+                <pipelineContent>PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/Pgo8cGlwZWxpbmVFbGVtZW50PgogICAgPHR5cGU+MDwvdHlwZT4KICAgIDxsaXN0PmZhbHNlPC9saXN0PgogICAgPHRhYmxlPmZhbHNlPC90YWJsZT4KICAgIDxsaXN0RWxlbWVudD5mYWxzZTwvbGlzdEVsZW1lbnQ+CiAgICA8cmVxdWlyZWQ+ZmFsc2U8L3JlcXVpcmVkPgogICAgPHJlZ2V4PmZhbHNlPC9yZWdleD4KICAgIDxjaGlsZHJlbj4KICAgICAgICA8Y2hpbGQ+CiAgICAgICAgICAgIDxuYW1lPmRhdGVTdHJpbmc8L25hbWU+CiAgICAgICAgICAgIDx2YWx1ZT4wNS4xMi4yMDE0PC92YWx1ZT4KICAgICAgICAgICAgPHR5cGU+MTwvdHlwZT4KICAgICAgICAgICAgPHJlZmVyZW5jZWRUeXBlPjwvcmVmZXJlbmNlZFR5cGU+CiAgICAgICAgICAgIDxsaXN0PmZhbHNlPC9saXN0PgogICAgICAgICAgICA8dGFibGU+ZmFsc2U8L3RhYmxlPgogICAgICAgICAgICA8bGlzdEVsZW1lbnQ+ZmFsc2U8L2xpc3RFbGVtZW50PgogICAgICAgICAgICA8cmVxdWlyZWQ+dHJ1ZTwvcmVxdWlyZWQ+CiAgICAgICAgICAgIDxyZWdleD5mYWxzZTwvcmVnZXg+CiAgICAgICAgICAgIDxjaGlsZHJlbi8+CiAgICAgICAgPC9jaGlsZD4KICAgICAgICA8Y2hpbGQ+CiAgICAgICAgICAgIDxuYW1lPmRhdGVGb3JtYXQ8L25hbWU+CiAgICAgICAgICAgIDx2YWx1ZT5kZC5NTS55eXl5PC92YWx1ZT4KICAgICAgICAgICAgPHR5cGU+MTwvdHlwZT4KICAgICAgICAgICAgPHJlZmVyZW5jZWRUeXBlPjwvcmVmZXJlbmNlZFR5cGU+CiAgICAgICAgICAgIDxsaXN0PmZhbHNlPC9saXN0PgogICAgICAgICAgICA8dGFibGU+ZmFsc2U8L3RhYmxlPgogICAgICAgICAgICA8bGlzdEVsZW1lbnQ+ZmFsc2U8L2xpc3RFbGVtZW50PgogICAgICAgICAgICA8cmVxdWlyZWQ+dHJ1ZTwvcmVxdWlyZWQ+CiAgICAgICAgICAgIDxyZWdleD5mYWxzZTwvcmVnZXg+CiAgICAgICAgICAgIDxjaGlsZHJlbi8+CiAgICAgICAgPC9jaGlsZD4KICAgIDwvY2hpbGRyZW4+CjwvcGlwZWxpbmVFbGVtZW50Pgo=</pipelineContent>
+                <useExternalFile>false</useExternalFile>
+                <useIDataFile>false</useIDataFile>
+            </pipelineInfo>
+            <expectedOutput>
+                <pipelineInfo>
+                    <externalFilePath></externalFilePath>
+                    <name>Expect 2014-12-05 00:00:00</name>
+                    <pipelineContent>PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/Pgo8cGlwZWxpbmVFbGVtZW50PgogICAgPHR5cGU+MDwvdHlwZT4KICAgIDxsaXN0PmZhbHNlPC9saXN0PgogICAgPHRhYmxlPmZhbHNlPC90YWJsZT4KICAgIDxsaXN0RWxlbWVudD5mYWxzZTwvbGlzdEVsZW1lbnQ+CiAgICA8cmVxdWlyZWQ+ZmFsc2U8L3JlcXVpcmVkPgogICAgPHJlZ2V4PmZhbHNlPC9yZWdleD4KICAgIDxjaGlsZHJlbj4KICAgICAgICA8Y2hpbGQ+CiAgICAgICAgICAgIDxuYW1lPmRhdGVWYWx1ZTwvbmFtZT4KICAgICAgICAgICAgPHZhbHVlPjIwMTQtMTItMDUgMDA6MDA6MDA8L3ZhbHVlPgogICAgICAgICAgICA8dHlwZT4xMzwvdHlwZT4KICAgICAgICAgICAgPHJlZmVyZW5jZWRUeXBlPjwvcmVmZXJlbmNlZFR5cGU+CiAgICAgICAgICAgIDxsaXN0PmZhbHNlPC9saXN0PgogICAgICAgICAgICA8dGFibGU+ZmFsc2U8L3RhYmxlPgogICAgICAgICAgICA8bGlzdEVsZW1lbnQ+ZmFsc2U8L2xpc3RFbGVtZW50PgogICAgICAgICAgICA8cmVxdWlyZWQ+dHJ1ZTwvcmVxdWlyZWQ+CiAgICAgICAgICAgIDxyZWdleD5mYWxzZTwvcmVnZXg+CiAgICAgICAgICAgIDxjaGlsZHJlbi8+CiAgICAgICAgPC9jaGlsZD4KICAgIDwvY2hpbGRyZW4+CjwvcGlwZWxpbmVFbGVtZW50Pgo=</pipelineContent>
+                    <useExternalFile>false</useExternalFile>
+                    <useIDataFile>false</useIDataFile>
+                </pipelineInfo>
+                <expectException>false</expectException>
+                <regexMessage>false</regexMessage>
+            </expectedOutput>
+            <testMocks/>
+            <numberOfInvocations/>
+        </testDetails>
+        <testDetails>
+            <id>4d8de234-e981-41dc-a793-cd95aade0a6b</id>
+            <name>Format dd.MM.yyyy - bad data</name>
+            <ignored>false</ignored>
+            <description>the date string is not correctly formatted. Expect exception</description>
+            <pipelineInfo>
+                <name>Date 05/12/2015</name>
+                <pipelineContent>PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/Pgo8cGlwZWxpbmVFbGVtZW50PgogICAgPG5hbWU+cm9vdDwvbmFtZT4KICAgIDx0eXBlPjI8L3R5cGU+CiAgICA8bGlzdD5mYWxzZTwvbGlzdD4KICAgIDx0YWJsZT5mYWxzZTwvdGFibGU+CiAgICA8bGlzdEVsZW1lbnQ+ZmFsc2U8L2xpc3RFbGVtZW50PgogICAgPHJlcXVpcmVkPmZhbHNlPC9yZXF1aXJlZD4KICAgIDxyZWdleD5mYWxzZTwvcmVnZXg+CiAgICA8Y2hpbGRyZW4+CiAgICAgICAgPGNoaWxkPgogICAgICAgICAgICA8bmFtZT5kYXRlU3RyaW5nPC9uYW1lPgogICAgICAgICAgICA8dmFsdWU+MDUvMTIvMjAxNTwvdmFsdWU+CiAgICAgICAgICAgIDx0eXBlPjE8L3R5cGU+CiAgICAgICAgICAgIDxyZWZlcmVuY2VkVHlwZT48L3JlZmVyZW5jZWRUeXBlPgogICAgICAgICAgICA8bGlzdD5mYWxzZTwvbGlzdD4KICAgICAgICAgICAgPHRhYmxlPmZhbHNlPC90YWJsZT4KICAgICAgICAgICAgPGxpc3RFbGVtZW50PmZhbHNlPC9saXN0RWxlbWVudD4KICAgICAgICAgICAgPHJlcXVpcmVkPnRydWU8L3JlcXVpcmVkPgogICAgICAgICAgICA8cmVnZXg+ZmFsc2U8L3JlZ2V4PgogICAgICAgICAgICA8Y2hpbGRyZW4vPgogICAgICAgIDwvY2hpbGQ+CiAgICAgICAgPGNoaWxkPgogICAgICAgICAgICA8bmFtZT5kYXRlRm9ybWF0PC9uYW1lPgogICAgICAgICAgICA8dmFsdWU+ZGQuTU0ueXl5eTwvdmFsdWU+CiAgICAgICAgICAgIDx0eXBlPjE8L3R5cGU+CiAgICAgICAgICAgIDxyZWZlcmVuY2VkVHlwZT48L3JlZmVyZW5jZWRUeXBlPgogICAgICAgICAgICA8bGlzdD5mYWxzZTwvbGlzdD4KICAgICAgICAgICAgPHRhYmxlPmZhbHNlPC90YWJsZT4KICAgICAgICAgICAgPGxpc3RFbGVtZW50PmZhbHNlPC9saXN0RWxlbWVudD4KICAgICAgICAgICAgPHJlcXVpcmVkPnRydWU8L3JlcXVpcmVkPgogICAgICAgICAgICA8cmVnZXg+ZmFsc2U8L3JlZ2V4PgogICAgICAgICAgICA8Y2hpbGRyZW4vPgogICAgICAgIDwvY2hpbGQ+CiAgICA8L2NoaWxkcmVuPgo8L3BpcGVsaW5lRWxlbWVudD4K</pipelineContent>
+                <useExternalFile>false</useExternalFile>
+                <useIDataFile>false</useIDataFile>
+            </pipelineInfo>
+            <expectedOutput>
+                <pipelineInfo>
+                    <name>Untitled</name>
+                    <pipelineContent>PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/Pgo8cGlwZWxpbmVFbGVtZW50PgogICAgPG5hbWU+cm9vdDwvbmFtZT4KICAgIDx0eXBlPjI8L3R5cGU+CiAgICA8bGlzdD5mYWxzZTwvbGlzdD4KICAgIDx0YWJsZT5mYWxzZTwvdGFibGU+CiAgICA8bGlzdEVsZW1lbnQ+ZmFsc2U8L2xpc3RFbGVtZW50PgogICAgPHJlcXVpcmVkPmZhbHNlPC9yZXF1aXJlZD4KICAgIDxyZWdleD5mYWxzZTwvcmVnZXg+CiAgICA8Y2hpbGRyZW4+CiAgICAgICAgPGNoaWxkPgogICAgICAgICAgICA8bmFtZT5kYXRlVmFsdWU8L25hbWU+CiAgICAgICAgICAgIDx2YWx1ZT4yMDE1LTEyLTA1IDAwOjAwOjAwPC92YWx1ZT4KICAgICAgICAgICAgPHR5cGU+MTM8L3R5cGU+CiAgICAgICAgICAgIDxyZWZlcmVuY2VkVHlwZT48L3JlZmVyZW5jZWRUeXBlPgogICAgICAgICAgICA8bGlzdD5mYWxzZTwvbGlzdD4KICAgICAgICAgICAgPHRhYmxlPmZhbHNlPC90YWJsZT4KICAgICAgICAgICAgPGxpc3RFbGVtZW50PmZhbHNlPC9saXN0RWxlbWVudD4KICAgICAgICAgICAgPHJlcXVpcmVkPnRydWU8L3JlcXVpcmVkPgogICAgICAgICAgICA8cmVnZXg+ZmFsc2U8L3JlZ2V4PgogICAgICAgICAgICA8Y2hpbGRyZW4vPgogICAgICAgIDwvY2hpbGQ+CiAgICA8L2NoaWxkcmVuPgo8L3BpcGVsaW5lRWxlbWVudD4K</pipelineContent>
+                    <useExternalFile>false</useExternalFile>
+                    <useIDataFile>false</useIDataFile>
+                </pipelineInfo>
+                <expectException>true</expectException>
+                <exceptionClass>java.text.ParseException</exceptionClass>
+                <exceptionMessage>Unparseable date: &quot;05/12/2015&quot;</exceptionMessage>
+                <regexMessage>false</regexMessage>
+            </expectedOutput>
+            <testMocks/>
+            <numberOfInvocations/>
+        </testDetails>
+    </testGroup>
+    <invokeBefores/>
+    <invokeAfters/>
+    <suiteMocks/>
+</ns2:testSuite>

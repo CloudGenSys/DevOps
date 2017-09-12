@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="2.7" jmeter="2.12 r1636949">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan" enabled="true">
+      <stringProp name="TestPlan.comments"></stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments">
+          <elementProp name="invokeAlias" elementType="Argument">
+            <stringProp name="Argument.name">invokeAlias</stringProp>
+            <stringProp name="Argument.value">/invoke/CgAutomationTestRunner:handleHTTPRequest</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="jmxScriptDirectory" elementType="Argument">
+            <stringProp name="Argument.name">jmxScriptDirectory</stringProp>
+            <stringProp name="Argument.value">${__P(jmxScriptDirectory,.)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+        </collectionProp>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Invoke Group" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <longProp name="ThreadGroup.start_time">1428501082000</longProp>
+        <longProp name="ThreadGroup.end_time">1428501082000</longProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <WmServiceInvokeSampler guiclass="WmServiceInvokeSamplerGui" testclass="WmServiceInvokeSampler" testname="73c4c3a3-6a05-4a84-a4b0-02efaec79a36--20160614-100520548-00000001.input.xml" enabled="true">
+          <stringProp name="TestPlan.comments">WebMethods Service Invocation</stringProp>
+          <stringProp name="HTTPSampler.proxyHost">${__P(hostname,localhost)}</stringProp>
+          <stringProp name="HTTPSampler.domain">${__P(hostname,localhost)}</stringProp>
+          <stringProp name="HTTPSampler.proxyPort">${__P(port,5555)}</stringProp>
+          <stringProp name="HTTPSampler.port">${__P(port,5555)}</stringProp>
+          <stringProp name="HTTPSampler.proxyUser">${__P(username,Administrator)}</stringProp>
+          <stringProp name="HTTPSampler.proxyPass">${__P(password,manage)}</stringProp>
+          <stringProp name="WmSampler.serviceInputType">IData XML Content</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="monitoredServices" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.name">monitoredServices</stringProp>
+                <stringProp name="Argument.value">CGDemo.SubmitToTN:gateway;</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+              <elementProp name="fileContent" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.name">fileContent</stringProp>
+                <stringProp name="Argument.value">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+
+&lt;IDataXMLCoder version=&quot;1.0&quot;&gt;
+  &lt;record javaclass=&quot;com.wm.data.ISMemDataImpl&quot;&gt;
+    &lt;value name=&quot;inputData&quot;&gt;604173971  015585404VNT$*/
+sony,experiaC,june,19000
+micromax,canvasnitro,june,9000
+samsung,s3,june,12000
+nokia,z1,may,5000
+mi,new,august,12000&lt;/value&gt;
+  &lt;/record&gt;
+&lt;/IDataXMLCoder&gt;
+</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+              <elementProp name="serviceName" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.name">serviceName</stringProp>
+                <stringProp name="Argument.value">CGDemo.SubmitToTN:submitToTN</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+              <elementProp name="uuid" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
+                <stringProp name="Argument.name">uuid</stringProp>
+                <stringProp name="Argument.value">56-00-00-0D-90-0E</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+        </WmServiceInvokeSampler>
+        <hashTree>
+          <XPathExtractor guiclass="XPathExtractorGui" testclass="XPathExtractor" testname="XPath Extractor" enabled="true">
+            <stringProp name="XPathExtractor.default"></stringProp>
+            <stringProp name="XPathExtractor.refname">innerInvokes</stringProp>
+            <stringProp name="XPathExtractor.xpathQuery">/document/innerInvokes</stringProp>
+            <boolProp name="XPathExtractor.validate">false</boolProp>
+            <boolProp name="XPathExtractor.tolerant">false</boolProp>
+            <boolProp name="XPathExtractor.namespace">false</boolProp>
+          </XPathExtractor>
+          <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Check the IS response" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="49586">200</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">8</intProp>
+            <stringProp name="TestPlan.comments">Check if the Integration Server response code = 200</stringProp>
+          </ResponseAssertion>
+          <hashTree/>
+          <XPathAssertion guiclass="XPathAssertionGui" testclass="XPathAssertion" testname="Check errorMessage" enabled="true">
+            <boolProp name="XPath.negate">false</boolProp>
+            <stringProp name="XPath.xpath">/document/errorMessage[text()=&quot;OK&quot;]</stringProp>
+            <boolProp name="XPath.validate">false</boolProp>
+            <boolProp name="XPath.whitespace">true</boolProp>
+            <boolProp name="XPath.tolerant">false</boolProp>
+            <boolProp name="XPath.namespace">false</boolProp>
+            <stringProp name="TestPlan.comments">Check errorMessage</stringProp>
+          </XPathAssertion>
+          <hashTree/>
+          <XPathAssertion guiclass="XPathAssertionGui" testclass="XPathAssertion" testname="outputResult" enabled="true">
+            <boolProp name="XPath.negate">false</boolProp>
+            <stringProp name="XPath.xpath">/document/outputResult</stringProp>
+            <boolProp name="XPath.validate">false</boolProp>
+            <boolProp name="XPath.whitespace">false</boolProp>
+            <boolProp name="XPath.tolerant">false</boolProp>
+            <boolProp name="XPath.namespace">false</boolProp>
+          </XPathAssertion>
+          <hashTree/>
+          <XPathAssertion guiclass="XPathAssertionGui" testclass="XPathAssertion" testname="mobileDT" enabled="true">
+            <boolProp name="XPath.negate">false</boolProp>
+            <stringProp name="XPath.xpath">/document/outputResult/mobileDT</stringProp>
+            <boolProp name="XPath.validate">false</boolProp>
+            <boolProp name="XPath.whitespace">false</boolProp>
+            <boolProp name="XPath.tolerant">false</boolProp>
+            <boolProp name="XPath.namespace">false</boolProp>
+          </XPathAssertion>
+          <hashTree/>
+          <XPathAssertion guiclass="XPathAssertionGui" testclass="XPathAssertion" testname="recordWithNoID[1][@delimiters=&apos;gt;&gt;&gt;BasicData:record=\n,field=,,subfield=,FormatInfo=&gt;&gt;&gt;BasicData:&lt;&lt;&lt;&lt;&lt;&lt;&apos; and @record-id=&apos;recordWithNoID&apos; and @segment-id=&apos;recordWithNoID&apos;]" enabled="true">
+            <boolProp name="XPath.negate">false</boolProp>
+            <stringProp name="XPath.xpath">/document/outputResult/mobileDT/recordWithNoID[1][@delimiters=&apos;gt;&gt;&gt;BasicData:record=\n,field=,,subfield=,FormatInfo=&gt;&gt;&gt;BasicData:&lt;&lt;&lt;&lt;&lt;&lt;&apos; and @record-id=&apos;recordWithNoID&apos; and @segment-id=&apos;recordWithNoID&apos;]</stringProp>
+            <boolProp name="XPath.validate">false</boolProp>
+            <boolProp name="XPath.whitespace">false</boolProp>
+            <boolProp name="XPath.tolerant">false</boolProp>
+            <boolProp name="XPath.namespace">false</boolProp>
+          </XPathAssertion>
+          <hashTree/>
+          <XPathAssertion guiclass="XPathAssertionGui" testclass="XPathAssertion" testname="model[text()=&quot;experiaC&quot;]" enabled="true">
+            <boolProp name="XPath.negate">false</boolProp>
+            <stringProp name="XPath.xpath">/document/outputResult/mobileDT/recordWithNoID[1]/model[text()=&quot;experiaC&quot;]</stringProp>
+            <boolProp name="XPath.validate">false</boolProp>
+            <boolProp name="XPath.whitespace">false</boolProp>
+            <boolProp name="XPath.tolerant">false</boolProp>
+            <boolProp name="XPath.namespace">false</boolProp>
+          </XPathAssertion>
+          <hashTree/>
+          <XPathAssertion guiclass="XPathAssertionGui" testclass="XPathAssertion" testname="month[text()=&quot;june&quot;]" enabled="true">
+            <boolProp name="XPath.negate">false</boolProp>
+            <stringProp name="XPath.xpath">/document/outputResult/mobileDT/recordWithNoID[1]/month[text()=&quot;june&quot;]</stringProp>
+            <boolProp name="XPath.validate">false</boolProp>
+            <boolProp name="XPath.whitespace">false</boolProp>
+            <boolProp name="XPath.tolerant">false</boolProp>
+            <boolProp name="XPath.namespace">false</boolProp>
+          </XPathAssertion>
+          <hashTree/>
+          <XPathAssertion guiclass="XPathAssertionGui" testclass="XPathAssertion" testname="price[text()=&quot;19000&quot;]" enabled="true">
+            <boolProp name="XPath.negate">false</boolProp>
+            <stringProp name="XPath.xpath">/document/outputResult/mobileDT/recordWithNoID[1]/price[text()=&quot;19000&quot;]</stringProp>
+            <boolProp name="XPath.validate">false</boolProp>
+            <boolProp name="XPath.whitespace">false</boolProp>
+            <boolProp name="XPath.tolerant">false</boolProp>
+            <boolProp name="XPath.namespace">false</boolProp>
+          </XPathAssertion>
+          <hashTree/>
+          <XPathAssertion guiclass="XPathAssertionGui" testclass="XPathAssertion" testname="recordWithNoID[2][@record-id=&apos;recordWithNoID&apos; and @segment-id=&apos;recordWithNoID&apos;]" enabled="true">
+            <boolProp name="XPath.negate">false</boolProp>
+            <stringProp name="XPath.xpath">/document/outputResult/mobileDT/recordWithNoID[2][@record-id=&apos;recordWithNoID&apos; and @segment-id=&apos;recordWithNoID&apos;]</stringProp>
+            <boolProp name="XPath.validate">false</boolProp>
+            <boolProp name="XPath.whitespace">false</boolProp>
+            <boolProp name="XPath.tolerant">false</boolProp>
+            <boolProp name="XPath.namespace">false</boolProp>
+          </XPathAssertion>
+          <hashTree/>
+          <XPathAssertion guiclass="XPathAssertionGui" testclass="XPathAssertion" testname="name[text()=&quot;micromax&quot;]" enabled="true">
+            <boolProp name="XPath.negate">false</boolProp>
+            <stringProp name="XPath.xpath">/document/outputResult/mobileDT/recordWithNoID[2]/name[text()=&quot;micromax&quot;]</stringProp>
+            <boolProp name="XPath.validate">false</boolProp>
+            <boolProp name="XPath.whitespace">false</boolProp>
+            <boolProp name="XPath.tolerant">false</boolProp>
+            <boolProp name="XPath.namespace">false</boolProp>
+          </XPathAssertion>
+          <hashTree/>
+          <XPathAssertion guiclass="XPathAssertionGui" testclass="XPathAssertion" testname="model[text()=&quot;canvasnitro&quot;]" enabled="true">
+            <boolProp name="XPath.negate">false</boolProp>
+            <stringProp name="XPath.xpath">/document/outputResult/mobileDT/recordWithNoID[2]/model[text()=&quot;canvasnitro&quot;]</stringProp>
+            <boolProp name="XPath.validate">false</boolProp>
+            <boolProp name="XPath.whitespace">false</boolProp>
+            <boolProp name="XPath.tolerant">false</boolProp>
+            <boolProp name="XPath.namespace">false</boolProp>
+          </XPathAssertion>
+          <hashTree/>
+          <XPathAssertion guiclass="XPathAssertionGui" testclass="XPathAssertion" testname="month[text()=&quot;june&quot;]" enabled="true">
+            <boolProp name="XPath.negate">false</boolProp>
+            <stringProp name="XPath.xpath">/document/outputResult/mobileDT/recordWithNoID[2]/month[text()=&quot;june&quot;]</stringProp>
+            <boolProp name="XPath.validate">false</boolProp>
+            <boolProp name="XPath.whitespace">false</boolProp>
+            <boolProp name="XPath.tolerant">false</boolProp>
+            <boolProp name="XPath.namespace">false</boolProp>
+          </XPathAssertion>
+          <hashTree/>
+          <XPathAssertion guiclass="XPathAssertionGui" testclass="XPathAssertion" testname="price[text()=&quot;9000&quot;]" enabled="true">
+            <boolProp name="XPath.negate">false</boolProp>
+            <stringProp name="XPath.xpath">/document/outputResult/mobileDT/recordWithNoID[2]/price[text()=&quot;9000&quot;]</stringProp>
+            <boolProp name="XPath.validate">false</boolProp>
+            <boolProp name="XPath.whitespace">false</boolProp>
+            <boolProp name="XPath.tolerant">false</boolProp>
+            <boolProp name="XPath.namespace">false</boolProp>
+          </XPathAssertion>
+          <hashTree/>
+          <XPathAssertion guiclass="XPathAssertionGui" testclass="XPathAssertion" testname="recordWithNoID[3][@record-id=&apos;recordWithNoID&apos; and @segment-id=&apos;recordWithNoID&apos;]" enabled="true">
+            <boolProp name="XPath.negate">false</boolProp>
+            <stringProp name="XPath.xpath">/document/outputResult/mobileDT/recordWithNoID[3][@record-id=&apos;recordWithNoID&apos; and @segment-id=&apos;recordWithNoID&apos;]</stringProp>
+            <boolProp name="XPath.validate">false</boolProp>
+            <boolProp name="XPath.whitespace">false</boolProp>
+            <boolProp name="XPath.tolerant">false</boolProp>
+            <boolProp name="XPath.namespace">false</boolProp>
+          </XPathAssertion>
+          <hashTree/>
+          <XPathAssertion guiclass="XPathAssertionGui" testclass="XPathAssertion" testname="name[text()=&quot;samsung&quot;]" enabled="true">
+            <boolProp name="XPath.negate">false</boolProp>
+            <stringProp name="XPath.xpath">/document/outputResult/mobileDT/recordWithNoID[3]/name[text()=&quot;samsung&quot;]</stringProp>
+            <boolProp name="XPath.validate">false</boolProp>
+            <boolProp name="XPath.whitespace">false</boolProp>
+            <boolProp name="XPath.tolerant">false</boolProp>
+            <boolProp name="XPath.namespace">false</boolProp>
+          </XPathAssertion>
+          <hashTree/>
+          <XPathAssertion guiclass="XPathAssertionGui" testclass="XPathAssertion" testname="model[text()=&quot;s3&quot;]" enabled="true">
+            <boolProp name="XPath.negate">false</boolProp>
+            <stringProp name="XPath.xpath">/document/outputResult/mobileDT/recordWithNoID[3]/model[text()=&quot;s3&quot;]</stringProp>
+            <boolProp name="XPath.validate">false</boolProp>
+            <boolProp name="XPath.whitespace">false</boolProp>
+            <boolProp name="XPath.tolerant">false</boolProp>
+            <boolProp name="XPath.namespace">false</boolProp>
+          </XPathAssertion>
+          <hashTree/>
+          <XPathAssertion guiclass="XPathAssertionGui" testclass="XPathAssertion" testname="month[text()=&quot;june&quot;]" enabled="true">
+            <boolProp name="XPath.negate">false</boolProp>
+            <stringProp name="XPath.xpath">/document/outputResult/mobileDT/recordWithNoID[3]/month[text()=&quot;june&quot;]</stringProp>
+            <boolProp name="XPath.validate">false</boolProp>
+            <boolProp name="XPath.whitespace">false</boolProp>
+            <boolProp name="XPath.tolerant">false</boolProp>
+            <boolProp name="XPath.namespace">false</boolProp>
+          </XPathAssertion>
+          <hashTree/>
+          <XPathAssertion guiclass="XPathAssertionGui" testclass="XPathAssertion" testname="price[text()=&quot;12000&quot;]" enabled="true">
+            <boolProp name="XPath.negate">false</boolProp>
+            <stringProp name="XPath.xpath">/document/outputResult/mobileDT/recordWithNoID[3]/price[text()=&quot;12000&quot;]</stringProp>
+            <boolProp name="XPath.validate">false</boolProp>
+            <boolProp name="XPath.whitespace">false</boolProp>
+            <boolProp name="XPath.tolerant">false</boolProp>
+            <boolProp name="XPath.namespace">false</boolProp>
+          </XPathAssertion>
+          <hashTree/>
+          <XPathAssertion guiclass="XPathAssertionGui" testclass="XPathAssertion" testname="recordWithNoID[4][@record-id=&apos;recordWithNoID&apos; and @segment-id=&apos;recordWithNoID&apos;]" enabled="true">
+            <boolProp name="XPath.negate">false</boolProp>
+            <stringProp name="XPath.xpath">/document/outputResult/mobileDT/recordWithNoID[4][@record-id=&apos;recordWithNoID&apos; and @segment-id=&apos;recordWithNoID&apos;]</stringProp>
+            <boolProp name="XPath.validate">false</boolProp>
+            <boolProp name="XPath.whitespace">false</boolProp>
+            <boolProp name="XPath.tolerant">false</boolProp>
+            <boolProp name="XPath.namespace">false</boolProp>
+          </XPathAssertion>
+          <hashTree/>
+          <XPathAssertion guiclass="XPathAssertionGui" testclass="XPathAssertion" testname="name[text()=&quot;nokia&quot;]" enabled="true">
+            <boolProp name="XPath.negate">false</boolProp>
+            <stringProp name="XPath.xpath">/document/outputResult/mobileDT/recordWithNoID[4]/name[text()=&quot;nokia&quot;]</stringProp>
+            <boolProp name="XPath.validate">false</boolProp>
+            <boolProp name="XPath.whitespace">false</boolProp>
+            <boolProp name="XPath.tolerant">false</boolProp>
+            <boolProp name="XPath.namespace">false</boolProp>
+          </XPathAssertion>
+          <hashTree/>
+          <XPathAssertion guiclass="XPathAssertionGui" testclass="XPathAssertion" testname="model[text()=&quot;z1&quot;]" enabled="true">
+            <boolProp name="XPath.negate">false</boolProp>
+            <stringProp name="XPath.xpath">/document/outputResult/mobileDT/recordWithNoID[4]/model[text()=&quot;z1&quot;]</stringProp>
+            <boolProp name="XPath.validate">false</boolProp>
+            <boolProp name="XPath.whitespace">false</boolProp>
+            <boolProp name="XPath.tolerant">false</boolProp>
+            <boolProp name="XPath.namespace">false</boolProp>
+          </XPathAssertion>
+          <hashTree/>
+          <XPathAssertion guiclass="XPathAssertionGui" testclass="XPathAssertion" testname="month[text()=&quot;may&quot;]" enabled="true">
+            <boolProp name="XPath.negate">false</boolProp>
+            <stringProp name="XPath.xpath">/document/outputResult/mobileDT/recordWithNoID[4]/month[text()=&quot;may&quot;]</stringProp>
+            <boolProp name="XPath.validate">false</boolProp>
+            <boolProp name="XPath.whitespace">false</boolProp>
+            <boolProp name="XPath.tolerant">false</boolProp>
+            <boolProp name="XPath.namespace">false</boolProp>
+          </XPathAssertion>
+          <hashTree/>
+          <XPathAssertion guiclass="XPathAssertionGui" testclass="XPathAssertion" testname="price[text()=&quot;5000&quot;]" enabled="true">
+            <boolProp name="XPath.negate">false</boolProp>
+            <stringProp name="XPath.xpath">/document/outputResult/mobileDT/recordWithNoID[4]/price[text()=&quot;5000&quot;]</stringProp>
+            <boolProp name="XPath.validate">false</boolProp>
+            <boolProp name="XPath.whitespace">false</boolProp>
+            <boolProp name="XPath.tolerant">false</boolProp>
+            <boolProp name="XPath.namespace">false</boolProp>
+          </XPathAssertion>
+          <hashTree/>
+          <XPathAssertion guiclass="XPathAssertionGui" testclass="XPathAssertion" testname="recordWithNoID[5][@record-id=&apos;recordWithNoID&apos; and @segment-id=&apos;recordWithNoID&apos;]" enabled="true">
+            <boolProp name="XPath.negate">false</boolProp>
+            <stringProp name="XPath.xpath">/document/outputResult/mobileDT/recordWithNoID[5][@record-id=&apos;recordWithNoID&apos; and @segment-id=&apos;recordWithNoID&apos;]</stringProp>
+            <boolProp name="XPath.validate">false</boolProp>
+            <boolProp name="XPath.whitespace">false</boolProp>
+            <boolProp name="XPath.tolerant">false</boolProp>
+            <boolProp name="XPath.namespace">false</boolProp>
+          </XPathAssertion>
+          <hashTree/>
+          <XPathAssertion guiclass="XPathAssertionGui" testclass="XPathAssertion" testname="name[text()=&quot;mi&quot;]" enabled="true">
+            <boolProp name="XPath.negate">false</boolProp>
+            <stringProp name="XPath.xpath">/document/outputResult/mobileDT/recordWithNoID[5]/name[text()=&quot;mi&quot;]</stringProp>
+            <boolProp name="XPath.validate">false</boolProp>
+            <boolProp name="XPath.whitespace">false</boolProp>
+            <boolProp name="XPath.tolerant">false</boolProp>
+            <boolProp name="XPath.namespace">false</boolProp>
+          </XPathAssertion>
+          <hashTree/>
+          <XPathAssertion guiclass="XPathAssertionGui" testclass="XPathAssertion" testname="model[text()=&quot;new&quot;]" enabled="true">
+            <boolProp name="XPath.negate">false</boolProp>
+            <stringProp name="XPath.xpath">/document/outputResult/mobileDT/recordWithNoID[5]/model[text()=&quot;new&quot;]</stringProp>
+            <boolProp name="XPath.validate">false</boolProp>
+            <boolProp name="XPath.whitespace">false</boolProp>
+            <boolProp name="XPath.tolerant">false</boolProp>
+            <boolProp name="XPath.namespace">false</boolProp>
+          </XPathAssertion>
+          <hashTree/>
+          <XPathAssertion guiclass="XPathAssertionGui" testclass="XPathAssertion" testname="month[text()=&quot;august&quot;]" enabled="true">
+            <boolProp name="XPath.negate">false</boolProp>
+            <stringProp name="XPath.xpath">/document/outputResult/mobileDT/recordWithNoID[5]/month[text()=&quot;august&quot;]</stringProp>
+            <boolProp name="XPath.validate">false</boolProp>
+            <boolProp name="XPath.whitespace">false</boolProp>
+            <boolProp name="XPath.tolerant">false</boolProp>
+            <boolProp name="XPath.namespace">false</boolProp>
+          </XPathAssertion>
+          <hashTree/>
+          <XPathAssertion guiclass="XPathAssertionGui" testclass="XPathAssertion" testname="price[text()=&quot;12000&quot;]" enabled="true">
+            <boolProp name="XPath.negate">false</boolProp>
+            <stringProp name="XPath.xpath">/document/outputResult/mobileDT/recordWithNoID[5]/price[text()=&quot;12000&quot;]</stringProp>
+            <boolProp name="XPath.validate">false</boolProp>
+            <boolProp name="XPath.whitespace">false</boolProp>
+            <boolProp name="XPath.tolerant">false</boolProp>
+            <boolProp name="XPath.namespace">false</boolProp>
+          </XPathAssertion>
+          <hashTree/>
+          <WmInnerInvokeAssertion guiclass="WmInnerInvokeAssertionGui" testclass="WmInnerInvokeAssertion" testname="CGDemo.SubmitToTN:gateway [1]" enabled="true">
+            <stringProp name="InnerInvoke.serviceName">CGDemo.SubmitToTN:gateway</stringProp>
+            <boolProp name="InnerInvoke.checkServiceInput">true</boolProp>
+            <stringProp name="InnerInvoke.inputDataXPath">/document/inputData/string[text()=&quot;604173971  015585404VNT$*/sony,experiaC,june,19000micromax,canvasnitro,june,9000samsung,s3,june,12000nokia,z1,may,5000mi,new,august,12000&quot;]
+/document/inputData/inputData[text()=&quot;604173971  015585404VNT$*/sony,experiaC,june,19000micromax,canvasnitro,june,9000samsung,s3,june,12000nokia,z1,may,5000mi,new,august,12000&quot;]</stringProp>
+            <boolProp name="InnerInvoke.checkServiceOutput">true</boolProp>
+            <stringProp name="InnerInvoke.outputDataXPath">/document/outputResult/inString[text()=&quot;  015585404VNT&quot;]
+/document/outputResult/length[text()=&quot;14&quot;]
+/document/outputResult/bytesRead[1][text()=&quot;14&quot;]
+/document/outputResult/bytesRead[2][text()=&quot;9&quot;]
+/document/outputResult/TN_Parms
+/document/outputResult/TN_Parms/SenderID[text()=&quot;604173971&quot;]
+/document/outputResult/TN_Parms/ReceiverID[text()=&quot;015585404VNT&quot;]
+/document/outputResult/TN_Parms/Content[text()=&quot;MobileDetails&quot;]
+/document/outputResult/string[text()=&quot;  015585404VNT&quot;]
+/document/outputResult/inputData[text()=&quot;604173971  015585404VNT$*/sony,experiaC,june,19000micromax,canvasnitro,june,9000samsung,s3,june,12000nokia,z1,may,5000mi,new,august,12000&quot;]
+/document/outputResult/name[text()=&quot;CGSmartSupport.TN.FlatFileProcessing.gatewayService:gateway&quot;]
+/document/outputResult/value[text()=&quot;015585404VNT&quot;]</stringProp>
+            <boolProp name="InnerInvoke.checkException">false</boolProp>
+            <stringProp name="InnerInvoke.exceptionData"></stringProp>
+            <stringProp name="TestPlan.comments">WebMethods Inner Invoke Assert</stringProp>
+          </WmInnerInvokeAssertion>
+          <hashTree/>
+          <WmInnerInvokeAssertion guiclass="WmInnerInvokeAssertionGui" testclass="WmInnerInvokeAssertion" testname="CGDemo.SubmitToTN:gateway [2]" enabled="false">
+            <stringProp name="InnerInvoke.serviceName">CGDemo.SubmitToTN:gateway</stringProp>
+            <boolProp name="InnerInvoke.checkServiceInput">true</boolProp>
+            <stringProp name="InnerInvoke.inputDataXPath">/document/inputData/string[text()=&quot;604173971  015585404VNT$*/sony,experiaC,june,19000micromax,canvasnitro,june,9000samsung,s3,june,12000nokia,z1,may,5000mi,new,august,12000&quot;]
+/document/inputData/inputData[text()=&quot;604173971  015585404VNT$*/sony,experiaC,june,19000micromax,canvasnitro,june,9000samsung,s3,june,12000nokia,z1,may,5000mi,new,august,12000&quot;]</stringProp>
+            <boolProp name="InnerInvoke.checkServiceOutput">true</boolProp>
+            <stringProp name="InnerInvoke.outputDataXPath">/document/outputResult/inString[text()=&quot;  015585404VNT&quot;]
+/document/outputResult/length[text()=&quot;14&quot;]
+/document/outputResult/bytesRead[1][text()=&quot;14&quot;]
+/document/outputResult/bytesRead[2][text()=&quot;9&quot;]
+/document/outputResult/TN_Parms
+/document/outputResult/TN_Parms/SenderID[text()=&quot;604173971&quot;]
+/document/outputResult/TN_Parms/ReceiverID[text()=&quot;015585404VNT&quot;]
+/document/outputResult/TN_Parms/Content[text()=&quot;MobileDetails&quot;]
+/document/outputResult/string[text()=&quot;  015585404VNT&quot;]
+/document/outputResult/inputData[text()=&quot;604173971  015585404VNT$*/sony,experiaC,june,19000micromax,canvasnitro,june,9000samsung,s3,june,12000nokia,z1,may,5000mi,new,august,12000&quot;]
+/document/outputResult/name[text()=&quot;CGSmartSupport.TN.FlatFileProcessing.gatewayService:gateway&quot;]
+/document/outputResult/value[text()=&quot;015585404VNT&quot;]</stringProp>
+            <boolProp name="InnerInvoke.checkException">false</boolProp>
+            <stringProp name="InnerInvoke.exceptionData"></stringProp>
+            <stringProp name="TestPlan.comments">WebMethods Inner Invoke Assert</stringProp>
+          </WmInnerInvokeAssertion>
+          <hashTree/>
+          <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View results (Request &amp; Response)" enabled="true">
+            <boolProp name="ResultCollector.error_logging">false</boolProp>
+            <objProp>
+              <name>saveConfig</name>
+              <value class="SampleSaveConfiguration">
+                <time>true</time>
+                <latency>true</latency>
+                <timestamp>true</timestamp>
+                <success>true</success>
+                <label>true</label>
+                <code>true</code>
+                <message>true</message>
+                <threadName>true</threadName>
+                <dataType>true</dataType>
+                <encoding>false</encoding>
+                <assertions>true</assertions>
+                <subresults>true</subresults>
+                <responseData>false</responseData>
+                <samplerData>false</samplerData>
+                <xml>false</xml>
+                <fieldNames>false</fieldNames>
+                <responseHeaders>false</responseHeaders>
+                <requestHeaders>false</requestHeaders>
+                <responseDataOnError>false</responseDataOnError>
+                <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+                <assertionsResultsToSave>0</assertionsResultsToSave>
+                <bytes>true</bytes>
+                <threadCounts>true</threadCounts>
+              </value>
+            </objProp>
+            <stringProp name="filename"></stringProp>
+          </ResultCollector>
+          <hashTree/>
+        </hashTree>
+      </hashTree>
+      <ResultCollector guiclass="TableVisualizer" testclass="ResultCollector" testname="View Results in Table" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>true</xml>
+            <fieldNames>false</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <threadCounts>true</threadCounts>
+          </value>
+        </objProp>
+        <stringProp name="filename">results.jtl</stringProp>
+      </ResultCollector>
+      <hashTree/>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>

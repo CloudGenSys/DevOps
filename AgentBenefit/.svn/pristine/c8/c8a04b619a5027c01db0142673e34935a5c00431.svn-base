@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<IDataXMLCoder version="1.0">
+  <record javaclass="com.wm.data.ISMemDataImpl">
+    <value name="documentTypeName">CgPubSubSamples.doc:Employee</value>
+    <record name="document" javaclass="com.wm.data.ISMemDataImpl">
+      <value name="Name">hari</value>
+      <value name="Designation">Degree</value>
+      <value name="Id">8578</value>
+      <record name="Address" javaclass="com.wm.data.ISMemDataImpl">
+        <value name="City">Hyderabad</value>
+        <value name="State">Telangana</value>
+        <value name="Zip">500032</value>
+      </record>
+      <record name="_env" javaclass="com.wm.data.ISMemDataImpl">
+        <value name="trackId">11cf382a-88bb-45f8-8030-4004adbf13dd:73b9520d-726c-47ff-9715-a0d42a1f93bd</value>
+        <value name="locale"></value>
+        <value name="activation">wm6e6e9c210-d210-16ec-a800-84fef5c4c688</value>
+        <value name="businessContext">wm6:37532200-2808-1ed5-99c9-d62832fb38d9\snull\snull:wm6e6e9c210-d210-16ec-a800-84fef5c4c688:null:IS_61:null</value>
+        <value name="uuid">1db67730-323d-11e6-a28c-ade7342d5f49</value>
+      </record>
+    </record>
+  </record>
+</IDataXMLCoder>

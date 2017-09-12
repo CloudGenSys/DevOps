@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<IDataXMLCoder version="1.0">
+  <record javaclass="com.wm.data.ISMemDataImpl">
+    <record name="PurchaseOrder" javaclass="com.wm.data.ISMemDataImpl">
+      <value name="PONumber">2565</value>
+      <value name="CustomerNo">5886</value>
+      <value name="TotalAmount">5000</value>
+      <array name="LineItemDetails" type="record" depth="1">
+        <record javaclass="com.wm.data.ISMemDataImpl">
+          <value name="ItemNo">123</value>
+          <value name="ManufacturerCode">CG02</value>
+          <value name="Quantity">5000</value>
+          <value name="UnitPrice">100</value>
+        </record>
+      </array>
+    </record>
+    <record name="PurchaseOrderAck" javaclass="com.wm.data.ISMemDataImpl">
+      <value name="PONumber">2565</value>
+      <value name="POStatus">Amount Error: invalid data supplied [500000.0 != 5000]</value>
+    </record>
+  </record>
+</IDataXMLCoder>

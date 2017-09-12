@@ -1,0 +1,58 @@
+<html xmlns:stringutils="xalan://org.apache.tools.ant.util.StringUtils" xmlns:lxslt="http://xml.apache.org/xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Unit Test Results: All Tests</title>
+<link title="Style" type="text/css" rel="stylesheet" href="stylesheet.css">
+</head>
+<body onload="open('allclasses-frame.html','classListFrame')">
+<h1>Unit Test Results.</h1>
+<table width="100%">
+<tr>
+<td align="left"></td><td align="right">Designed for use with <a href="http://www.junit.org/">JUnit</a> and <a href="http://ant.apache.org/">Ant</a>.</td>
+</tr>
+</table>
+<hr size="1">
+<h2>All Tests</h2>
+<table width="95%" cellspacing="2" cellpadding="5" border="0" class="details">
+<tr valign="top">
+<th>Class</th><th>Name</th><th>Status</th><th width="80%">Type</th><th nowrap>Time(s)</th>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a href="com/cloudgensys/cate/de/junit/test/0_BasicTestSuite.html">BasicTestSuite</a></td><td><a name="Two employeed agents"></a><a href="com/cloudgensys/cate/de/junit/test/0_BasicTestSuite.html#Two employeed agents">Two employeed agents</a></td><td>Success</td><td></td><td>0.843</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a href="com/cloudgensys/cate/de/junit/test/0_BasicTestSuite.html">BasicTestSuite</a></td><td><a name="Two contracted agents"></a><a href="com/cloudgensys/cate/de/junit/test/0_BasicTestSuite.html#Two contracted agents">Two contracted agents</a></td><td>Success</td><td></td><td>0.706</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a href="com/cloudgensys/cate/de/junit/test/0_BasicTestSuite.html">BasicTestSuite</a></td><td><a name="40 agents"></a><a href="com/cloudgensys/cate/de/junit/test/0_BasicTestSuite.html#40 agents">40 agents</a></td><td>Success</td><td></td><td>4.361</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a href="com/cloudgensys/cate/de/junit/test/0_BasicTestSuite.html">BasicTestSuite</a></td><td><a name="Failed email notofication"></a><a href="com/cloudgensys/cate/de/junit/test/0_BasicTestSuite.html#Failed email notofication">Failed email notofication</a></td><td>Success</td><td></td><td>0.482</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a href="com/cloudgensys/cate/de/junit/test/0_BasicTestSuite.html">BasicTestSuite</a></td><td><a name="Two employeed agents - ext"></a><a href="com/cloudgensys/cate/de/junit/test/0_BasicTestSuite.html#Two employeed agents - ext">Two employeed agents - ext</a></td><td>Success</td><td></td><td>0.528</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a href="com/cloudgensys/cate/de/junit/test/0_BasicTestSuite.html">BasicTestSuite</a></td><td><a name="Two contracted agents - ext"></a><a href="com/cloudgensys/cate/de/junit/test/0_BasicTestSuite.html#Two contracted agents - ext">Two contracted agents - ext</a></td><td>Success</td><td></td><td>0.703</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a href="com/cloudgensys/cate/de/junit/test/0_BasicTestSuite.html">BasicTestSuite</a></td><td><a name="40 agents - ext"></a><a href="com/cloudgensys/cate/de/junit/test/0_BasicTestSuite.html#40 agents - ext">40 agents - ext</a></td><td>Success</td><td></td><td>4.629</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a href="com/cloudgensys/cate/de/junit/test/0_BasicTestSuite.html">BasicTestSuite</a></td><td><a name="Failed email notofication - ext"></a><a href="com/cloudgensys/cate/de/junit/test/0_BasicTestSuite.html#Failed email notofication - ext">Failed email notofication - ext</a></td><td>Success</td><td></td><td>0.601</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a href="com/cloudgensys/cate/de/junit/test/0_BasicTestSuite.html">BasicTestSuite</a></td><td><a name="Format dd.MM.yyyy"></a><a href="com/cloudgensys/cate/de/junit/test/0_BasicTestSuite.html#Format dd.MM.yyyy">Format dd.MM.yyyy</a></td><td>Success</td><td></td><td>0.366</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a href="com/cloudgensys/cate/de/junit/test/0_BasicTestSuite.html">BasicTestSuite</a></td><td><a name="Format dd.MM.yyyy - bad data"></a><a href="com/cloudgensys/cate/de/junit/test/0_BasicTestSuite.html#Format dd.MM.yyyy - bad data">Format dd.MM.yyyy - bad data</a></td><td>Success</td><td></td><td>0.158</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a href="com/cloudgensys/cate/de/junit/test/0_BasicTestSuite.html">BasicTestSuite</a></td><td><a name="read 40 agents"></a><a href="com/cloudgensys/cate/de/junit/test/0_BasicTestSuite.html#read 40 agents">read 40 agents</a></td><td>Success</td><td></td><td>0.810</td>
+</tr>
+<tr valign="top" class="TableRowColor">
+<td><a href="com/cloudgensys/cate/de/junit/test/0_BasicTestSuite.html">BasicTestSuite</a></td><td><a name="file not found"></a><a href="com/cloudgensys/cate/de/junit/test/0_BasicTestSuite.html#file not found">file not found</a></td><td>Success</td><td></td><td>0.207</td>
+</tr>
+</table>
+</body>
+</html>

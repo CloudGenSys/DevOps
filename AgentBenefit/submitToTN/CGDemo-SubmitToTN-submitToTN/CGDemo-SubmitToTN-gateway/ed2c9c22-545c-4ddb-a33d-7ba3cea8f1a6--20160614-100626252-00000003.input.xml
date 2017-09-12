@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<IDataXMLCoder version="1.0">
+  <record javaclass="com.wm.data.ISMemDataImpl">
+    <value name="string">604173971  015585404VNT$*/
+sony,experiaC,june,19000
+micromax,canvasnitro,june,9000
+samsung,s3,june,12000
+nokia,z1,may,5000
+mi,new,august,12000</value>
+    <value name="inputData">604173971  015585404VNT$*/
+sony,experiaC,june,19000
+micromax,canvasnitro,june,9000
+samsung,s3,june,12000
+nokia,z1,may,5000
+mi,new,august,12000</value>
+  </record>
+</IDataXMLCoder>

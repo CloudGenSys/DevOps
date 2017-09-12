@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:testSuite xmlns:ns2="com.syteleo.sut.model.persist">
+    <id>754cd120-c087-4fb0-9234-753d6aa1a568</id>
+    <name>Create Email</name>
+    <serviceUnderTest>AgentBenefit.util:createEmailBody</serviceUnderTest>
+    <description></description>
+    <testGroup>
+        <testDetails>
+            <id>45c6d425-8b90-477c-875e-36fa39e360ad</id>
+            <name>positive test</name>
+            <ignored>false</ignored>
+            <description>descr</description>
+            <pipelineInfo>
+                <externalFilePath></externalFilePath>
+                <name>John</name>
+                <pipelineContent>PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/Pgo8cGlwZWxpbmVFbGVtZW50PgogICAgPHR5cGU+MDwvdHlwZT4KICAgIDxsaXN0PmZhbHNlPC9saXN0PgogICAgPHRhYmxlPmZhbHNlPC90YWJsZT4KICAgIDxsaXN0RWxlbWVudD5mYWxzZTwvbGlzdEVsZW1lbnQ+CiAgICA8cmVxdWlyZWQ+ZmFsc2U8L3JlcXVpcmVkPgogICAgPHJlZ2V4PmZhbHNlPC9yZWdleD4KICAgIDxjaGlsZHJlbj4KICAgICAgICA8Y2hpbGQ+CiAgICAgICAgICAgIDxuYW1lPmFnZW50TmFtZTwvbmFtZT4KICAgICAgICAgICAgPHZhbHVlPkpvaG48L3ZhbHVlPgogICAgICAgICAgICA8dHlwZT4xPC90eXBlPgogICAgICAgICAgICA8cmVmZXJlbmNlZFR5cGU+PC9yZWZlcmVuY2VkVHlwZT4KICAgICAgICAgICAgPGxpc3Q+ZmFsc2U8L2xpc3Q+CiAgICAgICAgICAgIDx0YWJsZT5mYWxzZTwvdGFibGU+CiAgICAgICAgICAgIDxsaXN0RWxlbWVudD5mYWxzZTwvbGlzdEVsZW1lbnQ+CiAgICAgICAgICAgIDxyZXF1aXJlZD50cnVlPC9yZXF1aXJlZD4KICAgICAgICAgICAgPHJlZ2V4PmZhbHNlPC9yZWdleD4KICAgICAgICAgICAgPGNoaWxkcmVuLz4KICAgICAgICA8L2NoaWxkPgogICAgICAgIDxjaGlsZD4KICAgICAgICAgICAgPG5hbWU+ZGF0ZTwvbmFtZT4KICAgICAgICAgICAgPHZhbHVlPjAyLjAzLjIwMTc8L3ZhbHVlPgogICAgICAgICAgICA8dHlwZT4xPC90eXBlPgogICAgICAgICAgICA8cmVmZXJlbmNlZFR5cGU+PC9yZWZlcmVuY2VkVHlwZT4KICAgICAgICAgICAgPGxpc3Q+ZmFsc2U8L2xpc3Q+CiAgICAgICAgICAgIDx0YWJsZT5mYWxzZTwvdGFibGU+CiAgICAgICAgICAgIDxsaXN0RWxlbWVudD5mYWxzZTwvbGlzdEVsZW1lbnQ+CiAgICAgICAgICAgIDxyZXF1aXJlZD50cnVlPC9yZXF1aXJlZD4KICAgICAgICAgICAgPHJlZ2V4PmZhbHNlPC9yZWdleD4KICAgICAgICAgICAgPGNoaWxkcmVuLz4KICAgICAgICA8L2NoaWxkPgogICAgICAgIDxjaGlsZD4KICAgICAgICAgICAgPG5hbWU+YW1vdW50PC9uYW1lPgogICAgICAgICAgICA8dmFsdWU+MTMwPC92YWx1ZT4KICAgICAgICAgICAgPHR5cGU+MTwvdHlwZT4KICAgICAgICAgICAgPHJlZmVyZW5jZWRUeXBlPjwvcmVmZXJlbmNlZFR5cGU+CiAgICAgICAgICAgIDxsaXN0PmZhbHNlPC9saXN0PgogICAgICAgICAgICA8dGFibGU+ZmFsc2U8L3RhYmxlPgogICAgICAgICAgICA8bGlzdEVsZW1lbnQ+ZmFsc2U8L2xpc3RFbGVtZW50PgogICAgICAgICAgICA8cmVxdWlyZWQ+dHJ1ZTwvcmVxdWlyZWQ+CiAgICAgICAgICAgIDxyZWdleD5mYWxzZTwvcmVnZXg+CiAgICAgICAgICAgIDxjaGlsZHJlbi8+CiAgICAgICAgPC9jaGlsZD4KICAgIDwvY2hpbGRyZW4+CjwvcGlwZWxpbmVFbGVtZW50Pgo=</pipelineContent>
+                <useExternalFile>false</useExternalFile>
+                <useIDataFile>false</useIDataFile>
+            </pipelineInfo>
+            <expectedOutput>
+                <pipelineInfo>
+                    <externalFilePath></externalFilePath>
+                    <name>amount 130</name>
+                    <pipelineContent>PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/Pgo8cGlwZWxpbmVFbGVtZW50PgogICAgPHR5cGU+MDwvdHlwZT4KICAgIDxsaXN0PmZhbHNlPC9saXN0PgogICAgPHRhYmxlPmZhbHNlPC90YWJsZT4KICAgIDxsaXN0RWxlbWVudD5mYWxzZTwvbGlzdEVsZW1lbnQ+CiAgICA8cmVxdWlyZWQ+ZmFsc2U8L3JlcXVpcmVkPgogICAgPHJlZ2V4PmZhbHNlPC9yZWdleD4KICAgIDxjaGlsZHJlbj4KICAgICAgICA8Y2hpbGQ+CiAgICAgICAgICAgIDxuYW1lPmJvZHlUZXh0PC9uYW1lPgogICAgICAgICAgICA8dmFsdWU+RGVhciBKb2huLAoKICAgQXQgdGhlIGRhdGUgMDIuMDMuMjAxNywgdGhlIGFtb3VudCBvZiAxMzAkIChvbmUgaHVuZHJlZCBhbmQgdGhpcnR5IGRvbGxhcnMpIGhhcyBiZWVuIHRyYW5zZmVyZWQgdG8geW91ciBhY2NvdW50LgoKQmVzdCBSZWdhcmRzLApDb21wYW55PC92YWx1ZT4KICAgICAgICAgICAgPHR5cGU+MTwvdHlwZT4KICAgICAgICAgICAgPHJlZmVyZW5jZWRUeXBlPjwvcmVmZXJlbmNlZFR5cGU+CiAgICAgICAgICAgIDxsaXN0PmZhbHNlPC9saXN0PgogICAgICAgICAgICA8dGFibGU+ZmFsc2U8L3RhYmxlPgogICAgICAgICAgICA8bGlzdEVsZW1lbnQ+ZmFsc2U8L2xpc3RFbGVtZW50PgogICAgICAgICAgICA8cmVxdWlyZWQ+dHJ1ZTwvcmVxdWlyZWQ+CiAgICAgICAgICAgIDxyZWdleD5mYWxzZTwvcmVnZXg+CiAgICAgICAgICAgIDxjaGlsZHJlbi8+CiAgICAgICAgPC9jaGlsZD4KICAgIDwvY2hpbGRyZW4+CjwvcGlwZWxpbmVFbGVtZW50Pgo=</pipelineContent>
+                    <useExternalFile>false</useExternalFile>
+                    <useIDataFile>false</useIDataFile>
+                </pipelineInfo>
+                <expectException>false</expectException>
+                <regexMessage>false</regexMessage>
+            </expectedOutput>
+            <testMocks>
+                <mockDetails>
+                    <id>709e8e65-4ae2-4a10-9588-39091110e795</id>
+                    <serviceName>AgentBenefit.ws.consumer.convertNumberToText_.connectors:NumberConversionSoapType_NumberToDollars</serviceName>
+                    <anyInput>true</anyInput>
+                    <inputData>
+                        <name>Any Input</name>
+                        <useExternalFile>false</useExternalFile>
+                        <useIDataFile>false</useIDataFile>
+                    </inputData>
+                    <outputData>
+                        <externalFilePath></externalFilePath>
+                        <name>200</name>
+                        <pipelineContent>PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/Pgo8cGlwZWxpbmVFbGVtZW50PgogICAgPHR5cGU+MDwvdHlwZT4KICAgIDxsaXN0PmZhbHNlPC9saXN0PgogICAgPHRhYmxlPmZhbHNlPC90YWJsZT4KICAgIDxsaXN0RWxlbWVudD5mYWxzZTwvbGlzdEVsZW1lbnQ+CiAgICA8cmVxdWlyZWQ+ZmFsc2U8L3JlcXVpcmVkPgogICAgPHJlZ2V4PmZhbHNlPC9yZWdleD4KICAgIDxjaGlsZHJlbj4KICAgICAgICA8Y2hpbGQ+CiAgICAgICAgICAgIDxuYW1lPnRuczpOdW1iZXJUb0RvbGxhcnNSZXNwb25zZTwvbmFtZT4KICAgICAgICAgICAgPHR5cGU+MjwvdHlwZT4KICAgICAgICAgICAgPHJlZmVyZW5jZWRUeXBlPjwvcmVmZXJlbmNlZFR5cGU+CiAgICAgICAgICAgIDxsaXN0PmZhbHNlPC9saXN0PgogICAgICAgICAgICA8dGFibGU+ZmFsc2U8L3RhYmxlPgogICAgICAgICAgICA8bGlzdEVsZW1lbnQ+ZmFsc2U8L2xpc3RFbGVtZW50PgogICAgICAgICAgICA8cmVxdWlyZWQ+ZmFsc2U8L3JlcXVpcmVkPgogICAgICAgICAgICA8cmVnZXg+ZmFsc2U8L3JlZ2V4PgogICAgICAgICAgICA8Y2hpbGRyZW4+CiAgICAgICAgICAgICAgICA8Y2hpbGQ+CiAgICAgICAgICAgICAgICAgICAgPG5hbWU+dG5zOk51bWJlclRvRG9sbGFyc1Jlc3VsdDwvbmFtZT4KICAgICAgICAgICAgICAgICAgICA8dmFsdWU+b25lIGh1bmRyZWQgYW5kIHRoaXJ0eSBkb2xsYXJzPC92YWx1ZT4KICAgICAgICAgICAgICAgICAgICA8dHlwZT4xPC90eXBlPgogICAgICAgICAgICAgICAgICAgIDxyZWZlcmVuY2VkVHlwZT48L3JlZmVyZW5jZWRUeXBlPgogICAgICAgICAgICAgICAgICAgIDxsaXN0PmZhbHNlPC9saXN0PgogICAgICAgICAgICAgICAgICAgIDx0YWJsZT5mYWxzZTwvdGFibGU+CiAgICAgICAgICAgICAgICAgICAgPGxpc3RFbGVtZW50PmZhbHNlPC9saXN0RWxlbWVudD4KICAgICAgICAgICAgICAgICAgICA8cmVxdWlyZWQ+dHJ1ZTwvcmVxdWlyZWQ+CiAgICAgICAgICAgICAgICAgICAgPHJlZ2V4PmZhbHNlPC9yZWdleD4KICAgICAgICAgICAgICAgICAgICA8Y2hpbGRyZW4vPgogICAgICAgICAgICAgICAgPC9jaGlsZD4KICAgICAgICAgICAgPC9jaGlsZHJlbj4KICAgICAgICA8L2NoaWxkPgogICAgICAgIDxjaGlsZD4KICAgICAgICAgICAgPG5hbWU+dHJhbnNwb3J0SW5mbzwvbmFtZT4KICAgICAgICAgICAgPHR5cGU+MjwvdHlwZT4KICAgICAgICAgICAgPHJlZmVyZW5jZWRUeXBlPjwvcmVmZXJlbmNlZFR5cGU+CiAgICAgICAgICAgIDxsaXN0PmZhbHNlPC9saXN0PgogICAgICAgICAgICA8dGFibGU+ZmFsc2U8L3RhYmxlPgogICAgICAgICAgICA8bGlzdEVsZW1lbnQ+ZmFsc2U8L2xpc3RFbGVtZW50PgogICAgICAgICAgICA8cmVxdWlyZWQ+ZmFsc2U8L3JlcXVpcmVkPgogICAgICAgICAgICA8cmVnZXg+ZmFsc2U8L3JlZ2V4PgogICAgICAgICAgICA8Y2hpbGRyZW4+CiAgICAgICAgICAgICAgICA8Y2hpbGQ+CiAgICAgICAgICAgICAgICAgICAgPG5hbWU+c3RhdHVzPC9uYW1lPgogICAgICAgICAgICAgICAgICAgIDx2YWx1ZT4yMDA8L3ZhbHVlPgogICAgICAgICAgICAgICAgICAgIDx0eXBlPjE8L3R5cGU+CiAgICAgICAgICAgICAgICAgICAgPHJlZmVyZW5jZWRUeXBlPjwvcmVmZXJlbmNlZFR5cGU+CiAgICAgICAgICAgICAgICAgICAgPGxpc3Q+ZmFsc2U8L2xpc3Q+CiAgICAgICAgICAgICAgICAgICAgPHRhYmxlPmZhbHNlPC90YWJsZT4KICAgICAgICAgICAgICAgICAgICA8bGlzdEVsZW1lbnQ+ZmFsc2U8L2xpc3RFbGVtZW50PgogICAgICAgICAgICAgICAgICAgIDxyZXF1aXJlZD5mYWxzZTwvcmVxdWlyZWQ+CiAgICAgICAgICAgICAgICAgICAgPHJlZ2V4PmZhbHNlPC9yZWdleD4KICAgICAgICAgICAgICAgICAgICA8Y2hpbGRyZW4vPgogICAgICAgICAgICAgICAgPC9jaGlsZD4KICAgICAgICAgICAgICAgIDxjaGlsZD4KICAgICAgICAgICAgICAgICAgICA8bmFtZT5zdGF0dXNNZXNzYWdlPC9uYW1lPgogICAgICAgICAgICAgICAgICAgIDx2YWx1ZT5PSzwvdmFsdWU+CiAgICAgICAgICAgICAgICAgICAgPHR5cGU+MTwvdHlwZT4KICAgICAgICAgICAgICAgICAgICA8cmVmZXJlbmNlZFR5cGU+PC9yZWZlcmVuY2VkVHlwZT4KICAgICAgICAgICAgICAgICAgICA8bGlzdD5mYWxzZTwvbGlzdD4KICAgICAgICAgICAgICAgICAgICA8dGFibGU+ZmFsc2U8L3RhYmxlPgogICAgICAgICAgICAgICAgICAgIDxsaXN0RWxlbWVudD5mYWxzZTwvbGlzdEVsZW1lbnQ+CiAgICAgICAgICAgICAgICAgICAgPHJlcXVpcmVkPmZhbHNlPC9yZXF1aXJlZD4KICAgICAgICAgICAgICAgICAgICA8cmVnZXg+ZmFsc2U8L3JlZ2V4PgogICAgICAgICAgICAgICAgICAgIDxjaGlsZHJlbi8+CiAgICAgICAgICAgICAgICA8L2NoaWxkPgogICAgICAgICAgICA8L2NoaWxkcmVuPgogICAgICAgIDwvY2hpbGQ+CiAgICA8L2NoaWxkcmVuPgo8L3BpcGVsaW5lRWxlbWVudD4K</pipelineContent>
+                        <useExternalFile>false</useExternalFile>
+                        <useIDataFile>false</useIDataFile>
+                    </outputData>
+                    <actionName>return</actionName>
+                    <alternativeServiceInput>
+                        <name>Untitled</name>
+                        <useExternalFile>false</useExternalFile>
+                        <useIDataFile>false</useIDataFile>
+                    </alternativeServiceInput>
+                </mockDetails>
+            </testMocks>
+            <numberOfInvocations>
+                <serviceInvocationDetails>
+                    <id>3f541569-1730-400e-a07d-39308781ccb1</id>
+                    <serviceName>pub.flow:debugLog</serviceName>
+                    <count>2</count>
+                    <quatifier>exactly</quatifier>
+                    <orderRelevant>false</orderRelevant>
+                    <anyInput>false</anyInput>
+                    <inputData>
+                        <externalFilePath></externalFilePath>
+                        <name>Any Input</name>
+                        <pipelineContent>PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/Pgo8cGlwZWxpbmVFbGVtZW50PgogICAgPHR5cGU+MDwvdHlwZT4KICAgIDxsaXN0PmZhbHNlPC9saXN0PgogICAgPHRhYmxlPmZhbHNlPC90YWJsZT4KICAgIDxsaXN0RWxlbWVudD5mYWxzZTwvbGlzdEVsZW1lbnQ+CiAgICA8cmVxdWlyZWQ+ZmFsc2U8L3JlcXVpcmVkPgogICAgPHJlZ2V4PmZhbHNlPC9yZWdleD4KICAgIDxjaGlsZHJlbj4KICAgICAgICA8Y2hpbGQ+CiAgICAgICAgICAgIDxuYW1lPm1lc3NhZ2U8L25hbWU+CiAgICAgICAgICAgIDx2YWx1ZT5TdWNjZXNzPC92YWx1ZT4KICAgICAgICAgICAgPHR5cGU+MTwvdHlwZT4KICAgICAgICAgICAgPHJlZmVyZW5jZWRUeXBlPjwvcmVmZXJlbmNlZFR5cGU+CiAgICAgICAgICAgIDxsaXN0PmZhbHNlPC9saXN0PgogICAgICAgICAgICA8dGFibGU+ZmFsc2U8L3RhYmxlPgogICAgICAgICAgICA8bGlzdEVsZW1lbnQ+ZmFsc2U8L2xpc3RFbGVtZW50PgogICAgICAgICAgICA8cmVxdWlyZWQ+ZmFsc2U8L3JlcXVpcmVkPgogICAgICAgICAgICA8cmVnZXg+ZmFsc2U8L3JlZ2V4PgogICAgICAgICAgICA8Y2hpbGRyZW4vPgogICAgICAgIDwvY2hpbGQ+CiAgICAgICAgPGNoaWxkPgogICAgICAgICAgICA8bmFtZT5mdW5jdGlvbjwvbmFtZT4KICAgICAgICAgICAgPHZhbHVlPi4qPC92YWx1ZT4KICAgICAgICAgICAgPHR5cGU+MTwvdHlwZT4KICAgICAgICAgICAgPHJlZmVyZW5jZWRUeXBlPjwvcmVmZXJlbmNlZFR5cGU+CiAgICAgICAgICAgIDxsaXN0PmZhbHNlPC9saXN0PgogICAgICAgICAgICA8dGFibGU+ZmFsc2U8L3RhYmxlPgogICAgICAgICAgICA8bGlzdEVsZW1lbnQ+ZmFsc2U8L2xpc3RFbGVtZW50PgogICAgICAgICAgICA8cmVxdWlyZWQ+ZmFsc2U8L3JlcXVpcmVkPgogICAgICAgICAgICA8cmVnZXg+dHJ1ZTwvcmVnZXg+CiAgICAgICAgICAgIDxjaGlsZHJlbi8+CiAgICAgICAgPC9jaGlsZD4KICAgICAgICA8Y2hpbGQ+CiAgICAgICAgICAgIDxuYW1lPmxldmVsPC9uYW1lPgogICAgICAgICAgICA8dmFsdWU+SW5mbzwvdmFsdWU+CiAgICAgICAgICAgIDx0eXBlPjE8L3R5cGU+CiAgICAgICAgICAgIDxyZWZlcmVuY2VkVHlwZT48L3JlZmVyZW5jZWRUeXBlPgogICAgICAgICAgICA8bGlzdD5mYWxzZTwvbGlzdD4KICAgICAgICAgICAgPHRhYmxlPmZhbHNlPC90YWJsZT4KICAgICAgICAgICAgPGxpc3RFbGVtZW50PmZhbHNlPC9saXN0RWxlbWVudD4KICAgICAgICAgICAgPHJlcXVpcmVkPmZhbHNlPC9yZXF1aXJlZD4KICAgICAgICAgICAgPHJlZ2V4PmZhbHNlPC9yZWdleD4KICAgICAgICAgICAgPGNoaWxkcmVuLz4KICAgICAgICA8L2NoaWxkPgogICAgPC9jaGlsZHJlbj4KPC9waXBlbGluZUVsZW1lbnQ+Cg==</pipelineContent>
+                        <useExternalFile>false</useExternalFile>
+                        <useIDataFile>false</useIDataFile>
+                    </inputData>
+                </serviceInvocationDetails>
+            </numberOfInvocations>
+        </testDetails>
+    </testGroup>
+    <invokeBefores/>
+    <invokeAfters/>
+    <suiteMocks/>
+</ns2:testSuite>

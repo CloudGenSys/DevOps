@@ -1,0 +1,691 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="2.7" jmeter="2.12 r1636949">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan" enabled="true">
+      <stringProp name="TestPlan.comments"></stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments">
+          <elementProp name="invokeAlias" elementType="Argument">
+            <stringProp name="Argument.name">invokeAlias</stringProp>
+            <stringProp name="Argument.value">/invoke/CgAutomationTestRunner:handleHTTPRequest</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="jmxScriptDirectory" elementType="Argument">
+            <stringProp name="Argument.name">jmxScriptDirectory</stringProp>
+            <stringProp name="Argument.value">${__P(jmxScriptDirectory,.)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+        </collectionProp>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Invoke Group" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <longProp name="ThreadGroup.start_time">1428501082000</longProp>
+        <longProp name="ThreadGroup.end_time">1428501082000</longProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <WmServiceInvokeSampler guiclass="WmServiceInvokeSamplerGui" testclass="WmServiceInvokeSampler" testname="53e8c18a-2baa-42c0-bb18-770d5bacab46--20160614-103435204-00000001.input.xml" enabled="true">
+          <stringProp name="HTTPSampler.domain">${__P(hostname,localhost)}</stringProp>
+          <stringProp name="HTTPSampler.port">${__P(port,5555)}</stringProp>
+          <stringProp name="HTTPSampler.proxyHost">${__P(hostname,localhost)}</stringProp>
+          <stringProp name="HTTPSampler.proxyPort">${__P(port,5555)}</stringProp>
+          <stringProp name="HTTPSampler.proxyUser">${__P(username,Administrator)}</stringProp>
+          <stringProp name="HTTPSampler.proxyPass">${__P(password,manage)}</stringProp>
+		  <stringProp name="WmSampler.serviceInputType">IData XML Content</stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/invoke/CgAutomationTestRunner:handleHTTPRequest</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
+		  <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="TestPlan.comments">WebMethods Service Invocation</stringProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments">
+			  <elementProp name="xmlDocument" elementType="HTTPArgument">
+                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                 <stringProp name="Argument.name">fileContent</stringProp>
+                 <stringProp name="Argument.value">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+
+&lt;IDataXMLCoder version=&quot;1.0&quot;&gt;
+  &lt;record javaclass=&quot;com.wm.data.ISMemDataImpl&quot;&gt;
+    &lt;record name=&quot;Employee&quot; javaclass=&quot;com.wm.data.ISMemDataImpl&quot;&gt;
+      &lt;value name=&quot;Name&quot;&gt;hari&lt;/value&gt;
+      &lt;value name=&quot;Designation&quot;&gt;Degree&lt;/value&gt;
+      &lt;value name=&quot;Id&quot;&gt;8578&lt;/value&gt;
+      &lt;record name=&quot;Address&quot; javaclass=&quot;com.wm.data.ISMemDataImpl&quot;&gt;
+        &lt;value name=&quot;City&quot;&gt;Hyderabad&lt;/value&gt;
+        &lt;value name=&quot;State&quot;&gt;Telangana&lt;/value&gt;
+        &lt;value name=&quot;Zip&quot;&gt;500032&lt;/value&gt;
+      &lt;/record&gt;
+    &lt;/record&gt;
+  &lt;/record&gt;
+&lt;/IDataXMLCoder&gt;
+</stringProp>
+                 <stringProp name="Argument.metadata">=</stringProp>
+                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>	
+              <elementProp name="serviceName" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">CgPubSubSamples.service:triggerEmployee</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">serviceName</stringProp>
+              </elementProp>
+			  <elementProp name="monitoredServices" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.name">monitoredServices</stringProp>
+                <stringProp name="Argument.value"><!-- :monitoredServicesList: --></stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+        </WmServiceInvokeSampler>
+        <hashTree>
+		   <XPathExtractor guiclass="XPathExtractorGui" testclass="XPathExtractor" testname="XPath Extractor" enabled="true">
+            <stringProp name="XPathExtractor.default"></stringProp>
+            <stringProp name="XPathExtractor.refname">innerInvokes</stringProp>
+            <stringProp name="XPathExtractor.xpathQuery">/document/innerInvokes</stringProp>
+            <boolProp name="XPathExtractor.validate">false</boolProp>
+            <boolProp name="XPathExtractor.tolerant">false</boolProp>
+            <boolProp name="XPathExtractor.namespace">false</boolProp>
+          </XPathExtractor>
+		  <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Check the IS response" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="49586">200</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">8</intProp>
+            <stringProp name="TestPlan.comments">Check if the Integration Server response code = 200</stringProp>
+          </ResponseAssertion>
+          <hashTree/>
+          <XPathAssertion guiclass="XPathAssertionGui" testclass="XPathAssertion" testname="Check errorMessage" enabled="true">
+            <boolProp name="XPath.negate">false</boolProp>
+            <stringProp name="XPath.xpath">/document/errorMessage[text()=&quot;OK&quot;]</stringProp>
+            <boolProp name="XPath.validate">false</boolProp>
+            <boolProp name="XPath.whitespace">true</boolProp>
+            <boolProp name="XPath.tolerant">false</boolProp>
+            <boolProp name="XPath.namespace">false</boolProp>
+            <stringProp name="TestPlan.comments">Check errorMessage</stringProp>
+          </XPathAssertion>
+          <hashTree/>
+          <XPathAssertion guiclass="XPathAssertionGui" testclass="XPathAssertion" testname="outputResult" enabled="true">
+            <boolProp name="XPath.negate">false</boolProp>
+            <stringProp name="XPath.xpath">/document/outputResult</stringProp>
+            <boolProp name="XPath.validate">false</boolProp>
+            <boolProp name="XPath.whitespace">false</boolProp>
+            <boolProp name="XPath.tolerant">false</boolProp>
+            <boolProp name="XPath.namespace">false</boolProp>
+          </XPathAssertion>
+          <hashTree/>
+          <XPathAssertion guiclass="XPathAssertionGui" testclass="XPathAssertion" testname="documentTypeName[text()=&quot;CgPubSubSamples.doc:Employee&quot;]" enabled="true">
+            <boolProp name="XPath.negate">false</boolProp>
+            <stringProp name="XPath.xpath">/document/outputResult/documentTypeName[text()=&quot;CgPubSubSamples.doc:Employee&quot;]</stringProp>
+            <boolProp name="XPath.validate">false</boolProp>
+            <boolProp name="XPath.whitespace">false</boolProp>
+            <boolProp name="XPath.tolerant">false</boolProp>
+            <boolProp name="XPath.namespace">false</boolProp>
+          </XPathAssertion>
+          <hashTree/>
+          <XPathAssertion guiclass="XPathAssertionGui" testclass="XPathAssertion" testname="document" enabled="true">
+            <boolProp name="XPath.negate">false</boolProp>
+            <stringProp name="XPath.xpath">/document/outputResult/document</stringProp>
+            <boolProp name="XPath.validate">false</boolProp>
+            <boolProp name="XPath.whitespace">false</boolProp>
+            <boolProp name="XPath.tolerant">false</boolProp>
+            <boolProp name="XPath.namespace">false</boolProp>
+          </XPathAssertion>
+          <hashTree/>
+          <XPathAssertion guiclass="XPathAssertionGui" testclass="XPathAssertion" testname="Name[text()=&quot;hari&quot;]" enabled="true">
+            <boolProp name="XPath.negate">false</boolProp>
+            <stringProp name="XPath.xpath">/document/outputResult/document/Name[text()=&quot;hari&quot;]</stringProp>
+            <boolProp name="XPath.validate">false</boolProp>
+            <boolProp name="XPath.whitespace">false</boolProp>
+            <boolProp name="XPath.tolerant">false</boolProp>
+            <boolProp name="XPath.namespace">false</boolProp>
+          </XPathAssertion>
+          <hashTree/>
+          <XPathAssertion guiclass="XPathAssertionGui" testclass="XPathAssertion" testname="Designation[text()=&quot;Degree&quot;]" enabled="true">
+            <boolProp name="XPath.negate">false</boolProp>
+            <stringProp name="XPath.xpath">/document/outputResult/document/Designation[text()=&quot;Degree&quot;]</stringProp>
+            <boolProp name="XPath.validate">false</boolProp>
+            <boolProp name="XPath.whitespace">false</boolProp>
+            <boolProp name="XPath.tolerant">false</boolProp>
+            <boolProp name="XPath.namespace">false</boolProp>
+          </XPathAssertion>
+          <hashTree/>
+          <XPathAssertion guiclass="XPathAssertionGui" testclass="XPathAssertion" testname="Id[text()=&quot;8578&quot;]" enabled="true">
+            <boolProp name="XPath.negate">false</boolProp>
+            <stringProp name="XPath.xpath">/document/outputResult/document/Id[text()=&quot;8578&quot;]</stringProp>
+            <boolProp name="XPath.validate">false</boolProp>
+            <boolProp name="XPath.whitespace">false</boolProp>
+            <boolProp name="XPath.tolerant">false</boolProp>
+            <boolProp name="XPath.namespace">false</boolProp>
+          </XPathAssertion>
+          <hashTree/>
+          <XPathAssertion guiclass="XPathAssertionGui" testclass="XPathAssertion" testname="Address" enabled="true">
+            <boolProp name="XPath.negate">false</boolProp>
+            <stringProp name="XPath.xpath">/document/outputResult/document/Address</stringProp>
+            <boolProp name="XPath.validate">false</boolProp>
+            <boolProp name="XPath.whitespace">false</boolProp>
+            <boolProp name="XPath.tolerant">false</boolProp>
+            <boolProp name="XPath.namespace">false</boolProp>
+          </XPathAssertion>
+          <hashTree/>
+          <XPathAssertion guiclass="XPathAssertionGui" testclass="XPathAssertion" testname="City[text()=&quot;Hyderabad&quot;]" enabled="true">
+            <boolProp name="XPath.negate">false</boolProp>
+            <stringProp name="XPath.xpath">/document/outputResult/document/Address/City[text()=&quot;Hyderabad&quot;]</stringProp>
+            <boolProp name="XPath.validate">false</boolProp>
+            <boolProp name="XPath.whitespace">false</boolProp>
+            <boolProp name="XPath.tolerant">false</boolProp>
+            <boolProp name="XPath.namespace">false</boolProp>
+          </XPathAssertion>
+          <hashTree/>
+          <XPathAssertion guiclass="XPathAssertionGui" testclass="XPathAssertion" testname="State[text()=&quot;Telangana&quot;]" enabled="true">
+            <boolProp name="XPath.negate">false</boolProp>
+            <stringProp name="XPath.xpath">/document/outputResult/document/Address/State[text()=&quot;Telangana&quot;]</stringProp>
+            <boolProp name="XPath.validate">false</boolProp>
+            <boolProp name="XPath.whitespace">false</boolProp>
+            <boolProp name="XPath.tolerant">false</boolProp>
+            <boolProp name="XPath.namespace">false</boolProp>
+          </XPathAssertion>
+          <hashTree/>
+          <XPathAssertion guiclass="XPathAssertionGui" testclass="XPathAssertion" testname="Zip[text()=&quot;500032&quot;]" enabled="true">
+            <boolProp name="XPath.negate">false</boolProp>
+            <stringProp name="XPath.xpath">/document/outputResult/document/Address/Zip[text()=&quot;500032&quot;]</stringProp>
+            <boolProp name="XPath.validate">false</boolProp>
+            <boolProp name="XPath.whitespace">false</boolProp>
+            <boolProp name="XPath.tolerant">false</boolProp>
+            <boolProp name="XPath.namespace">false</boolProp>
+          </XPathAssertion>
+          <hashTree/>
+          <XPathExtractor guiclass="XPathExtractorGui" testclass="XPathExtractor" testname="Extract XPath" enabled="true">
+            <stringProp name="XPathExtractor.default">no.publish.context.id</stringProp>
+            <stringProp name="XPathExtractor.refname">publishContextID</stringProp>
+            <stringProp name="XPathExtractor.xpathQuery">/document/publishContextID</stringProp>
+            <boolProp name="XPathExtractor.validate">false</boolProp>
+            <boolProp name="XPathExtractor.tolerant">false</boolProp>
+            <boolProp name="XPathExtractor.namespace">false</boolProp>
+          </XPathExtractor>
+          <hashTree/>
+          <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View results (Request &amp; Response)" enabled="true">
+            <boolProp name="ResultCollector.error_logging">false</boolProp>
+            <objProp>
+              <name>saveConfig</name>
+              <value class="SampleSaveConfiguration">
+                <time>true</time>
+                <latency>true</latency>
+                <timestamp>true</timestamp>
+                <success>true</success>
+                <label>true</label>
+                <code>true</code>
+                <message>true</message>
+                <threadName>true</threadName>
+                <dataType>true</dataType>
+                <encoding>false</encoding>
+                <assertions>true</assertions>
+                <subresults>true</subresults>
+                <responseData>false</responseData>
+                <samplerData>false</samplerData>
+                <xml>false</xml>
+                <fieldNames>false</fieldNames>
+                <responseHeaders>false</responseHeaders>
+                <requestHeaders>false</requestHeaders>
+                <responseDataOnError>false</responseDataOnError>
+                <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+                <assertionsResultsToSave>0</assertionsResultsToSave>
+                <bytes>true</bytes>
+                <threadCounts>true</threadCounts>
+              </value>
+            </objProp>
+            <stringProp name="filename"></stringProp>
+          </ResultCollector>
+          <hashTree/>
+		 </hashTree>
+<!-- :HTTP Samplers: -->
+		<WhileController guiclass="WhileControllerGui" testclass="WhileController" testname="While Status is &apos;waiting&apos;" enabled="true">
+          <stringProp name="WhileController.condition">${__javaScript(&apos;${retryCounter}&apos; != &apos;5&apos; &amp;&amp; &apos;${publishStateStatus}&apos; != &apos;done&apos;)}</stringProp>
+        </WhileController>
+        <hashTree>
+          <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="Increment Retry Counter" enabled="true">
+            <stringProp name="CounterConfig.start">0</stringProp>
+            <stringProp name="CounterConfig.end">5</stringProp>
+            <stringProp name="CounterConfig.incr">1</stringProp>
+            <stringProp name="CounterConfig.name">retryCounter</stringProp>
+            <stringProp name="CounterConfig.format"></stringProp>
+            <boolProp name="CounterConfig.per_user">true</boolProp>
+            <boolProp name="CounterConfig.reset_on_tg_iteration">true</boolProp>
+          </CounterConfig>
+          <hashTree/>
+          <WmServiceInvokeSampler guiclass="WmServiceInvokeSamplerGui" testclass="WmServiceInvokeSampler" testname="Get Publish State  ${retryCounter}" enabled="true">
+	<stringProp name="HTTPSampler.proxyHost">${__P(hostname,localhost)}</stringProp>
+	<stringProp name="HTTPSampler.domain">${__P(hostname,localhost)}</stringProp>
+	<stringProp name="HTTPSampler.proxyPort">${__P(port,5555)}</stringProp>
+	<stringProp name="HTTPSampler.port">${__P(port,5555)}</stringProp>
+	<stringProp name="HTTPSampler.proxyUser">${__P(username,Administrator)}</stringProp>
+	<stringProp name="HTTPSampler.proxyPass">${__P(password,manage)}</stringProp>
+	<stringProp name="WmSampler.serviceInputType">XML String</stringProp>
+	<stringProp name="HTTPSampler.method">POST</stringProp>
+	<boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+	<boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+	<boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+	<boolProp name="HTTPSampler.DO_MULTIPART_POST">true</boolProp>
+	<boolProp name="HTTPSampler.monitor">false</boolProp>
+	<elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+	  <collectionProp name="Arguments.arguments">
+		<elementProp name="xmlDocument" elementType="HTTPArgument">
+		  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+		  <stringProp name="Argument.name">xmlDocument</stringProp>
+		  <stringProp name="Argument.value">&lt;?xml version=&quot;1.0&quot;?&gt;
+	
+&lt;publishContextID&gt;${publishContextID}&lt;/publishContextID&gt;
+	&lt;expectedState&gt;
+	  	  	  
+&lt;publishedDocuments&gt;
+		
+&lt;documentType&gt;CgPubSubSamples.doc:Employee&lt;/documentType&gt;
+			&lt;documentCount&gt;1&lt;/documentCount&gt;
+	  
+&lt;/publishedDocuments&gt;
+&lt;publishedDocuments&gt;
+		
+&lt;documentType&gt;CgPubSubSamples.doc:EmpBankDetail&lt;/documentType&gt;
+			&lt;documentCount&gt;1&lt;/documentCount&gt;
+	  
+&lt;/publishedDocuments&gt;
+&lt;publishedDocuments&gt;
+		
+&lt;documentType&gt;CgPubSubSamples.doc:PFdetailsOfEmp&lt;/documentType&gt;
+			&lt;documentCount&gt;1&lt;/documentCount&gt;
+	  
+&lt;/publishedDocuments&gt;
+&lt;publishedDocuments&gt;
+		
+&lt;documentType&gt;CgPubSubSamples.doc:EmpProjectDetails&lt;/documentType&gt;
+			&lt;documentCount&gt;1&lt;/documentCount&gt;
+	  
+&lt;/publishedDocuments&gt;
+		  
+&lt;triggeredServices&gt;
+		
+&lt;serviceName&gt;CgPubSubSamples.service:retrieveBankDetails&lt;/serviceName&gt;
+		
+&lt;serviceCount&gt;1&lt;/serviceCount&gt;
+	  
+&lt;/triggeredServices&gt;
+&lt;triggeredServices&gt;
+		
+&lt;serviceName&gt;CgPubSubSamples.service:getPFofEmployee&lt;/serviceName&gt;
+		
+&lt;serviceCount&gt;1&lt;/serviceCount&gt;
+	  
+&lt;/triggeredServices&gt;
+&lt;triggeredServices&gt;
+		
+&lt;serviceName&gt;CgPubSubSamples.service:assignProject&lt;/serviceName&gt;
+		
+&lt;serviceCount&gt;1&lt;/serviceCount&gt;
+	  
+&lt;/triggeredServices&gt;
+&lt;triggeredServices&gt;
+		
+&lt;serviceName&gt;CgPubSubSamples.service:flowEnd&lt;/serviceName&gt;
+		
+&lt;serviceCount&gt;1&lt;/serviceCount&gt;
+	  
+&lt;/triggeredServices&gt;
+	
+&lt;/expectedState&gt;
+	
+&lt;tempTestParam&gt;${retryCounter}&lt;/tempTestParam&gt;</stringProp>
+		  <stringProp name="Argument.metadata">=</stringProp>
+		  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+		</elementProp>
+		<elementProp name="serviceName" elementType="HTTPArgument">
+		  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+		  <stringProp name="Argument.name">serviceName</stringProp>
+		  <stringProp name="Argument.value">CgAutomationTestEngine.pubsub.storage:getActualPublishedState</stringProp>
+		  <stringProp name="Argument.metadata">=</stringProp>
+		  <boolProp name="HTTPArgument.use_equals">true</boolProp>
+		</elementProp>
+	  </collectionProp>
+	</elementProp>
+</WmServiceInvokeSampler>
+          <hashTree>
+            <XPathExtractor guiclass="XPathExtractorGui" testclass="XPathExtractor" testname="Extract Publish State XML" enabled="true">
+              <stringProp name="XPathExtractor.default">no.publish.state</stringProp>
+              <stringProp name="XPathExtractor.refname">publishState</stringProp>
+              <stringProp name="XPathExtractor.xpathQuery">/document/outputResult/publishState</stringProp>
+              <boolProp name="XPathExtractor.validate">false</boolProp>
+              <boolProp name="XPathExtractor.tolerant">false</boolProp>
+              <boolProp name="XPathExtractor.namespace">false</boolProp>
+              <boolProp name="XPathExtractor.fragment">true</boolProp>
+            </XPathExtractor>
+            <hashTree/>
+            <XPathExtractor guiclass="XPathExtractorGui" testclass="XPathExtractor" testname="Extract Publish State Status" enabled="true">
+              <stringProp name="XPathExtractor.default">no.value</stringProp>
+              <stringProp name="XPathExtractor.refname">publishStateStatus</stringProp>
+              <stringProp name="XPathExtractor.xpathQuery">/document/outputResult/status</stringProp>
+              <boolProp name="XPathExtractor.validate">false</boolProp>
+              <boolProp name="XPathExtractor.tolerant">false</boolProp>
+              <boolProp name="XPathExtractor.namespace">false</boolProp>
+            </XPathExtractor>
+            <hashTree/>
+            <XPathAssertion guiclass="XPathAssertionGui" testclass="XPathAssertion" testname="Check errorMessage" enabled="true">
+              <boolProp name="XPath.negate">false</boolProp>
+              <stringProp name="XPath.xpath">/document/errorMessage[text()=&apos;OK&apos;]</stringProp>
+              <boolProp name="XPath.validate">false</boolProp>
+              <boolProp name="XPath.whitespace">true</boolProp>
+              <boolProp name="XPath.tolerant">false</boolProp>
+              <boolProp name="XPath.namespace">false</boolProp>
+              <stringProp name="TestPlan.comments">Check if the errorMessage tag returns &quot;OK&quot;</stringProp>
+            </XPathAssertion>
+            <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Check the IS response" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="49586">200</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">8</intProp>
+              <stringProp name="TestPlan.comments">Check if the Integration Server response code = 200</stringProp>
+            </ResponseAssertion>
+            <hashTree/>
+          </hashTree>
+          <IfController guiclass="IfControllerPanel" testclass="IfController" testname="If not &apos;done&apos;" enabled="true">
+            <stringProp name="IfController.condition">${__javaScript(&apos;${publishStateStatus}&apos; != &apos;done&apos;)}</stringProp>
+            <boolProp name="IfController.evaluateAll">false</boolProp>
+          </IfController>
+          <hashTree>
+            <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Wait Transaction" enabled="true">
+              <boolProp name="TransactionController.includeTimers">false</boolProp>
+              <boolProp name="TransactionController.parent">true</boolProp>
+            </TransactionController>
+            <hashTree>
+              <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Wait Sampler" enabled="true">
+                <boolProp name="displayJMeterProperties">false</boolProp>
+                <boolProp name="displayJMeterVariables">true</boolProp>
+                <boolProp name="displaySystemProperties">false</boolProp>
+              </DebugSampler>
+              <hashTree>
+                <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="Constant Timer (3 seconds)" enabled="true">
+                  <stringProp name="ConstantTimer.delay">3000</stringProp>
+                </ConstantTimer>
+                <hashTree/>
+              </hashTree>
+            </hashTree>
+          </hashTree>
+        </hashTree>
+        <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Publish State Status: ${publishStateStatus}" enabled="true">
+          <boolProp name="displayJMeterProperties">false</boolProp>
+          <boolProp name="displayJMeterVariables">true</boolProp>
+          <boolProp name="displaySystemProperties">false</boolProp>
+        </DebugSampler>
+        <hashTree>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Check publish state status" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="3089282">done</stringProp>
+            </collectionProp>
+            <stringProp name="TestPlan.comments">Success only if is &apos;done&apos;</stringProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">1</intProp>
+            <stringProp name="Assertion.scope">variable</stringProp>
+            <stringProp name="Scope.variable">publishStateStatus</stringProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Check Publish State" enabled="true">
+          <boolProp name="displayJMeterProperties">false</boolProp>
+          <boolProp name="displayJMeterVariables">true</boolProp>
+          <boolProp name="displaySystemProperties">false</boolProp>
+        </DebugSampler>
+        <hashTree>
+			<WmPubSubAssertion guiclass="WmPubSubAssertionGui" testclass="WmPubSubAssertion" testname="CgPubSubSamples.doc:Employee" enabled="true">
+	<stringProp name="PubSub.docType">CgPubSubSamples.doc:Employee</stringProp>
+	<boolProp name="PubSub.checkPublishedData">true</boolProp>
+	<stringProp name="PubSub.publishedDataXPath">inputDocument
+inputDocument/Name[text()="hari"]
+inputDocument/Designation[text()="Degree"]
+inputDocument/Id[text()="8578"]
+inputDocument/Address
+inputDocument/Address/City[text()="Hyderabad"]
+inputDocument/Address/State[text()="Telangana"]
+inputDocument/Address/Zip[text()="500032"]
+</stringProp>
+	<collectionProp name="PubSub.triggeredServices">
+	  <collectionProp name="CgPubSubSamples.service:retrieveBankDetails">
+		<stringProp name="PubSub.triggeredServiceName">CgPubSubSamples.service:retrieveBankDetails</stringProp>
+		<stringProp name="PubSub.triggeredServiceOutput">outputDocument
+outputDocument/documentTypeName[text()="CgPubSubSamples.doc:EmpBankDetail"]
+outputDocument/document
+outputDocument/document/AccountNumber[text()="4045678"]
+outputDocument/document/BankName[text()="ANZ Bank"]
+outputDocument/document/IfscCode[text()="1839839"]
+outputDocument/document/EmpName[text()="hari"]
+outputDocument/bankDtls
+outputDocument/bankDtls/AccountNumber[text()="4045678"]
+outputDocument/bankDtls/BankName[text()="ANZ Bank"]
+outputDocument/bankDtls/IfscCode[text()="1839839"]
+outputDocument/bankDtls/EmpName[text()="hari"]
+</stringProp>
+		<boolProp name="PubSub.triggeredOutputCheck">true</boolProp>
+</collectionProp>
+
+	</collectionProp>
+</WmPubSubAssertion>
+<hashTree/>
+<WmPubSubAssertion guiclass="WmPubSubAssertionGui" testclass="WmPubSubAssertion" testname="CgPubSubSamples.doc:EmpBankDetail" enabled="true">
+	<stringProp name="PubSub.docType">CgPubSubSamples.doc:EmpBankDetail</stringProp>
+	<boolProp name="PubSub.checkPublishedData">true</boolProp>
+	<stringProp name="PubSub.publishedDataXPath">inputDocument
+inputDocument/AccountNumber[text()="4045678"]
+inputDocument/BankName[text()="ANZ Bank"]
+inputDocument/IfscCode[text()="1839839"]
+inputDocument/EmpName[text()="hari"]
+</stringProp>
+	<collectionProp name="PubSub.triggeredServices">
+	  <collectionProp name="CgPubSubSamples.service:getPFofEmployee">
+		<stringProp name="PubSub.triggeredServiceName">CgPubSubSamples.service:getPFofEmployee</stringProp>
+		<stringProp name="PubSub.triggeredServiceOutput">outputDocument
+outputDocument/documentTypeName[text()="CgPubSubSamples.doc:PFdetailsOfEmp"]
+outputDocument/document
+outputDocument/document/AccountNumber[text()="7395869"]
+outputDocument/document/UAN[text()="NOPE92379"]
+outputDocument/document/eName[text()="hari"]
+outputDocument/PFdetails
+outputDocument/PFdetails/AccountNumber[text()="7395869"]
+outputDocument/PFdetails/UAN[text()="NOPE92379"]
+outputDocument/PFdetails/eName[text()="hari"]
+outputDocument/message[text()="PF createdhari"]
+outputDocument/EmpBankDetail
+outputDocument/EmpBankDetail/AccountNumber[text()="4045678"]
+outputDocument/EmpBankDetail/BankName[text()="ANZ Bank"]
+outputDocument/EmpBankDetail/IfscCode[text()="1839839"]
+outputDocument/EmpBankDetail/EmpName[text()="hari"]
+</stringProp>
+		<boolProp name="PubSub.triggeredOutputCheck">true</boolProp>
+</collectionProp>
+
+	</collectionProp>
+</WmPubSubAssertion>
+<hashTree/>
+<WmPubSubAssertion guiclass="WmPubSubAssertionGui" testclass="WmPubSubAssertion" testname="CgPubSubSamples.doc:PFdetailsOfEmp" enabled="true">
+	<stringProp name="PubSub.docType">CgPubSubSamples.doc:PFdetailsOfEmp</stringProp>
+	<boolProp name="PubSub.checkPublishedData">true</boolProp>
+	<stringProp name="PubSub.publishedDataXPath">inputDocument
+inputDocument/AccountNumber[text()="7395869"]
+inputDocument/UAN[text()="NOPE92379"]
+inputDocument/eName[text()="hari"]
+</stringProp>
+	<collectionProp name="PubSub.triggeredServices">
+	  <collectionProp name="CgPubSubSamples.service:assignProject">
+		<stringProp name="PubSub.triggeredServiceName">CgPubSubSamples.service:assignProject</stringProp>
+		<stringProp name="PubSub.triggeredServiceOutput">outputDocument
+outputDocument/message[text()="Projecct Assigned for  hari"]
+outputDocument/documentTypeName[text()="CgPubSubSamples.doc:EmpProjectDetails"]
+outputDocument/document
+outputDocument/document/ProjectName[text()="CATE"]
+outputDocument/document/EmpDesignation[text()="Developer"]
+outputDocument/document/TotalHours[text()="40"]
+outputDocument/document/Billing[text()="Fixed"]
+outputDocument/document/EmpName[text()="hari"]
+outputDocument/PFdetailsOfEmp
+outputDocument/PFdetailsOfEmp/AccountNumber[text()="7395869"]
+outputDocument/PFdetailsOfEmp/UAN[text()="NOPE92379"]
+outputDocument/PFdetailsOfEmp/eName[text()="hari"]
+outputDocument/ProjectDetails
+outputDocument/ProjectDetails/ProjectName[text()="CATE"]
+outputDocument/ProjectDetails/EmpDesignation[text()="Developer"]
+outputDocument/ProjectDetails/TotalHours[text()="40"]
+outputDocument/ProjectDetails/Billing[text()="Fixed"]
+outputDocument/ProjectDetails/EmpName[text()="hari"]
+</stringProp>
+		<boolProp name="PubSub.triggeredOutputCheck">true</boolProp>
+</collectionProp>
+
+	</collectionProp>
+</WmPubSubAssertion>
+<hashTree/>
+<WmPubSubAssertion guiclass="WmPubSubAssertionGui" testclass="WmPubSubAssertion" testname="CgPubSubSamples.doc:EmpProjectDetails" enabled="true">
+	<stringProp name="PubSub.docType">CgPubSubSamples.doc:EmpProjectDetails</stringProp>
+	<boolProp name="PubSub.checkPublishedData">true</boolProp>
+	<stringProp name="PubSub.publishedDataXPath">inputDocument
+inputDocument/ProjectName[text()="CATE"]
+inputDocument/EmpDesignation[text()="Developer"]
+inputDocument/TotalHours[text()="40"]
+inputDocument/Billing[text()="Fixed"]
+inputDocument/EmpName[text()="hari"]
+</stringProp>
+	<collectionProp name="PubSub.triggeredServices">
+	  <collectionProp name="CgPubSubSamples.service:flowEnd">
+		<stringProp name="PubSub.triggeredServiceName">CgPubSubSamples.service:flowEnd</stringProp>
+		<stringProp name="PubSub.triggeredServiceOutput">outputDocument
+outputDocument/message[text()="Project Assigned and Flow Terminated"]
+outputDocument/EmpProjectDetails
+outputDocument/EmpProjectDetails/ProjectName[text()="CATE"]
+outputDocument/EmpProjectDetails/EmpDesignation[text()="Developer"]
+outputDocument/EmpProjectDetails/TotalHours[text()="40"]
+outputDocument/EmpProjectDetails/Billing[text()="Fixed"]
+outputDocument/EmpProjectDetails/EmpName[text()="hari"]
+</stringProp>
+		<boolProp name="PubSub.triggeredOutputCheck">true</boolProp>
+</collectionProp>
+
+	</collectionProp>
+</WmPubSubAssertion>
+<hashTree/>
+
+        </hashTree>
+        <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Check Extra Calls" enabled="true">
+          <boolProp name="displayJMeterProperties">false</boolProp>
+          <boolProp name="displayJMeterVariables">true</boolProp>
+          <boolProp name="displaySystemProperties">false</boolProp>
+        </DebugSampler>
+        <hashTree>
+          <XPathAssertion guiclass="XPathAssertionGui" testclass="XPathAssertion" testname="Check Publish State Empty" enabled="true">
+            <stringProp name="TestPlan.comments">Check the publishState JMeter variable</stringProp>
+            <boolProp name="XPath.negate">true</boolProp>
+            <stringProp name="XPath.xpath">/publishState/publishList</stringProp>
+            <boolProp name="XPath.validate">false</boolProp>
+            <boolProp name="XPath.whitespace">false</boolProp>
+            <boolProp name="XPath.tolerant">false</boolProp>
+            <boolProp name="XPath.namespace">false</boolProp>
+            <stringProp name="Assertion.scope">variable</stringProp>
+            <stringProp name="Scope.variable">publishState</stringProp>
+          </XPathAssertion>
+          <hashTree/>
+        </hashTree>
+		<ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>false</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <threadCounts>true</threadCounts>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+       </hashTree>
+        <ResultCollector guiclass="TableVisualizer" testclass="ResultCollector" testname="View Results in Table" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>true</xml>
+              <fieldNames>false</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <threadCounts>true</threadCounts>
+            </value>
+          </objProp>
+          <stringProp name="filename">results.jtl</stringProp>
+        </ResultCollector>
+        <hashTree/>
+      </hashTree>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<IDataXMLCoder version="1.0">
+  <record javaclass="com.wm.data.ISMemDataImpl">
+    <record name="mobileDT" javaclass="com.wm.data.ISMemDataImpl">
+      <array name="recordWithNoID" type="record" depth="1">
+        <record javaclass="com.wm.data.ISMemDataImpl">
+          <value name="@record-id">recordWithNoID</value>
+          <record name="@delimiters" javaclass="com.wm.data.ISMemDataImpl">
+            <value name="record">\n</value>
+            <value name="field">,</value>
+            <value name="subfield"></value>
+            <record name="FormatInfo" javaclass="com.wm.data.ISMemDataImpl">
+            </record>
+          </record>
+          <value name="@segment-id">recordWithNoID</value>
+          <value name="name">ony</value>
+          <value name="model">experiaC</value>
+          <value name="month">june</value>
+          <value name="price">19000</value>
+        </record>
+        <record javaclass="com.wm.data.ISMemDataImpl">
+          <value name="@record-id">recordWithNoID</value>
+          <value name="@segment-id">recordWithNoID</value>
+          <value name="name">micromax</value>
+          <value name="model">canvasnitro</value>
+          <value name="month">june</value>
+          <value name="price">9000</value>
+        </record>
+        <record javaclass="com.wm.data.ISMemDataImpl">
+          <value name="@record-id">recordWithNoID</value>
+          <value name="@segment-id">recordWithNoID</value>
+          <value name="name">samsung</value>
+          <value name="model">s3</value>
+          <value name="month">june</value>
+          <value name="price">12000</value>
+        </record>
+        <record javaclass="com.wm.data.ISMemDataImpl">
+          <value name="@record-id">recordWithNoID</value>
+          <value name="@segment-id">recordWithNoID</value>
+          <value name="name">nokia</value>
+          <value name="model">z1</value>
+          <value name="month">may</value>
+          <value name="price">5000</value>
+        </record>
+        <record javaclass="com.wm.data.ISMemDataImpl">
+          <value name="@record-id">recordWithNoID</value>
+          <value name="@segment-id">recordWithNoID</value>
+          <value name="name">mi</value>
+          <value name="model">new</value>
+          <value name="month">august</value>
+          <value name="price">12000</value>
+        </record>
+      </array>
+    </record>
+  </record>
+</IDataXMLCoder>

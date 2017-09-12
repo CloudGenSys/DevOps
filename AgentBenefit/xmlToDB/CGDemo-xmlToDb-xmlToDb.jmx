@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="2.7" jmeter="2.12 r1636949">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan" enabled="true">
+      <stringProp name="TestPlan.comments"></stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments">
+          <elementProp name="invokeAlias" elementType="Argument">
+            <stringProp name="Argument.name">invokeAlias</stringProp>
+            <stringProp name="Argument.value">/invoke/CgAutomationTestRunner:handleHTTPRequest</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="jmxScriptDirectory" elementType="Argument">
+            <stringProp name="Argument.name">jmxScriptDirectory</stringProp>
+            <stringProp name="Argument.value">${__P(jmxScriptDirectory,.)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+        </collectionProp>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Invoke Group" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <longProp name="ThreadGroup.start_time">1428501082000</longProp>
+        <longProp name="ThreadGroup.end_time">1428501082000</longProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <WmServiceInvokeSampler guiclass="WmServiceInvokeSamplerGui" testclass="WmServiceInvokeSampler" testname="51aa9068-dd8d-47a3-bc2e-ae586d206703--20160614-100703852-00000001.input.xml" enabled="true">
+          <stringProp name="HTTPSampler.domain">${__P(hostname,localhost)}</stringProp>
+          <stringProp name="HTTPSampler.port">${__P(port,5555)}</stringProp>
+          <stringProp name="HTTPSampler.proxyHost">${__P(hostname,localhost)}</stringProp>
+          <stringProp name="HTTPSampler.proxyPort">${__P(port,5555)}</stringProp>
+          <stringProp name="HTTPSampler.proxyUser">${__P(username,Administrator)}</stringProp>
+          <stringProp name="HTTPSampler.proxyPass">${__P(password,manage)}</stringProp>
+		  <stringProp name="WmSampler.serviceInputType">IData XML Content</stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/invoke/CgAutomationTestRunner:handleHTTPRequest</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
+		  <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="TestPlan.comments">WebMethods Service Invocation</stringProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments">
+			  <elementProp name="xmlDocument" elementType="HTTPArgument">
+                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                 <stringProp name="Argument.name">fileContent</stringProp>
+                 <stringProp name="Argument.value">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+
+&lt;IDataXMLCoder version=&quot;1.0&quot;&gt;
+  &lt;record javaclass=&quot;com.wm.data.ISMemDataImpl&quot;&gt;
+    &lt;value name=&quot;inputData&quot;&gt;&amp;lt;?xml version=&quot;1.0&quot;?&amp;gt;
+&amp;lt;catalog&amp;gt;
+   &amp;lt;book id=&quot;bk101&quot;&amp;gt;
+      &amp;lt;author&amp;gt;Gambardella, Matthew&amp;lt;/author&amp;gt;
+      &amp;lt;title&amp;gt;XML Developer&apos;s Guide&amp;lt;/title&amp;gt;
+      &amp;lt;genre&amp;gt;Computer&amp;lt;/genre&amp;gt;
+      &amp;lt;price&amp;gt;44.95&amp;lt;/price&amp;gt;
+      &amp;lt;publish_date&amp;gt;2000-10-01&amp;lt;/publish_date&amp;gt;
+      &amp;lt;description&amp;gt;An in-depth look at creating applications with XML.&amp;lt;/description&amp;gt;
+   &amp;lt;/book&amp;gt;
+   &amp;lt;book id=&quot;bk102&quot;&amp;gt;
+      &amp;lt;author&amp;gt;Ralls, Kim&amp;lt;/author&amp;gt;
+      &amp;lt;title&amp;gt;Midnight Rain&amp;lt;/title&amp;gt;
+      &amp;lt;genre&amp;gt;Fantasy&amp;lt;/genre&amp;gt;
+      &amp;lt;price&amp;gt;5.95&amp;lt;/price&amp;gt;
+      &amp;lt;publish_date&amp;gt;2000-12-16&amp;lt;/publish_date&amp;gt;
+      &amp;lt;description&amp;gt;A former architect battles corporate zombies,an evil sorceress, and her own childhood to become queen of the world.&amp;lt;/description&amp;gt;
+   &amp;lt;/book&amp;gt;
+   &amp;lt;book id=&quot;bk103&quot;&amp;gt;
+      &amp;lt;author&amp;gt;Corets, Eva&amp;lt;/author&amp;gt;
+      &amp;lt;title&amp;gt;Maeve Ascendant&amp;lt;/title&amp;gt;
+      &amp;lt;genre&amp;gt;Fantasy&amp;lt;/genre&amp;gt;
+      &amp;lt;price&amp;gt;5.95&amp;lt;/price&amp;gt;
+      &amp;lt;publish_date&amp;gt;2000-11-17&amp;lt;/publish_date&amp;gt;
+      &amp;lt;description&amp;gt;After the collapse of a nanotechnology society in England, the young survivors lay the foundation for a new society.&amp;lt;/description&amp;gt;
+   &amp;lt;/book&amp;gt;
+   &amp;lt;book id=&quot;bk104&quot;&amp;gt;
+      &amp;lt;author&amp;gt;Corets, Eva&amp;lt;/author&amp;gt;
+      &amp;lt;title&amp;gt;Oberon&apos;s Legacy&amp;lt;/title&amp;gt;
+      &amp;lt;genre&amp;gt;Fantasy&amp;lt;/genre&amp;gt;
+      &amp;lt;price&amp;gt;5.95&amp;lt;/price&amp;gt;
+      &amp;lt;publish_date&amp;gt;2001-03-10&amp;lt;/publish_date&amp;gt;
+      &amp;lt;description&amp;gt;In post-apocalypse England, the mysterious agent known only as Oberon helps to create a new life for the inhabitants of London. Sequel to Maeve Ascendant.&amp;lt;/description&amp;gt;
+   &amp;lt;/book&amp;gt;
+   &amp;lt;book id=&quot;bk105&quot;&amp;gt;
+      &amp;lt;author&amp;gt;Corets, Eva&amp;lt;/author&amp;gt;
+      &amp;lt;title&amp;gt;The Sundered Grail&amp;lt;/title&amp;gt;
+      &amp;lt;genre&amp;gt;Fantasy&amp;lt;/genre&amp;gt;
+      &amp;lt;price&amp;gt;5.95&amp;lt;/price&amp;gt;
+      &amp;lt;publish_date&amp;gt;2001-09-10&amp;lt;/publish_date&amp;gt;
+      &amp;lt;description&amp;gt;The two daughters of Maeve, half-sisters, battle one another for control of England. Sequel to Oberon&apos;s Legacy.&amp;lt;/description&amp;gt;
+   &amp;lt;/book&amp;gt;
+   &amp;lt;book id=&quot;bk106&quot;&amp;gt;
+      &amp;lt;author&amp;gt;Randall, Cynthia&amp;lt;/author&amp;gt;
+      &amp;lt;title&amp;gt;Lover Birds&amp;lt;/title&amp;gt;
+      &amp;lt;genre&amp;gt;Romance&amp;lt;/genre&amp;gt;
+      &amp;lt;price&amp;gt;4.95&amp;lt;/price&amp;gt;
+      &amp;lt;publish_date&amp;gt;2000-09-02&amp;lt;/publish_date&amp;gt;
+      &amp;lt;description&amp;gt;When Carla meets Paul at an ornithology conference, tempers fly as feathers get ruffled.&amp;lt;/description&amp;gt;
+   &amp;lt;/book&amp;gt;
+   &amp;lt;book id=&quot;bk107&quot;&amp;gt;
+      &amp;lt;author&amp;gt;Thurman, Paula&amp;lt;/author&amp;gt;
+      &amp;lt;title&amp;gt;Splish Splash&amp;lt;/title&amp;gt;
+      &amp;lt;genre&amp;gt;Romance&amp;lt;/genre&amp;gt;
+      &amp;lt;price&amp;gt;4.95&amp;lt;/price&amp;gt;
+      &amp;lt;publish_date&amp;gt;2000-11-02&amp;lt;/publish_date&amp;gt;
+      &amp;lt;description&amp;gt;A deep sea diver finds true love twenty thousand leagues beneath the sea.&amp;lt;/description&amp;gt;
+   &amp;lt;/book&amp;gt;
+   &amp;lt;book id=&quot;bk108&quot;&amp;gt;
+      &amp;lt;author&amp;gt;Knorr, Stefan&amp;lt;/author&amp;gt;
+      &amp;lt;title&amp;gt;Creepy Crawlies&amp;lt;/title&amp;gt;
+      &amp;lt;genre&amp;gt;Horror&amp;lt;/genre&amp;gt;
+      &amp;lt;price&amp;gt;4.95&amp;lt;/price&amp;gt;
+      &amp;lt;publish_date&amp;gt;2000-12-06&amp;lt;/publish_date&amp;gt;
+      &amp;lt;description&amp;gt;An anthology of horror stories about roaches,centipedes, scorpions  and other insects.&amp;lt;/description&amp;gt;
+   &amp;lt;/book&amp;gt;
+   &amp;lt;book id=&quot;bk109&quot;&amp;gt;
+      &amp;lt;author&amp;gt;Kress, Peter&amp;lt;/author&amp;gt;
+      &amp;lt;title&amp;gt;Paradox Lost&amp;lt;/title&amp;gt;
+      &amp;lt;genre&amp;gt;Science Fiction&amp;lt;/genre&amp;gt;
+      &amp;lt;price&amp;gt;6.95&amp;lt;/price&amp;gt;
+      &amp;lt;publish_date&amp;gt;2000-11-02&amp;lt;/publish_date&amp;gt;
+      &amp;lt;description&amp;gt;After an inadvertant trip through a Heisenberg Uncertainty Device, James Salway discovers the problems of being quantum.&amp;lt;/description&amp;gt;
+   &amp;lt;/book&amp;gt;
+   &amp;lt;book id=&quot;bk110&quot;&amp;gt;
+      &amp;lt;author&amp;gt;O&apos;Brien, Tim&amp;lt;/author&amp;gt;
+      &amp;lt;title&amp;gt;Microsoft .NET: The Programming Bible&amp;lt;/title&amp;gt;
+      &amp;lt;genre&amp;gt;Computer&amp;lt;/genre&amp;gt;
+      &amp;lt;price&amp;gt;36.95&amp;lt;/price&amp;gt;
+      &amp;lt;publish_date&amp;gt;2000-12-09&amp;lt;/publish_date&amp;gt;
+      &amp;lt;description&amp;gt;Microsoft&apos;s .NET initiative is explored in detail in this deep programmer&apos;s reference.&amp;lt;/description&amp;gt;
+   &amp;lt;/book&amp;gt;
+   &amp;lt;book id=&quot;bk111&quot;&amp;gt;
+      &amp;lt;author&amp;gt;O&apos;Brien, Tim&amp;lt;/author&amp;gt;
+      &amp;lt;title&amp;gt;MSXML3: A Comprehensive Guide&amp;lt;/title&amp;gt;
+      &amp;lt;genre&amp;gt;Computer&amp;lt;/genre&amp;gt;
+      &amp;lt;price&amp;gt;36.95&amp;lt;/price&amp;gt;
+      &amp;lt;publish_date&amp;gt;2000-12-01&amp;lt;/publish_date&amp;gt;
+      &amp;lt;description&amp;gt;The Microsoft MSXML3 parser is covered in detail, with attention to XML DOM interfaces, XSLT processing, SAX and more.&amp;lt;/description&amp;gt;
+   &amp;lt;/book&amp;gt;
+   &amp;lt;book id=&quot;bk112&quot;&amp;gt;
+      &amp;lt;author&amp;gt;Galos, Mike&amp;lt;/author&amp;gt;
+      &amp;lt;title&amp;gt;Visual Studio 7: A Comprehensive Guide&amp;lt;/title&amp;gt;
+      &amp;lt;genre&amp;gt;Computer&amp;lt;/genre&amp;gt;
+      &amp;lt;price&amp;gt;49.95&amp;lt;/price&amp;gt;
+      &amp;lt;publish_date&amp;gt;2001-04-16&amp;lt;/publish_date&amp;gt;
+      &amp;lt;description&amp;gt;Microsoft Visual Studio 7 is explored in depth,looking at how Visual Basic, Visual C++, C#, and ASP+ are integrated into a comprehensive development environment.&amp;lt;/description&amp;gt;
+   &amp;lt;/book&amp;gt;
+&amp;lt;/catalog&amp;gt;&lt;/value&gt;
+  &lt;/record&gt;
+&lt;/IDataXMLCoder&gt;
+</stringProp>
+                 <stringProp name="Argument.metadata">=</stringProp>
+                 <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>	
+              <elementProp name="serviceName" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">CGDemo.xmlToDb:xmlToDb</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">serviceName</stringProp>
+              </elementProp>
+			  <elementProp name="monitoredServices" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.name">monitoredServices</stringProp>
+                <stringProp name="Argument.value"><!-- :monitoredServicesList: --></stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+        </WmServiceInvokeSampler>
+        <hashTree>
+		   <XPathExtractor guiclass="XPathExtractorGui" testclass="XPathExtractor" testname="XPath Extractor" enabled="true">
+            <stringProp name="XPathExtractor.default"></stringProp>
+            <stringProp name="XPathExtractor.refname">innerInvokes</stringProp>
+            <stringProp name="XPathExtractor.xpathQuery">/document/innerInvokes</stringProp>
+            <boolProp name="XPathExtractor.validate">false</boolProp>
+            <boolProp name="XPathExtractor.tolerant">false</boolProp>
+            <boolProp name="XPathExtractor.namespace">false</boolProp>
+          </XPathExtractor>
+		  <hashTree/>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Check the IS response" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="49586">200</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">8</intProp>
+            <stringProp name="TestPlan.comments">Check if the Integration Server response code = 200</stringProp>
+          </ResponseAssertion>
+          <hashTree/>
+          <XPathAssertion guiclass="XPathAssertionGui" testclass="XPathAssertion" testname="Check errorMessage" enabled="true">
+            <boolProp name="XPath.negate">false</boolProp>
+            <stringProp name="XPath.xpath">/document/errorMessage[text()=&quot;OK&quot;]</stringProp>
+            <boolProp name="XPath.validate">false</boolProp>
+            <boolProp name="XPath.whitespace">true</boolProp>
+            <boolProp name="XPath.tolerant">false</boolProp>
+            <boolProp name="XPath.namespace">false</boolProp>
+            <stringProp name="TestPlan.comments">Check errorMessage</stringProp>
+          </XPathAssertion>
+          <hashTree/>
+          <XPathAssertion guiclass="XPathAssertionGui" testclass="XPathAssertion" testname="outputResult" enabled="true">
+            <boolProp name="XPath.negate">false</boolProp>
+            <stringProp name="XPath.xpath">/document/outputResult</stringProp>
+            <boolProp name="XPath.validate">false</boolProp>
+            <boolProp name="XPath.whitespace">false</boolProp>
+            <boolProp name="XPath.tolerant">false</boolProp>
+            <boolProp name="XPath.namespace">false</boolProp>
+          </XPathAssertion>
+          <hashTree/>
+          <XPathAssertion guiclass="XPathAssertionGui" testclass="XPathAssertion" testname="status[text()=&quot;Ack&quot;]" enabled="true">
+            <boolProp name="XPath.negate">false</boolProp>
+            <stringProp name="XPath.xpath">/document/outputResult/status[text()=&quot;Ack&quot;]</stringProp>
+            <boolProp name="XPath.validate">false</boolProp>
+            <boolProp name="XPath.whitespace">false</boolProp>
+            <boolProp name="XPath.tolerant">false</boolProp>
+            <boolProp name="XPath.namespace">false</boolProp>
+          </XPathAssertion>
+          <hashTree/>
+<!-- :Assertions: -->
+          <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View results (Request &amp; Response)" enabled="true">
+            <boolProp name="ResultCollector.error_logging">false</boolProp>
+            <objProp>
+              <name>saveConfig</name>
+              <value class="SampleSaveConfiguration">
+                <time>true</time>
+                <latency>true</latency>
+                <timestamp>true</timestamp>
+                <success>true</success>
+                <label>true</label>
+                <code>true</code>
+                <message>true</message>
+                <threadName>true</threadName>
+                <dataType>true</dataType>
+                <encoding>false</encoding>
+                <assertions>true</assertions>
+                <subresults>true</subresults>
+                <responseData>false</responseData>
+                <samplerData>false</samplerData>
+                <xml>false</xml>
+                <fieldNames>false</fieldNames>
+                <responseHeaders>false</responseHeaders>
+                <requestHeaders>false</requestHeaders>
+                <responseDataOnError>false</responseDataOnError>
+                <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+                <assertionsResultsToSave>0</assertionsResultsToSave>
+                <bytes>true</bytes>
+                <threadCounts>true</threadCounts>
+              </value>
+            </objProp>
+            <stringProp name="filename"></stringProp>
+          </ResultCollector>
+          <hashTree/>
+		 </hashTree>
+<!-- :HTTP Samplers: -->
+<!-- :PUBLISH STATE Assertions: -->
+       </hashTree>
+        <ResultCollector guiclass="TableVisualizer" testclass="ResultCollector" testname="View Results in Table" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>true</xml>
+              <fieldNames>false</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <threadCounts>true</threadCounts>
+            </value>
+          </objProp>
+          <stringProp name="filename">results.jtl</stringProp>
+        </ResultCollector>
+        <hashTree/>
+      </hashTree>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>

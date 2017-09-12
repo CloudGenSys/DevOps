@@ -1,0 +1,271 @@
+<!doctype html>
+<html>
+<head>
+
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+<meta http-equiv="Expires" content="-1">
+<title>AgentBenefit Code Coverage</title>
+<link rel="stylesheet" type="text/css" href="css/sut.css">
+<link rel="stylesheet" type="text/css" href="css/specialTable.css">
+<link rel="stylesheet" type="text/css" href="css/progressBar.css">
+
+
+<style type="text/css">
+* {
+	font-family: Helvetica Neue, Arial, sans-serif;
+}
+
+body {
+	background-image: linear-gradient(#D8D8D8, 25%, #2E2E2E);
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+</style>
+</head>
+
+<body>
+
+	<table width="100%" cellpadding="0" cellspacing="0">
+		<tr>
+			<td class="subHeader" colspan="3">AgentBenefit &gt; Code Coverage
+				Report</td>
+		</tr>
+	</table>
+
+	<table>
+		<tr>
+			<td>
+				<ul style="list-style: none;">
+					<li><input type="image" id="packageIcon"
+						src="img/package_icon.png" alt="image not found"
+						style="border: 0; padding: 0; margin: 0;"> AgentBenefit <a></a></li>
+
+				</ul>
+				<ul></ul>
+			</td>
+		</tr>
+	</table>
+
+	<div class="activeTable">
+		<table>
+			<tbody>
+				<tr id="firsTRow">
+					<th>&nbsp;</th>
+					<th width="300px">Name</th>
+					<th align="center">&nbsp;&nbsp;Total LoC&nbsp;&nbsp;</th>
+					<th align="center">&nbsp;&nbsp;Covered LoC&nbsp;&nbsp;</th>
+					<th align="center">&nbsp;&nbsp;Covered (%)&nbsp;&nbsp;</th>
+					<th align="center" width="100px">&nbsp;&nbsp;&nbsp;</th>
+
+
+				</tr>
+								<tr>
+					<td>
+					
+					</td>
+
+					<td width="50%">
+						<input type="image" id="folderIcon" src="img/folder_icon.png" alt="image not found" style="border:0; padding: 0; margin:0;">
+						<a href="#">AgentBenefit</a>
+					</td>
+					<td align="center">44</td>
+					<td align="center">29</td>
+					<td align="center">65.91%</td>
+					<td align="left">
+						<div id="progressbar">
+							<div style="width: 65.91%"></div>
+						</div>
+					</td>
+
+				</tr>
+
+				<tr>
+					<td>
+					
+					</td>
+
+					<td width="50%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="image" id="folderIcon" src="img/folder_icon.png" alt="image not found" style="border:0; padding: 0; margin:0;">
+						<a href="#">pub</a>
+					</td>
+					<td align="center">14</td>
+					<td align="center">14</td>
+					<td align="center">100.00%</td>
+					<td align="left">
+						<div id="progressbar">
+							<div style="width: 100.00%"></div>
+						</div>
+					</td>
+
+				</tr>
+
+				<tr>
+					<td>
+					
+					</td>
+
+					<td width="50%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="image" id="folderIcon" src="img/flow_invoke_step.png" alt="image not found" style="border:0; padding: 0; margin:0;">
+						<a href="AgentBenefit.pub-importAgentPaymentData.html">AgentBenefit.pub:importAgentPaymentData</a>
+					</td>
+					<td align="center">14</td>
+					<td align="center">14</td>
+					<td align="center">100.00%</td>
+					<td align="left">
+						<div id="progressbar">
+							<div style="width: 100.00%"></div>
+						</div>
+					</td>
+
+				</tr>
+
+				<tr>
+					<td>
+					
+					</td>
+
+					<td width="50%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="image" id="folderIcon" src="img/folder_icon.png" alt="image not found" style="border:0; padding: 0; margin:0;">
+						<a href="#">test</a>
+					</td>
+					<td align="center">1</td>
+					<td align="center">0</td>
+					<td align="center">0.00%</td>
+					<td align="left">
+						<div id="progressbar">
+							<div style="width: 0.00%"></div>
+						</div>
+					</td>
+
+				</tr>
+
+				<tr>
+					<td>
+					
+					</td>
+
+					<td width="50%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="image" id="folderIcon" src="img/flow_invoke_step.png" alt="image not found" style="border:0; padding: 0; margin:0;">
+						<a href="AgentBenefit.test-sample01.html">AgentBenefit.test:sample01</a>
+					</td>
+					<td align="center">1</td>
+					<td align="center">0</td>
+					<td align="center">0.00%</td>
+					<td align="left">
+						<div id="progressbar">
+							<div style="width: 0.00%"></div>
+						</div>
+					</td>
+
+				</tr>
+
+				<tr>
+					<td>
+					
+					</td>
+
+					<td width="50%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="image" id="folderIcon" src="img/folder_icon.png" alt="image not found" style="border:0; padding: 0; margin:0;">
+						<a href="#">util</a>
+					</td>
+					<td align="center">29</td>
+					<td align="center">15</td>
+					<td align="center">51.72%</td>
+					<td align="left">
+						<div id="progressbar">
+							<div style="width: 51.72%"></div>
+						</div>
+					</td>
+
+				</tr>
+
+				<tr>
+					<td>
+					
+					</td>
+
+					<td width="50%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="image" id="folderIcon" src="img/flow_invoke_step.png" alt="image not found" style="border:0; padding: 0; margin:0;">
+						<a href="AgentBenefit.util-amountToDollars.html">AgentBenefit.util:amountToDollars</a>
+					</td>
+					<td align="center">12</td>
+					<td align="center">0</td>
+					<td align="center">0.00%</td>
+					<td align="left">
+						<div id="progressbar">
+							<div style="width: 0.00%"></div>
+						</div>
+					</td>
+
+				</tr>
+
+				<tr>
+					<td>
+					
+					</td>
+
+					<td width="50%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="image" id="folderIcon" src="img/flow_invoke_step.png" alt="image not found" style="border:0; padding: 0; margin:0;">
+						<a href="AgentBenefit.util-createEmailBody.html">AgentBenefit.util:createEmailBody</a>
+					</td>
+					<td align="center">2</td>
+					<td align="center">0</td>
+					<td align="center">0.00%</td>
+					<td align="left">
+						<div id="progressbar">
+							<div style="width: 0.00%"></div>
+						</div>
+					</td>
+
+				</tr>
+
+				<tr>
+					<td>
+					
+					</td>
+
+					<td width="50%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="image" id="folderIcon" src="img/flow_invoke_step.png" alt="image not found" style="border:0; padding: 0; margin:0;">
+						<a href="AgentBenefit.util-readAgentListFromFile.html">AgentBenefit.util:readAgentListFromFile</a>
+					</td>
+					<td align="center">15</td>
+					<td align="center">15</td>
+					<td align="center">100.00%</td>
+					<td align="left">
+						<div id="progressbar">
+							<div style="width: 100.00%"></div>
+						</div>
+					</td>
+
+				</tr>
+
+
+
+
+
+			</tbody>
+		</table>
+	</div>
+
+	<table>
+
+		<tr>
+			<td><br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
+				<br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
+				<br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
+				<br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
+				<br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
+				<br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
+				<br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />
+				<br /> <br /> <br /></td>
+		</tr>
+
+
+	</table>
+
+</body>
+</html>

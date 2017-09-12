@@ -1,0 +1,37 @@
+.activeTable table {
+  border-collapse: collapse;
+  width: 70%;
+  margin: 0 auto 5rem;
+}
+
+
+.activeTable tr {
+  background: hsl(50, 50%, 80%);
+}
+
+.activeTable tr,td {
+  transition: .4s ease-in;
+}
+
+.activeTable tr:first-child {
+  background: hsla(12, 100%, 40%, 0.5);
+}
+
+.activeTable tr:nth-child(even) {
+  background: hsla(40, 50%, 80%, 0.7);
+}
+
+.activeTable td:empty {
+  background: hsla(50, 25%, 60%, 0.7);
+}
+
+.activeTable tr:hover:not(#firstrow), tr:hover td:empty {
+  background: #ff0;
+  pointer-events: visible;
+}
+
+.activeTable tr:hover:not(#firstrow) {
+  transform: scale(1.05);
+  font-weight: 700;
+  box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.5);
+}

@@ -1,0 +1,109 @@
+<?xml version="1.0"?>
+<project name="com.cloudgensys.cate.de.is.sample.agent.benefit" default="main" basedir=".">
+	<property name="external.lib.dir" location="C:\Users\Administrator\Documents\CATE\DE\JARS" />
+	
+	<property name="junit.lib.dir" location="${external.lib.dir}/junit" />
+	<property name="log4j.lib.dir" location="${external.lib.dir}/log4j" />
+	<property name="sut.lib.dir" location="${external.lib.dir}/sut" />
+	
+	<!-- Variables that can be also provided as input parameters  -->
+	<property name="sut.is.host" value="localhost" />
+	<property name="sut.is.port" value="5555" />
+	<property name="sut.is.log.level" value="Warn" />
+	<!-- value="Administrator:manage" base64 encoded -->
+	<property name="sut.is.credentials" value="QWRtaW5pc3RyYXRvcjptYW5hZ2U=" />
+	
+	
+
+	<!-- Variables used for JUnit testing -->
+	<property name="sut.test.dir" value="test" />	
+	<property name="test.report.dir" location="testreport" />
+
+	<!-- Create a classpath container which can be later used in the ant task-->
+	<path id="build.classpath">
+		<fileset dir="${junit.lib.dir}">
+			<include name="**/*.jar" />
+		</fileset>
+		<fileset dir="${log4j.lib.dir}">
+			<include name="**/*.jar" />
+		</fileset>
+		<fileset dir="${sut.lib.dir}">
+			<include name="**/*.jar" />
+		</fileset>
+	</path>
+
+	<property name="test.dir" value="${basedir}/${sut.test.dir}" />	
+	<fileset dir="${test.dir}" id="test.files">
+		<include name="**/*.sut" />
+	</fileset>
+	
+	<target name="clean">
+		<delete dir="${test.report.dir}" />
+	</target>
+
+	<target name="makedir">
+		<mkdir dir="${test.report.dir}" />
+	</target>
+
+	<property name="sut.test.files" refid="test.files" />
+
+	<!-- Run the JUnit Tests -->
+	<!-- Output is XML, could also be plain-->
+	<target name="sut-test" depends="clean,delete-coverage-report,makedir">
+		<junit printsummary="on" fork="true" haltonfailure="no">
+			<classpath refid="build.classpath" />
+			<sysproperty key="sut.files" value="${sut.test.files}" />
+			<sysproperty key="sut.test.dir" value="${test.dir}" />
+			<sysproperty key="sut.is.host" value="${sut.is.host}" />
+			<sysproperty key="sut.is.port" value="${sut.is.port}" />			
+			<sysproperty key="sut.is.credetials" value="${sut.is.credentials}" />
+			
+			<sysproperty key="sut.is.log.level" value="${sut.is.log.level}" />
+
+			<sysproperty key="sut.is.client.log.file" value="${basedir}/sut_is_client.log" />
+			<sysproperty key="sut.runner.log.file" value="${basedir}/sut_runner.log" />
+	
+			<formatter type="xml" />
+
+			<batchtest todir="${test.report.dir}">
+				<resources>
+					<zipfileset src="${sut.lib.dir}/com.cloudgensys.cate.de-all.jar" includes="**/*BasicTestSuite.class" />
+				</resources>
+			</batchtest>
+		</junit>
+	</target>
+
+
+	<!-- If it fails whle running from Eclipse, then follow these steps:  -->
+	<!-- Right Click > Run As... > External Tool Configurations... > Go to "JRE" tab > Select 'Run in the same JRE as the workspace'-->
+	<target name="report" depends="sut-test">
+		<mkdir dir="${test.report.dir}/html" />
+		<junitreport todir="${test.report.dir}">
+			<fileset dir="${test.report.dir}">
+				<include name="TEST-*.xml" />
+			</fileset>
+			<report todir="${test.report.dir}/html" />
+		</junitreport>
+	</target>
+	
+	<taskdef resource="antlib-runner.xml">
+		<classpath refid="build.classpath" />
+	</taskdef>
+	
+	<target name="delete-coverage-report" description="Delete HTML reports for a package">
+		<coveragereport packageName="AgentBenefit" action="delete" logFile="sut_runner.log">
+			<server host="${sut.is.host}" port="${sut.is.port}" credentials="${sut.is.credentials}" />			
+		</coveragereport>
+	</target>
+	
+	<target name="create-coverage-report" description="Generate HTML reports for a package">
+		<coveragereport packageName="AgentBenefit" toDir="${test.report.dir}" logFile="sut_runner.log">
+			<server host="${sut.is.host}" port="${sut.is.port}" credentials="${sut.is.credentials}" />			
+		</coveragereport>
+	</target>
+
+	<target name="main" depends="sut-test, report, create-coverage-report">
+		<description>Main target</description>
+	</target>
+
+</project>

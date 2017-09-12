@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<IDataXMLCoder version="1.0">
+  <record javaclass="com.wm.data.ISMemDataImpl">
+    <record name="TN_parms" javaclass="com.wm.util.Values">
+      <value name="SenderID">604173971</value>
+      <value name="ReceiverID">015585404VNT</value>
+      <value name="Content">MobileDetails</value>
+      <value name="$contentType">application/x-www-form-urlencoded</value>
+      <null name="$contentEncoding"/>
+    </record>
+    <value name="inString">  015585404VNT</value>
+    <value name="length">14</value>
+    <byte name="bytes">
+ICAwMTU1ODU0MDRWTlQ=    </byte>
+    <byte name="buffer">
+ICAwMTU1ODU0MDRWTlQ=    </byte>
+    <value name="bytesRead">14</value>
+    <value name="bytesRead">9</value>
+    <byte name="bytes">
+NjA0MTczOTcx    </byte>
+    <record name="TN_Parms" javaclass="com.wm.util.Values">
+      <value name="SenderID">604173971</value>
+      <value name="ReceiverID">015585404VNT</value>
+      <value name="Content">MobileDetails</value>
+    </record>
+    <value name="string">  015585404VNT</value>
+    <value name="inputData">604173971  015585404VNT$*/
+sony,experiaC,june,19000
+micromax,canvasnitro,june,9000
+samsung,s3,june,12000
+nokia,z1,may,5000
+mi,new,august,12000</value>
+    <value name="$name">CGSmartSupport.TN.FlatFileProcessing.gatewayService:gateway</value>
+    <value name="value">015585404VNT</value>
+    <record name="bizdoc" javaclass="com.wm.app.tn.doc.BizDocEnvelope">
+      <value name="InternalID">m3r7he00al7jna550000007a</value>
+      <idatacodable name="DocType" javaclass="com.wm.app.tn.doc.FFDocType">
+        <value name="TypeID">m3r7he00a8qs209m0000000t</value>
+        <value name="TypeName">testff</value>
+        <value name="TypeDescription"></value>
+        <idatacodable name="Deleted" javaclass="com.wm.data.MBoolean">          <value name="MBoolean">false</value>
+        </idatacodable>
+        <idatacodable name="Hidden" javaclass="com.wm.data.MBoolean">          <value name="MBoolean">false</value>
+        </idatacodable>
+        <idatacodable name="SenderFromSession" javaclass="com.wm.data.MBoolean">          <value name="MBoolean">false</value>
+        </idatacodable>
+        <value name="LastModified">2016-01-12 07:13:28.61</value>
+        <value name="ValidationSvc">wm.tn.doc.ff:validate</value>
+        <record name="PreProcessingFlags" javaclass="com.wm.app.tn.route.PreRoutingFlags">
+          <value name="verify?">no</value>
+          <value name="validate?">no</value>
+          <value name="persist?">yes</value>
+          <value name="unique?">don't care</value>
+          <value name="persistOption?">content, attributes and activity log</value>
+          <null name="dupCheckSvc"/>
+        </record>
+        <null name="Attributes"/>
+        <record name="RequiredAttributes" javaclass="com.wm.data.ISMemDataImpl">
+          <value name="SenderID">true</value>
+          <value name="ReceiverID">true</value>
+        </record>
+        <record name="PipelineMatchIData" javaclass="com.wm.data.ISMemDataImpl">
+          <value name="Content">MobileDetails</value>
+        </record>
+        <idatacodable name="Routing" javaclass="com.wm.data.MBoolean">          <value name="MBoolean">true</value>
+        </idatacodable>
+        <idatacodable name="BAMMonitorableDoctype" javaclass="com.wm.data.MBoolean">          <value name="MBoolean">false</value>
+        </idatacodable>
+        <null name="BAMMonitoringAttributes"/>
+        <null name="BAMEventMap"/>
+        <null name="BAMAction"/>
+        <null name="BAMEventMapName"/>
+        <null name="SubDocTypeID"/>
+        <null name="BAMAttrListEventOption"/>
+        <null name="BAMDocTypeMapping"/>
+        <null name="BAMDocTypeDependency"/>
+        <value name="Type">2</value>
+        <null name="ParsingSchema"/>
+        <null name="ValidationInputs"/>
+        <record name="SystemAttributes" javaclass="com.wm.data.ISMemDataImpl">
+          <idatacodable name="SenderID" javaclass="com.wm.app.tn.doc.BizDocAttributeTransform">
+            <value name="function">10</value>
+            <null name="svc"/>
+            <array name="args" type="value" depth="1">
+              <value>1</value>
+            </array>
+            <value name="preFunction">-1</value>
+            <array name="preFnArgs" type="value" depth="1">
+              <null/>
+            </array>
+            <record name="attrib" javaclass="com.wm.app.tn.doc.BizDocAttribute">
+              <value name="AttributeID">SenderID</value>
+              <value name="AttributeName">SenderID</value>
+              <null name="AttributeDescription"/>
+              <value name="AttributeType">STRING</value>
+              <idatacodable name="Deleted?" javaclass="com.wm.data.MBoolean">                <value name="MBoolean">false</value>
+              </idatacodable>
+              <idatacodable name="Persist?" javaclass="com.wm.data.MBoolean">                <value name="MBoolean">true</value>
+              </idatacodable>
+              <null name="LastModifiedTime"/>
+              <value name="VERSION_NO">9.0.1.0</value>
+              <idatacodable name="System?" javaclass="com.wm.data.MBoolean">                <value name="MBoolean">false</value>
+              </idatacodable>
+            </record>
+            <null name="IDTypeName"/>
+            <value name="VERSION_NO">9.0.1.0</value>
+          </idatacodable>
+          <idatacodable name="ReceiverID" javaclass="com.wm.app.tn.doc.BizDocAttributeTransform">
+            <value name="function">10</value>
+            <null name="svc"/>
+            <array name="args" type="value" depth="1">
+              <value>1</value>
+            </array>
+            <value name="preFunction">-1</value>
+            <array name="preFnArgs" type="value" depth="1">
+              <null/>
+            </array>
+            <record name="attrib" javaclass="com.wm.app.tn.doc.BizDocAttribute">
+              <value name="AttributeID">ReceiverID</value>
+              <value name="AttributeName">ReceiverID</value>
+              <null name="AttributeDescription"/>
+              <value name="AttributeType">STRING</value>
+              <idatacodable name="Deleted?" javaclass="com.wm.data.MBoolean">                <value name="MBoolean">false</value>
+              </idatacodable>
+              <idatacodable name="Persist?" javaclass="com.wm.data.MBoolean">                <value name="MBoolean">true</value>
+              </idatacodable>
+              <null name="LastModifiedTime"/>
+              <value name="VERSION_NO">9.0.1.0</value>
+              <idatacodable name="System?" javaclass="com.wm.data.MBoolean">                <value name="MBoolean">false</value>
+              </idatacodable>
+            </record>
+            <null name="IDTypeName"/>
+            <value name="VERSION_NO">9.0.1.0</value>
+          </idatacodable>
+        </record>
+        <value name="VERSION_NO">9.0.1.0</value>
+      </idatacodable>
+      <value name="DocTimestamp">2016-06-14 10:05:57.885</value>
+      <value name="LastModified">2016-06-14 10:05:57.885</value>
+      <value name="SenderID">m3r7he009qn3sabh0000000j</value>
+      <value name="ReceiverID">m3r7he009qn3sadj0000000m</value>
+      <null name="DocumentID"/>
+      <null name="GroupID"/>
+      <null name="ConversationID"/>
+      <value name="SystemStatus">DONE</value>
+      <value name="UserStatus">IGNORED</value>
+      <null name="Attributes"/>
+      <null name="Signature"/>
+      <null name="SignedBody"/>
+      <array name="ContentParts" type="record" depth="1">
+        <record javaclass="com.wm.app.tn.doc.BizDocContentPart">
+          <value name="PartName">ffdata</value>
+          <value name="MimeType">application/x-www-form-urlencoded; charset=UTF8</value>
+          <number name="Length" type="java.lang.Integer">142</number>
+          <byte name="Bytes">
+NjA0MTczOTcxICAwMTU1ODU0MDRWTlQkKi8Kc29ueSxleHBlcmlhQyxqdW5lLDE5MDAwCm1pY3JvbWF4LGNhbnZhc25pdHJvLGp1bmUsOTAwMApzYW1zdW5nLHMzLGp1bmUsMTIwMDAKbm9raWEsejEsbWF5LDUwMDAKbWksbmV3LGF1Z3VzdCwxMjAwMA==          </byte>
+          <number name="PartIndex" type="java.lang.Integer">0</number>
+          <null name="StorageType"/>
+          <null name="StorageRef"/>
+          <idatacodable name="LargePart?" javaclass="com.wm.data.MBoolean">            <value name="MBoolean">false</value>
+          </idatacodable>
+        </record>
+      </array>
+      <byte name="Content">
+NjA0MTczOTcxICAwMTU1ODU0MDRWTlQkKi8Kc29ueSxleHBlcmlhQyxqdW5lLDE5MDAwCm1pY3JvbWF4LGNhbnZhc25pdHJvLGp1bmUsOTAwMApzYW1zdW5nLHMzLGp1bmUsMTIwMDAKbm9raWEsejEsbWF5LDUwMDAKbWksbmV3LGF1Z3VzdCwxMjAwMA==      </byte>
+      <value name="Persisted?">true</value>
+      <record name="Errors" javaclass="com.wm.app.tn.doc.BizDocErrorSet">
+        <array name="Processing" type="record" depth="1">
+          <record javaclass="com.wm.app.tn.err.ActivityLogEntry">
+            <value name="EntryTimestamp">2016-06-14 10:05:57.885</value>
+            <value name="EntryType">2</value>
+            <value name="EntryClass">Processing</value>
+            <value name="BriefMessage">Routing rule Default rule selected</value>
+            <null name="FullMessage"/>
+            <value name="RelatedDocID">m3r7he00al7jna550000007a</value>
+            <null name="RelatedPartnerID"/>
+            <null name="RelatedInstanceID"/>
+            <null name="RelatedStepID"/>
+            <null name="B2BUser"/>
+            <null name="RelatedDocTypeID"/>
+            <null name="RelatedProcRuleID"/>
+          </record>
+        </array>
+      </record>
+      <null name="Relationships"/>
+      <value name="LargeDocument?">false</value>
+      <value name="VERSION_NO">9.0.1.0</value>
+      <null name="ReceiveSvc"/>
+      <value name="OriginalSenderID">604173971</value>
+      <value name="OriginalReceiverID">015585404VNT</value>
+      <null name="Comments"/>
+      <null name="MonitoringEnabled"/>
+      <null name="MonitoringDataItems"/>
+      <null name="SetMonitoringAction"/>
+      <null name="RepeatNum"/>
+      <value name="RoutingType"></value>
+      <value name="Duplicate">false</value>
+    </record>
+    <record name="flags" javaclass="com.wm.app.tn.route.PreRoutingFlags">
+      <value name="verify?">no</value>
+      <value name="validate?">no</value>
+      <value name="persist?">yes</value>
+      <value name="unique?">don't care</value>
+      <value name="persistOption?">content, attributes and activity log</value>
+      <null name="dupCheckSvc"/>
+    </record>
+    <record name="sender" javaclass="com.wm.app.tn.profile.ProfileSummary">
+      <value name="ProfileID">m3r7he009qn3sabh0000000j</value>
+      <value name="CorporationName">CloudGen</value>
+      <null name="OrgUnit"/>
+      <value name="Type">TNServer</value>
+      <idatacodable name="Self?" javaclass="com.wm.data.MBoolean">        <value name="MBoolean">false</value>
+      </idatacodable>
+      <value name="Status">Active</value>
+      <null name="RemoteStatus"/>
+      <null name="PreferredProtocol"/>
+      <null name="PollingProtocol"/>
+      <value name="TNVersion">9.0.1.0</value>
+      <idatacodable name="Deleted?" javaclass="com.wm.data.MBoolean">        <value name="MBoolean">false</value>
+      </idatacodable>
+      <number name="TimeToWait" type="java.lang.Integer">0</number>
+      <number name="RetryLimit" type="java.lang.Short">0</number>
+      <number name="RetryFactor" type="java.lang.Integer">1</number>
+      <null name="ProfileGroups"/>
+      <idatacodable name="RoutingOffStatus" javaclass="com.wm.data.MBoolean">        <value name="MBoolean">false</value>
+      </idatacodable>
+      <null name="Substatus"/>
+    </record>
+    <record name="receiver" javaclass="com.wm.app.tn.profile.ProfileSummary">
+      <value name="ProfileID">m3r7he009qn3sadj0000000m</value>
+      <value name="CorporationName">CATE</value>
+      <null name="OrgUnit"/>
+      <value name="Type">TNServer</value>
+      <idatacodable name="Self?" javaclass="com.wm.data.MBoolean">        <value name="MBoolean">false</value>
+      </idatacodable>
+      <value name="Status">Active</value>
+      <null name="RemoteStatus"/>
+      <null name="PreferredProtocol"/>
+      <null name="PollingProtocol"/>
+      <value name="TNVersion">9.0.1.0</value>
+      <idatacodable name="Deleted?" javaclass="com.wm.data.MBoolean">        <value name="MBoolean">false</value>
+      </idatacodable>
+      <number name="TimeToWait" type="java.lang.Integer">0</number>
+      <number name="RetryLimit" type="java.lang.Short">0</number>
+      <number name="RetryFactor" type="java.lang.Integer">1</number>
+      <null name="ProfileGroups"/>
+      <idatacodable name="RoutingOffStatus" javaclass="com.wm.data.MBoolean">        <value name="MBoolean">false</value>
+      </idatacodable>
+      <null name="Substatus"/>
+    </record>
+  </record>
+</IDataXMLCoder>

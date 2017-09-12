@@ -1,0 +1,1112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<IDataXMLCoder version="1.0">
+  <record javaclass="com.wm.data.ISMemDataImpl">
+    <value name="msg">Success</value>
+    <byte name="content">
+PD94bWwgdmVyc2lvbj0iMS4wIj8+CjxTVCByZWNvcmQtaWQ9IlNUIiBwb3NpdGlvbj0iMTAwIiBhcmVhPSJoZWFkaW5nIiBkZWxpbWl0ZXJzPSI+Pj5CYXNpY0RhdGE6cmVjb3JkPX4sZmllbGQ9KixzdWJmaWVsZD0+LEZvcm1hdEluZm89Pj4+QmFzaWNEYXRhOjw8PDw8PCIgc2VnbWVudC1pZD0iU1QiPgogIDxTVDAxPgogICAgPGNvZGU+ODEwPC9jb2RlPgogIDwvU1QwMT4KICA8U1QwMj4wLjAwMDwvU1QwMj4KICA8TjEgcmVjb3JkLWlkPSJOMSIgcG9zaXRpb249IjY1MCIgYXJlYT0iaGVhZGluZyIgc2VnbWVudC1pZD0iTjEiIGxvb3BzLWlkPSJOMV9fU1QiPgogICAgPE4xMDQ+b2xkbWlnPC9OMTA0PgogICAgPE4zIHJlY29yZC1pZD0iTjMiIHBvc2l0aW9uPSI3NTAiIGFyZWE9ImhlYWRpbmciIHNlZ21lbnQtaWQ9Ik4zIiBsb29wcy1pZD0iTjNfX04xIj4KICAgICAgPE4zMDE+aHlkZXJhYmFkPC9OMzAxPgogICAgICA8TjMwMj5iaGVsPC9OMzAyPgogICAgPC9OMz4KICAgIDxONCByZWNvcmQtaWQ9Ik40IiBwb3NpdGlvbj0iODAwIiBhcmVhPSJoZWFkaW5nIiBzZWdtZW50LWlkPSJONCI+CiAgICAgIDxONDAxPlJSPC9ONDAxPgogICAgICA8TjQwMj4KICAgICAgICA8Y29kZT5UZWxhbmdhbmE8L2NvZGU+CiAgICAgIDwvTjQwMj4KICAgICAgPE40MDM+CiAgICAgICAgPGNvZGU+NTAyMDMyPC9jb2RlPgogICAgICA8L040MDM+CiAgICAgIDxONDA0PgogICAgICAgIDxjb2RlPklOSURBPC9jb2RlPgogICAgICA8L040MDQ+CiAgICA8L040PgogIDwvTjE+CiAgPEZPQiByZWNvcmQtaWQ9IkZPQiIgcG9zaXRpb249IjEyMDAiIGFyZWE9ImhlYWRpbmciIHNlZ21lbnQtaWQ9IkZPQiI+CiAgICA8Rk9CMDE+CiAgICAgIDxjb2RlPkRTPC9jb2RlPgogICAgPC9GT0IwMT4KICA8L0ZPQj4KICA8Q1RUIHJlY29yZC1pZD0iQ1RUIiBwb3NpdGlvbj0iNzAwIiBhcmVhPSJzdW1tYXJ5IiBzZWdtZW50LWlkPSJDVFQiPgogICAgPENUVDAxPjA8L0NUVDAxPgogIDwvQ1RUPgogIDxTRSByZWNvcmQtaWQ9IlNFIiBwb3NpdGlvbj0iODAwIiBhcmVhPSJzdW1tYXJ5IiBzZWdtZW50LWlkPSJTRSI+CiAgICA8U0UwMT43PC9TRTAxPgogICAgPFNFMDI+MC4wMDA8L1NFMDI+CiAgPC9TRT4KPC9TVD4=    </byte>
+    <value name="remotefile">edi.xml</value>
+    <byte name="data">
+PD94bWwgdmVyc2lvbj0iMS4wIj8+CjxTVCByZWNvcmQtaWQ9IlNUIiBwb3NpdGlvbj0iMTAwIiBhcmVhPSJoZWFkaW5nIiBkZWxpbWl0ZXJzPSI+Pj5CYXNpY0RhdGE6cmVjb3JkPX4sZmllbGQ9KixzdWJmaWVsZD0+LEZvcm1hdEluZm89Pj4+QmFzaWNEYXRhOjw8PDw8PCIgc2VnbWVudC1pZD0iU1QiPgogIDxTVDAxPgogICAgPGNvZGU+ODEwPC9jb2RlPgogIDwvU1QwMT4KICA8U1QwMj4wLjAwMDwvU1QwMj4KICA8TjEgcmVjb3JkLWlkPSJOMSIgcG9zaXRpb249IjY1MCIgYXJlYT0iaGVhZGluZyIgc2VnbWVudC1pZD0iTjEiIGxvb3BzLWlkPSJOMV9fU1QiPgogICAgPE4xMDQ+b2xkbWlnPC9OMTA0PgogICAgPE4zIHJlY29yZC1pZD0iTjMiIHBvc2l0aW9uPSI3NTAiIGFyZWE9ImhlYWRpbmciIHNlZ21lbnQtaWQ9Ik4zIiBsb29wcy1pZD0iTjNfX04xIj4KICAgICAgPE4zMDE+aHlkZXJhYmFkPC9OMzAxPgogICAgICA8TjMwMj5iaGVsPC9OMzAyPgogICAgPC9OMz4KICAgIDxONCByZWNvcmQtaWQ9Ik40IiBwb3NpdGlvbj0iODAwIiBhcmVhPSJoZWFkaW5nIiBzZWdtZW50LWlkPSJONCI+CiAgICAgIDxONDAxPlJSPC9ONDAxPgogICAgICA8TjQwMj4KICAgICAgICA8Y29kZT5UZWxhbmdhbmE8L2NvZGU+CiAgICAgIDwvTjQwMj4KICAgICAgPE40MDM+CiAgICAgICAgPGNvZGU+NTAyMDMyPC9jb2RlPgogICAgICA8L040MDM+CiAgICAgIDxONDA0PgogICAgICAgIDxjb2RlPklOSURBPC9jb2RlPgogICAgICA8L040MDQ+CiAgICA8L040PgogIDwvTjE+CiAgPEZPQiByZWNvcmQtaWQ9IkZPQiIgcG9zaXRpb249IjEyMDAiIGFyZWE9ImhlYWRpbmciIHNlZ21lbnQtaWQ9IkZPQiI+CiAgICA8Rk9CMDE+CiAgICAgIDxjb2RlPkRTPC9jb2RlPgogICAgPC9GT0IwMT4KICA8L0ZPQj4KICA8Q1RUIHJlY29yZC1pZD0iQ1RUIiBwb3NpdGlvbj0iNzAwIiBhcmVhPSJzdW1tYXJ5IiBzZWdtZW50LWlkPSJDVFQiPgogICAgPENUVDAxPjA8L0NUVDAxPgogIDwvQ1RUPgogIDxTRSByZWNvcmQtaWQ9IlNFIiBwb3NpdGlvbj0iODAwIiBhcmVhPSJzdW1tYXJ5IiBzZWdtZW50LWlkPSJTRSI+CiAgICA8U0UwMT43PC9TRTAxPgogICAgPFNFMDI+MC4wMDA8L1NFMDI+CiAgPC9TRT4KPC9TVD4=    </byte>
+    <record name="flags" javaclass="com.wm.app.tn.route.PreRoutingFlags">
+      <value name="verify?">no</value>
+      <value name="validate?">no</value>
+      <value name="persist?">yes</value>
+      <value name="unique?">don't care</value>
+      <value name="persistOption?">content, attributes and activity log</value>
+      <null name="dupCheckSvc"/>
+    </record>
+    <value name="NS_name">custom.EDIIDMapping:addEDIIDMapping</value>
+    <value name="outDocument">ISA*00*          *00*          *01*1234567890000  *01*9876543210111  *160614*0833*U*04060*112331408*0*P*&gt;~GS*IN*1234567890000  *9876543210111*20160614*0833*111331408*T*004060~ST*810*0.000~N1****oldmig~N3*hyderabad*bhel~N4*RR*Telangana*502032*INIDA~FOB*DS~CTT*0~SE*7*0.000~GE*1*111331408~IEA*1*112331408~</value>
+    <null name="IDcode"/>
+    <value name="grpCtlNumber">111331408</value>
+    <value name="date">20160614</value>
+    <value name="agencyCode">T</value>
+    <record name="EDItemplate" javaclass="com.wm.data.ISMemDataImpl">
+      <value name="record">~</value>
+    </record>
+    <record name="tIT1" javaclass="com.wm.util.Values">
+      <value name="@loops-id"></value>
+      <value name="@record-id"></value>
+      <value name="@segment-id"></value>
+      <value name="@area"></value>
+      <value name="@position"></value>
+      <value name="@record-count"></value>
+      <value name="IT101"></value>
+      <value name="IT102"></value>
+      <record name="IT103" javaclass="com.wm.util.Values">
+        <value name="code"></value>
+      </record>
+      <value name="IT104"></value>
+      <record name="IT105" javaclass="com.wm.util.Values">
+        <value name="code"></value>
+      </record>
+      <record name="IT106" javaclass="com.wm.util.Values">
+        <value name="code"></value>
+      </record>
+      <value name="IT107"></value>
+      <record name="IT108" javaclass="com.wm.util.Values">
+        <value name="code"></value>
+      </record>
+      <value name="IT109"></value>
+      <record name="IT110" javaclass="com.wm.util.Values">
+        <value name="code"></value>
+      </record>
+      <value name="IT111"></value>
+      <record name="IT112" javaclass="com.wm.util.Values">
+        <value name="code"></value>
+      </record>
+      <value name="IT113"></value>
+      <record name="IT114" javaclass="com.wm.util.Values">
+        <value name="code"></value>
+      </record>
+      <value name="IT115"></value>
+      <record name="IT116" javaclass="com.wm.util.Values">
+        <value name="code"></value>
+      </record>
+      <value name="IT117"></value>
+      <record name="IT118" javaclass="com.wm.util.Values">
+        <value name="code"></value>
+      </record>
+      <value name="IT119"></value>
+      <record name="IT120" javaclass="com.wm.util.Values">
+        <value name="code"></value>
+      </record>
+      <value name="IT121"></value>
+      <record name="IT122" javaclass="com.wm.util.Values">
+        <value name="code"></value>
+      </record>
+      <value name="IT123"></value>
+      <record name="IT124" javaclass="com.wm.util.Values">
+        <value name="code"></value>
+      </record>
+      <value name="IT125"></value>
+      <record name="CRC" javaclass="com.wm.util.Values">
+        <value name="@record-id"></value>
+        <value name="@segment-id"></value>
+        <value name="@area"></value>
+        <value name="@position"></value>
+        <value name="@record-count"></value>
+        <record name="CRC01" javaclass="com.wm.util.Values">
+          <value name="code"></value>
+        </record>
+        <record name="CRC02" javaclass="com.wm.util.Values">
+          <value name="code"></value>
+        </record>
+        <record name="CRC03" javaclass="com.wm.util.Values">
+          <value name="code"></value>
+        </record>
+        <record name="CRC04" javaclass="com.wm.util.Values">
+          <value name="code"></value>
+        </record>
+        <record name="CRC05" javaclass="com.wm.util.Values">
+          <value name="code"></value>
+        </record>
+        <record name="CRC06" javaclass="com.wm.util.Values">
+          <value name="code"></value>
+        </record>
+        <record name="CRC07" javaclass="com.wm.util.Values">
+          <value name="code"></value>
+        </record>
+        <value name="unDefData"></value>
+        <value name="segmentCount"></value>
+      </record>
+      <array name="QTY" type="record" depth="1">
+      </array>
+      <record name="CUR" javaclass="com.wm.util.Values">
+        <value name="@record-id"></value>
+        <value name="@segment-id"></value>
+        <value name="@area"></value>
+        <value name="@position"></value>
+        <value name="@record-count"></value>
+        <record name="CUR01" javaclass="com.wm.util.Values">
+          <value name="code"></value>
+        </record>
+        <record name="CUR02" javaclass="com.wm.util.Values">
+          <value name="code"></value>
+        </record>
+        <value name="CUR03"></value>
+        <record name="CUR04" javaclass="com.wm.util.Values">
+          <value name="code"></value>
+        </record>
+        <record name="CUR05" javaclass="com.wm.util.Values">
+          <value name="code"></value>
+        </record>
+        <record name="CUR06" javaclass="com.wm.util.Values">
+          <value name="code"></value>
+        </record>
+        <record name="CUR07" javaclass="com.wm.util.Values">
+          <value name="code"></value>
+        </record>
+        <value name="CUR08"></value>
+        <value name="CUR09"></value>
+        <record name="CUR10" javaclass="com.wm.util.Values">
+          <value name="code"></value>
+        </record>
+        <value name="CUR11"></value>
+        <value name="CUR12"></value>
+        <record name="CUR13" javaclass="com.wm.util.Values">
+          <value name="code"></value>
+        </record>
+        <value name="CUR14"></value>
+        <value name="CUR15"></value>
+        <record name="CUR16" javaclass="com.wm.util.Values">
+          <value name="code"></value>
+        </record>
+        <value name="CUR17"></value>
+        <value name="CUR18"></value>
+        <record name="CUR19" javaclass="com.wm.util.Values">
+          <value name="code"></value>
+        </record>
+        <value name="CUR20"></value>
+        <value name="CUR21"></value>
+        <value name="unDefData"></value>
+        <value name="segmentCount"></value>
+      </record>
+      <array name="IT3" type="record" depth="1">
+      </array>
+      <array name="TXI" type="record" depth="1">
+      </array>
+      <array name="CTP" type="record" depth="1">
+      </array>
+      <array name="PAM" type="record" depth="1">
+      </array>
+      <array name="MEA" type="record" depth="1">
+      </array>
+      <array name="PID" type="record" depth="1">
+      </array>
+      <array name="PWK" type="record" depth="1">
+      </array>
+      <array name="PKG" type="record" depth="1">
+      </array>
+      <record name="PO4" javaclass="com.wm.util.Values">
+        <value name="@record-id"></value>
+        <value name="@segment-id"></value>
+        <value name="@area"></value>
+        <value name="@position"></value>
+        <value name="@record-count"></value>
+        <value name="PO401"></value>
+        <value name="PO402"></value>
+        <record name="PO403" javaclass="com.wm.util.Values">
+          <value name="code"></value>
+        </record>
+        <value name="PO404"></value>
+        <record name="PO405" javaclass="com.wm.util.Values">
+          <value name="code"></value>
+        </record>
+        <value name="PO406"></value>
+        <record name="PO407" javaclass="com.wm.util.Values">
+          <value name="code"></value>
+        </record>
+        <value name="PO408"></value>
+        <record name="PO409" javaclass="com.wm.util.Values">
+          <value name="code"></value>
+        </record>
+        <value name="PO410"></value>
+        <value name="PO411"></value>
+        <value name="PO412"></value>
+        <record name="PO413" javaclass="com.wm.util.Values">
+          <value name="code"></value>
+        </record>
+        <value name="PO414"></value>
+        <record name="PO415" javaclass="com.wm.util.Values">
+          <value name="code"></value>
+        </record>
+        <value name="PO416"></value>
+        <value name="PO417"></value>
+        <value name="PO418"></value>
+        <value name="unDefData"></value>
+        <value name="segmentCount"></value>
+      </record>
+      <array name="ITD" type="record" depth="1">
+      </array>
+      <array name="REF" type="record" depth="1">
+      </array>
+      <array name="YNQ" type="record" depth="1">
+      </array>
+      <array name="PER" type="record" depth="1">
+      </array>
+      <array name="SDQ" type="record" depth="1">
+      </array>
+      <array name="DTM" type="record" depth="1">
+      </array>
+      <array name="CAD" type="record" depth="1">
+      </array>
+      <array name="L7" type="record" depth="1">
+      </array>
+      <record name="SR" javaclass="com.wm.util.Values">
+        <value name="@record-id"></value>
+        <value name="@segment-id"></value>
+        <value name="@area"></value>
+        <value name="@position"></value>
+        <value name="@record-count"></value>
+        <value name="SR01"></value>
+        <value name="SR02"></value>
+        <value name="SR03"></value>
+        <value name="SR04"></value>
+        <value name="SR05"></value>
+        <value name="SR06"></value>
+        <value name="SR07"></value>
+        <value name="SR08"></value>
+        <value name="SR09"></value>
+        <value name="SR10"></value>
+        <value name="SR11"></value>
+        <value name="unDefData"></value>
+        <value name="segmentCount"></value>
+      </record>
+      <array name="SAC" type="record" depth="1">
+      </array>
+      <array name="SLN" type="record" depth="1">
+      </array>
+      <array name="N1" type="record" depth="1">
+      </array>
+      <array name="LM" type="record" depth="1">
+      </array>
+      <array name="V1" type="record" depth="1">
+      </array>
+      <array name="FA1" type="record" depth="1">
+      </array>
+      <value name="unDefData"></value>
+      <value name="segmentCount"></value>
+    </record>
+    <record name="invoiceXML" javaclass="com.wm.data.BasicData">
+      <value name="@version">1.0</value>
+      <record name="Invoice" javaclass="com.wm.data.BasicData">
+        <record name="InvoiceHeader" javaclass="com.wm.data.BasicData">
+          <record name="DocumentID" javaclass="com.wm.data.BasicData">
+            <record name="ID" javaclass="com.wm.data.BasicData">
+              <value name="@schemeName">0.000</value>
+              <value name="*body">0090050843</value>
+            </record>
+          </record>
+          <array name="Description" type="record" depth="1">
+            <record javaclass="com.wm.data.BasicData">
+              <value name="@descriptionType">026</value>
+              <value name="@descriptionTypeCode">20150921</value>
+            </record>
+            <record javaclass="com.wm.data.BasicData">
+              <value name="@descriptionType">001</value>
+              <value name="@descriptionTypeCode">20150915</value>
+            </record>
+            <record javaclass="com.wm.data.BasicData">
+              <value name="@descriptionType">022</value>
+              <value name="@descriptionTypeCode">20150914</value>
+            </record>
+            <record javaclass="com.wm.data.BasicData">
+              <value name="@descriptionType">012</value>
+              <value name="@descriptionTypeCode">20150921</value>
+            </record>
+            <record javaclass="com.wm.data.BasicData">
+              <value name="@descriptionType">011</value>
+              <value name="@descriptionTypeCode">20150921</value>
+            </record>
+            <record javaclass="com.wm.data.BasicData">
+              <value name="@descriptionType">024</value>
+              <value name="@descriptionTypeCode">20150921</value>
+            </record>
+            <record javaclass="com.wm.data.BasicData">
+              <value name="@descriptionType">028</value>
+              <value name="@descriptionTypeCode">20151021</value>
+            </record>
+          </array>
+          <array name="DocumentReference" type="record" depth="1">
+            <record javaclass="com.wm.data.BasicData">
+              <value name="@type">PO</value>
+              <record name="DocumentID" javaclass="com.wm.data.BasicData">
+                <value name="@agencyRole">009</value>
+                <value name="ID">0090050843</value>
+              </record>
+            </record>
+            <record javaclass="com.wm.data.BasicData">
+              <value name="@type">PO</value>
+              <record name="DocumentID" javaclass="com.wm.data.BasicData">
+                <value name="@agencyRole">001</value>
+                <record name="ID" javaclass="com.wm.data.BasicData">
+                  <value name="@schemeID">20150914</value>
+                  <value name="*body">0006123378</value>
+                </record>
+              </record>
+            </record>
+            <record javaclass="com.wm.data.BasicData">
+              <value name="@type">PO</value>
+              <record name="DocumentID" javaclass="com.wm.data.BasicData">
+                <value name="@agencyRole">002</value>
+                <record name="ID" javaclass="com.wm.data.BasicData">
+                  <value name="@schemeID">20150915</value>
+                  <value name="*body">0000040198</value>
+                </record>
+              </record>
+            </record>
+            <record javaclass="com.wm.data.BasicData">
+              <value name="@type">PO</value>
+              <record name="DocumentID" javaclass="com.wm.data.BasicData">
+                <value name="@agencyRole">012</value>
+                <record name="ID" javaclass="com.wm.data.BasicData">
+                  <value name="@schemeID">20150915</value>
+                  <value name="*body">0080051820</value>
+                </record>
+              </record>
+            </record>
+            <record javaclass="com.wm.data.BasicData">
+              <value name="@type">PO</value>
+              <record name="DocumentID" javaclass="com.wm.data.BasicData">
+                <value name="@agencyRole">017</value>
+                <value name="ID">0006123378</value>
+              </record>
+            </record>
+            <record javaclass="com.wm.data.BasicData">
+              <value name="@type">DP</value>
+              <record name="DocumentID" javaclass="com.wm.data.BasicData">
+                <value name="@agencyRole">008</value>
+                <value name="ID">1000</value>
+              </record>
+            </record>
+            <record javaclass="com.wm.data.BasicData">
+              <value name="@type">DP</value>
+              <record name="DocumentID" javaclass="com.wm.data.BasicData">
+                <value name="@agencyRole">J01</value>
+                <value name="ID">0651</value>
+              </record>
+            </record>
+            <record javaclass="com.wm.data.BasicData">
+              <value name="@type">DP</value>
+              <record name="DocumentID" javaclass="com.wm.data.BasicData">
+                <value name="@agencyRole">007</value>
+                <value name="ID">20</value>
+              </record>
+            </record>
+            <record javaclass="com.wm.data.BasicData">
+              <value name="@type">DP</value>
+              <record name="DocumentID" javaclass="com.wm.data.BasicData">
+                <value name="@agencyRole">006</value>
+                <value name="ID">01</value>
+              </record>
+            </record>
+            <record javaclass="com.wm.data.BasicData">
+              <value name="@type">DP</value>
+              <record name="DocumentID" javaclass="com.wm.data.BasicData">
+                <value name="@agencyRole">015</value>
+                <value name="ID">ZF2</value>
+              </record>
+            </record>
+            <record javaclass="com.wm.data.BasicData">
+              <value name="@type">DP</value>
+              <record name="DocumentID" javaclass="com.wm.data.BasicData">
+                <value name="@agencyRole">003</value>
+                <value name="ID">1000</value>
+              </record>
+            </record>
+            <record javaclass="com.wm.data.BasicData">
+              <value name="@type">DP</value>
+              <record name="DocumentID" javaclass="com.wm.data.BasicData">
+                <value name="@agencyRole">016</value>
+                <value name="ID">1000</value>
+              </record>
+            </record>
+            <record javaclass="com.wm.data.BasicData">
+              <value name="@type">MA</value>
+              <record name="DocumentID" javaclass="com.wm.data.BasicData">
+                <value name="ID">0000083185</value>
+              </record>
+            </record>
+            <record javaclass="com.wm.data.BasicData">
+              <value name="@type">RS</value>
+              <record name="AlternateDocumentID" javaclass="com.wm.data.BasicData">
+                <record name="ID" javaclass="com.wm.data.BasicData">
+                  <value name="@schemeID"></value>
+                </record>
+                <value name="RevisionID"></value>
+              </record>
+              <value name="Description">TORY BURCH LLC</value>
+            </record>
+            <record javaclass="com.wm.data.BasicData">
+              <value name="@type">AG</value>
+              <record name="AlternateDocumentID" javaclass="com.wm.data.BasicData">
+                <record name="ID" javaclass="com.wm.data.BasicData">
+                  <value name="@schemeID"></value>
+                </record>
+                <value name="RevisionID">7004838</value>
+              </record>
+              <value name="Description">SAKS FIFTH AVENUE DIRECT</value>
+            </record>
+            <record javaclass="com.wm.data.BasicData">
+              <value name="@type">ZSP</value>
+              <record name="DocumentID" javaclass="com.wm.data.BasicData">
+                <value name="ID">GLTN</value>
+              </record>
+              <record name="AlternateDocumentID" javaclass="com.wm.data.BasicData">
+                <record name="ID" javaclass="com.wm.data.BasicData">
+                  <value name="@schemeID">00840890000535172</value>
+                  <value name="@schemeName">M</value>
+                  <value name="*body">00840890000535158</value>
+                </record>
+                <value name="RevisionID"></value>
+              </record>
+              <value name="Description">Performance Team</value>
+            </record>
+            <record javaclass="com.wm.data.BasicData">
+              <value name="@type">RE</value>
+              <record name="AlternateDocumentID" javaclass="com.wm.data.BasicData">
+                <record name="ID" javaclass="com.wm.data.BasicData">
+                  <value name="@schemeID"></value>
+                </record>
+                <value name="RevisionID">7004838</value>
+              </record>
+              <value name="Description">SAKS FIFTH AVENUE AP</value>
+            </record>
+            <record javaclass="com.wm.data.BasicData">
+              <value name="@type">RG</value>
+              <record name="AlternateDocumentID" javaclass="com.wm.data.BasicData">
+                <record name="ID" javaclass="com.wm.data.BasicData">
+                  <value name="@schemeID"></value>
+                </record>
+                <value name="RevisionID">7004838</value>
+              </record>
+              <value name="Description">SAKS FIFTH AVENUE AP</value>
+            </record>
+            <record javaclass="com.wm.data.BasicData">
+              <value name="@type">001</value>
+              <record name="DocumentID" javaclass="com.wm.data.BasicData">
+                <value name="ID">4</value>
+                <record name="RevisionID" javaclass="com.wm.data.BasicData">
+                  <value name="@schemeID">LB</value>
+                  <value name="*body">268.200</value>
+                </record>
+              </record>
+            </record>
+            <record javaclass="com.wm.data.BasicData">
+              <value name="@type">024</value>
+              <record name="DocumentID" javaclass="com.wm.data.BasicData">
+                <value name="ID">00026</value>
+                <record name="RevisionID" javaclass="com.wm.data.BasicData">
+                  <value name="@schemeID">LB</value>
+                  <value name="*body">268.200</value>
+                </record>
+              </record>
+            </record>
+            <record javaclass="com.wm.data.BasicData">
+              <value name="@type">012</value>
+              <record name="DocumentID" javaclass="com.wm.data.BasicData">
+                <value name="ID">20788.00</value>
+                <record name="RevisionID" javaclass="com.wm.data.BasicData">
+                  <value name="@schemeID">LB</value>
+                  <value name="*body">268.200</value>
+                </record>
+              </record>
+            </record>
+            <record javaclass="com.wm.data.BasicData">
+              <value name="@type">005</value>
+              <record name="DocumentID" javaclass="com.wm.data.BasicData">
+                <value name="ID">0.00</value>
+                <record name="RevisionID" javaclass="com.wm.data.BasicData">
+                  <value name="@schemeID">LB</value>
+                  <value name="*body">268.200</value>
+                </record>
+              </record>
+            </record>
+            <record javaclass="com.wm.data.BasicData">
+              <value name="@type">010</value>
+              <record name="DocumentID" javaclass="com.wm.data.BasicData">
+                <value name="ID">20788.00</value>
+                <record name="RevisionID" javaclass="com.wm.data.BasicData">
+                  <value name="@schemeID">LB</value>
+                  <value name="*body">268.200</value>
+                </record>
+              </record>
+            </record>
+            <record javaclass="com.wm.data.BasicData">
+              <value name="@type">011</value>
+              <record name="DocumentID" javaclass="com.wm.data.BasicData">
+                <value name="ID">20788</value>
+                <record name="RevisionID" javaclass="com.wm.data.BasicData">
+                  <value name="@schemeID">LB</value>
+                  <value name="*body">268.200</value>
+                </record>
+              </record>
+            </record>
+          </array>
+          <record name="TotalAmount" javaclass="com.wm.data.BasicData">
+            <value name="@currencyID">USD</value>
+          </record>
+          <array name="Party" type="record" depth="1">
+            <record javaclass="com.wm.data.BasicData">
+              <value name="@role">RS</value>
+              <record name="ns:Name" javaclass="com.wm.data.BasicData">
+                <value name="@languageID"></value>
+                <value name="*body">TORY BURCH LLC</value>
+              </record>
+              <record name="ns:Contact" javaclass="com.wm.data.BasicData">
+                <record name="ID" javaclass="com.wm.data.BasicData">
+                  <value name="@schemeID">11 WEST 19TH STREET, 7TH FL</value>
+                  <value name="@schemeName"></value>
+                  <value name="@schemeAgencyID">NEW YORK</value>
+                  <value name="@schemeAgencyName">NY</value>
+                  <value name="@schemeVersionID">100114277</value>
+                  <value name="@schemeDataURI">US</value>
+                  <value name="*body">900465261</value>
+                </record>
+              </record>
+            </record>
+            <record javaclass="com.wm.data.BasicData">
+              <value name="@role">AG</value>
+              <record name="ns:PartyIDs" javaclass="com.wm.data.BasicData">
+                <value name="ns:DUNSID">7004838</value>
+              </record>
+              <record name="ns:Name" javaclass="com.wm.data.BasicData">
+                <value name="@languageID"></value>
+                <value name="*body">SAKS FIFTH AVENUE DIRECT</value>
+              </record>
+              <record name="ns:Contact" javaclass="com.wm.data.BasicData">
+                <record name="ID" javaclass="com.wm.data.BasicData">
+                  <value name="@schemeID">1 WALDEN BOOKS DR</value>
+                  <value name="@schemeName"></value>
+                  <value name="@schemeAgencyID">LA VERGNE</value>
+                  <value name="@schemeAgencyName">TN</value>
+                  <value name="@schemeVersionID">370863615</value>
+                  <value name="@schemeDataURI">US</value>
+                </record>
+              </record>
+            </record>
+            <record javaclass="com.wm.data.BasicData">
+              <value name="@role">ZSP</value>
+              <record name="ns:Name" javaclass="com.wm.data.BasicData">
+                <value name="@languageID">GLTN00840890000535158</value>
+                <value name="*body">Performance Team</value>
+              </record>
+              <record name="ns:Contact" javaclass="com.wm.data.BasicData">
+                <record name="ID" javaclass="com.wm.data.BasicData">
+                  <value name="@schemeID"></value>
+                  <value name="@schemeName"></value>
+                  <value name="@schemeAgencyID"></value>
+                  <value name="@schemeAgencyName"></value>
+                  <value name="@schemeVersionID"></value>
+                  <value name="@schemeDataURI"></value>
+                </record>
+              </record>
+            </record>
+            <record javaclass="com.wm.data.BasicData">
+              <value name="@role">RE</value>
+              <record name="ns:PartyIDs" javaclass="com.wm.data.BasicData">
+                <value name="ns:DUNSID">7004838</value>
+              </record>
+              <record name="ns:Name" javaclass="com.wm.data.BasicData">
+                <value name="@languageID"></value>
+                <value name="*body">SAKS FIFTH AVENUE AP</value>
+              </record>
+              <record name="ns:Contact" javaclass="com.wm.data.BasicData">
+                <record name="ID" javaclass="com.wm.data.BasicData">
+                  <value name="@schemeID">PO BOX 20040</value>
+                  <value name="@schemeName"></value>
+                  <value name="@schemeAgencyID">JACKSON</value>
+                  <value name="@schemeAgencyName">MS</value>
+                  <value name="@schemeVersionID">392890040</value>
+                  <value name="@schemeDataURI">US</value>
+                  <value name="*body">19374</value>
+                </record>
+              </record>
+            </record>
+            <record javaclass="com.wm.data.BasicData">
+              <value name="@role">RG</value>
+              <record name="ns:PartyIDs" javaclass="com.wm.data.BasicData">
+                <value name="ns:DUNSID">7004838</value>
+              </record>
+              <record name="ns:Name" javaclass="com.wm.data.BasicData">
+                <value name="@languageID"></value>
+                <value name="*body">SAKS FIFTH AVENUE AP</value>
+              </record>
+              <record name="ns:Contact" javaclass="com.wm.data.BasicData">
+                <record name="ID" javaclass="com.wm.data.BasicData">
+                  <value name="@schemeID">PO BOX 20040</value>
+                  <value name="@schemeName"></value>
+                  <value name="@schemeAgencyID">JACKSON</value>
+                  <value name="@schemeAgencyName">MS</value>
+                  <value name="@schemeVersionID">392890040</value>
+                  <value name="@schemeDataURI">US</value>
+                  <value name="*body">19374</value>
+                </record>
+              </record>
+            </record>
+          </array>
+          <array name="PaymentTerm" type="record" depth="1">
+            <record javaclass="com.wm.data.BasicData">
+              <value name="@type">001</value>
+              <record name="ns:Term" javaclass="com.wm.data.BasicData">
+                <value name="ns:Description">Free on board</value>
+              </record>
+            </record>
+            <record javaclass="com.wm.data.BasicData">
+              <value name="@type">002</value>
+              <record name="ns:Term" javaclass="com.wm.data.BasicData">
+                <value name="ns:Description">FOB DC</value>
+              </record>
+            </record>
+          </array>
+          <record name="Allowance" javaclass="com.wm.data.BasicData">
+            <value name="@type">001</value>
+            <value name="ns:ID">3</value>
+            <value name="ns:Amount">0.000</value>
+            <record name="ns:TimePeriod" javaclass="com.wm.data.BasicData">
+              <value name="ns:DurationDue">30</value>
+            </record>
+          </record>
+        </record>
+        <array name="InvoiceLine" type="record" depth="1">
+          <record javaclass="com.wm.data.BasicData">
+            <value name="LineNumber">000011</value>
+            <record name="Item" javaclass="com.wm.data.BasicData">
+              <array name="ns:ItemID" type="record" depth="1">
+                <record javaclass="com.wm.data.BasicData">
+                  <value name="@agencyRole">002</value>
+                  <record name="ns:ID" javaclass="com.wm.data.BasicData">
+                    <value name="@schemeID">NYLN CINCHED TOTE BLK</value>
+                    <value name="@schemeVersionID">12159594</value>
+                    <value name="@schemeDataURI">NYLON CINCHED TOTE</value>
+                    <value name="@schemeURI">001</value>
+                    <value name="*body">9492-001</value>
+                  </record>
+                </record>
+                <record javaclass="com.wm.data.BasicData">
+                  <value name="@agencyRole">003</value>
+                  <value name="ns:ID">888736526571</value>
+                </record>
+                <record javaclass="com.wm.data.BasicData">
+                  <value name="@agencyRole">010</value>
+                  <value name="ns:ID">0000027987</value>
+                </record>
+              </array>
+            </record>
+            <record name="UnitPrice" javaclass="com.wm.data.BasicData">
+              <value name="ns:PerQuantity">65.000</value>
+              <array name="ns:Code" type="record" depth="1">
+                <record javaclass="com.wm.data.BasicData">
+                  <value name="@listID">8710.00</value>
+                  <value name="*body">003</value>
+                </record>
+                <record javaclass="com.wm.data.BasicData">
+                  <value name="@listID">295.00</value>
+                  <value name="*body">009</value>
+                </record>
+                <record javaclass="com.wm.data.BasicData">
+                  <value name="@listID">134.00</value>
+                  <value name="*body">006</value>
+                </record>
+                <record javaclass="com.wm.data.BasicData">
+                  <value name="@listID">8710.00</value>
+                  <value name="*body">004</value>
+                </record>
+                <record javaclass="com.wm.data.BasicData">
+                  <value name="@listID">8710.00</value>
+                  <value name="*body">010</value>
+                </record>
+                <record javaclass="com.wm.data.BasicData">
+                  <value name="@listID">8710.00</value>
+                  <value name="*body">011</value>
+                </record>
+                <record javaclass="com.wm.data.BasicData">
+                  <value name="@listID">8710.00</value>
+                  <value name="*body">012</value>
+                </record>
+                <record javaclass="com.wm.data.BasicData">
+                  <value name="@listID">134</value>
+                  <value name="*body">001</value>
+                </record>
+                <record javaclass="com.wm.data.BasicData">
+                  <value name="@listID">8710.00</value>
+                  <value name="*body">002</value>
+                </record>
+              </array>
+            </record>
+            <array name="PurchaseOrderReference" type="record" depth="1">
+              <record javaclass="com.wm.data.BasicData">
+                <record name="ns:DocumentID" javaclass="com.wm.data.BasicData">
+                  <value name="@agencyRole">JM</value>
+                  <record name="ID" javaclass="com.wm.data.BasicData">
+                    <value name="@schemeID">SAKS DIRECT SK 0689</value>
+                    <value name="@schemeVersionID">1 WALDENBOOKS DR</value>
+                    <value name="@schemeURI">LA VERGNE</value>
+                    <value name="*body">0689</value>
+                  </record>
+                  <record name="RevisionID" javaclass="com.wm.data.BasicData">
+                    <value name="@schemeID">370863615</value>
+                    <value name="*body">TN</value>
+                  </record>
+                </record>
+              </record>
+              <record javaclass="com.wm.data.BasicData">
+                <record name="ns:DocumentID" javaclass="com.wm.data.BasicData">
+                  <value name="@agencyRole">WE</value>
+                  <record name="ID" javaclass="com.wm.data.BasicData">
+                    <value name="@schemeID">SAKS FIFTH AVENUE LAVERGNE DC LA</value>
+                    <value name="@schemeVersionID">1 WALDENBOOKS DR</value>
+                    <value name="@schemeURI">LA VERGNE</value>
+                    <value name="*body">0585</value>
+                  </record>
+                  <record name="RevisionID" javaclass="com.wm.data.BasicData">
+                    <value name="@schemeID">370863615</value>
+                    <value name="*body">TN</value>
+                  </record>
+                </record>
+              </record>
+            </array>
+          </record>
+          <record javaclass="com.wm.data.BasicData">
+            <value name="LineNumber">000021</value>
+            <record name="Item" javaclass="com.wm.data.BasicData">
+              <array name="ns:ItemID" type="record" depth="1">
+                <record javaclass="com.wm.data.BasicData">
+                  <value name="@agencyRole">002</value>
+                  <record name="ns:ID" javaclass="com.wm.data.BasicData">
+                    <value name="@schemeID">NYLN CINCHED TOTE TB NVY</value>
+                    <value name="@schemeVersionID">12159594</value>
+                    <value name="@schemeDataURI">NYLON CINCHED TOTE</value>
+                    <value name="@schemeURI">401</value>
+                    <value name="*body">9492-401</value>
+                  </record>
+                </record>
+                <record javaclass="com.wm.data.BasicData">
+                  <value name="@agencyRole">003</value>
+                  <value name="ns:ID">888736526588</value>
+                </record>
+                <record javaclass="com.wm.data.BasicData">
+                  <value name="@agencyRole">010</value>
+                  <value name="ns:ID">0000028002</value>
+                </record>
+              </array>
+            </record>
+            <record name="UnitPrice" javaclass="com.wm.data.BasicData">
+              <value name="ns:PerQuantity">30.000</value>
+              <array name="ns:Code" type="record" depth="1">
+                <record javaclass="com.wm.data.BasicData">
+                  <value name="@listID">4020.00</value>
+                  <value name="*body">003</value>
+                </record>
+                <record javaclass="com.wm.data.BasicData">
+                  <value name="@listID">295.00</value>
+                  <value name="*body">009</value>
+                </record>
+                <record javaclass="com.wm.data.BasicData">
+                  <value name="@listID">134.00</value>
+                  <value name="*body">006</value>
+                </record>
+                <record javaclass="com.wm.data.BasicData">
+                  <value name="@listID">4020.00</value>
+                  <value name="*body">004</value>
+                </record>
+                <record javaclass="com.wm.data.BasicData">
+                  <value name="@listID">4020.00</value>
+                  <value name="*body">010</value>
+                </record>
+                <record javaclass="com.wm.data.BasicData">
+                  <value name="@listID">4020.00</value>
+                  <value name="*body">011</value>
+                </record>
+                <record javaclass="com.wm.data.BasicData">
+                  <value name="@listID">4020.00</value>
+                  <value name="*body">012</value>
+                </record>
+                <record javaclass="com.wm.data.BasicData">
+                  <value name="@listID">134</value>
+                  <value name="*body">001</value>
+                </record>
+                <record javaclass="com.wm.data.BasicData">
+                  <value name="@listID">4020.00</value>
+                  <value name="*body">002</value>
+                </record>
+              </array>
+            </record>
+          </record>
+          <record javaclass="com.wm.data.BasicData">
+            <value name="LineNumber">000031</value>
+            <record name="Item" javaclass="com.wm.data.BasicData">
+              <array name="ns:ItemID" type="record" depth="1">
+                <record javaclass="com.wm.data.BasicData">
+                  <value name="@agencyRole">002</value>
+                  <record name="ns:ID" javaclass="com.wm.data.BasicData">
+                    <value name="@schemeID">NYLN SWINGPACK BLK</value>
+                    <value name="@schemeVersionID">12159600</value>
+                    <value name="@schemeDataURI">NYLON SWINGPACK</value>
+                    <value name="@schemeURI">001</value>
+                    <value name="*body">9499-001</value>
+                  </record>
+                </record>
+                <record javaclass="com.wm.data.BasicData">
+                  <value name="@agencyRole">003</value>
+                  <value name="ns:ID">888736523587</value>
+                </record>
+                <record javaclass="com.wm.data.BasicData">
+                  <value name="@agencyRole">010</value>
+                  <value name="ns:ID">0000027975</value>
+                </record>
+              </array>
+            </record>
+            <record name="UnitPrice" javaclass="com.wm.data.BasicData">
+              <value name="ns:PerQuantity">24.000</value>
+              <array name="ns:Code" type="record" depth="1">
+                <record javaclass="com.wm.data.BasicData">
+                  <value name="@listID">2448.00</value>
+                  <value name="*body">003</value>
+                </record>
+                <record javaclass="com.wm.data.BasicData">
+                  <value name="@listID">225.00</value>
+                  <value name="*body">009</value>
+                </record>
+                <record javaclass="com.wm.data.BasicData">
+                  <value name="@listID">102.00</value>
+                  <value name="*body">006</value>
+                </record>
+                <record javaclass="com.wm.data.BasicData">
+                  <value name="@listID">2448.00</value>
+                  <value name="*body">004</value>
+                </record>
+                <record javaclass="com.wm.data.BasicData">
+                  <value name="@listID">2448.00</value>
+                  <value name="*body">010</value>
+                </record>
+                <record javaclass="com.wm.data.BasicData">
+                  <value name="@listID">2448.00</value>
+                  <value name="*body">011</value>
+                </record>
+                <record javaclass="com.wm.data.BasicData">
+                  <value name="@listID">2448.00</value>
+                  <value name="*body">012</value>
+                </record>
+                <record javaclass="com.wm.data.BasicData">
+                  <value name="@listID">102</value>
+                  <value name="*body">001</value>
+                </record>
+                <record javaclass="com.wm.data.BasicData">
+                  <value name="@listID">2448.00</value>
+                  <value name="*body">002</value>
+                </record>
+              </array>
+            </record>
+          </record>
+          <record javaclass="com.wm.data.BasicData">
+            <value name="LineNumber">000041</value>
+            <record name="Item" javaclass="com.wm.data.BasicData">
+              <array name="ns:ItemID" type="record" depth="1">
+                <record javaclass="com.wm.data.BasicData">
+                  <value name="@agencyRole">002</value>
+                  <record name="ns:ID" javaclass="com.wm.data.BasicData">
+                    <value name="@schemeID">NYLN SWINGPACK TB NVY</value>
+                    <value name="@schemeVersionID">12159600</value>
+                    <value name="@schemeDataURI">NYLON SWINGPACK</value>
+                    <value name="@schemeURI">401</value>
+                    <value name="*body">9499-401</value>
+                  </record>
+                </record>
+                <record javaclass="com.wm.data.BasicData">
+                  <value name="@agencyRole">003</value>
+                  <value name="ns:ID">888736523594</value>
+                </record>
+                <record javaclass="com.wm.data.BasicData">
+                  <value name="@agencyRole">010</value>
+                  <value name="ns:ID">0000027988</value>
+                </record>
+              </array>
+            </record>
+            <record name="UnitPrice" javaclass="com.wm.data.BasicData">
+              <value name="ns:PerQuantity">55.000</value>
+              <array name="ns:Code" type="record" depth="1">
+                <record javaclass="com.wm.data.BasicData">
+                  <value name="@listID">5610.00</value>
+                  <value name="*body">003</value>
+                </record>
+                <record javaclass="com.wm.data.BasicData">
+                  <value name="@listID">225.00</value>
+                  <value name="*body">009</value>
+                </record>
+                <record javaclass="com.wm.data.BasicData">
+                  <value name="@listID">102.00</value>
+                  <value name="*body">006</value>
+                </record>
+                <record javaclass="com.wm.data.BasicData">
+                  <value name="@listID">5610.00</value>
+                  <value name="*body">004</value>
+                </record>
+                <record javaclass="com.wm.data.BasicData">
+                  <value name="@listID">5610.00</value>
+                  <value name="*body">010</value>
+                </record>
+                <record javaclass="com.wm.data.BasicData">
+                  <value name="@listID">5610.00</value>
+                  <value name="*body">011</value>
+                </record>
+                <record javaclass="com.wm.data.BasicData">
+                  <value name="@listID">5610.00</value>
+                  <value name="*body">012</value>
+                </record>
+                <record javaclass="com.wm.data.BasicData">
+                  <value name="@listID">102</value>
+                  <value name="*body">001</value>
+                </record>
+                <record javaclass="com.wm.data.BasicData">
+                  <value name="@listID">5610.00</value>
+                  <value name="*body">002</value>
+                </record>
+              </array>
+            </record>
+          </record>
+        </array>
+      </record>
+      <record name="ControlDoc" javaclass="com.wm.data.BasicData">
+        <value name="SENDER_ID">1234567890000</value>
+        <value name="RECEIVER_ID">9876543210111</value>
+        <value name="INTERFACE_ID">0000000002998555</value>
+        <value name="MESSAGE_TYPE">INVOIC</value>
+        <value name="DIRECTION">OUTBOUND</value>
+        <record name="References" javaclass="com.wm.data.BasicData">
+          <value name="ATTRIBUTE9">00</value>
+        </record>
+      </record>
+    </record>
+    <value name="time">0833</value>
+    <value name="senderQual">01</value>
+    <value name="receiverQual">01</value>
+    <value name="returncode">221</value>
+    <value name="returnmsg">221 Goodbye</value>
+    <value name="logmsg">--&gt; QUIT
+
+&lt;-- 221 Goodbye
+</value>
+    <record name="bizdoc" javaclass="com.wm.app.tn.doc.BizDocEnvelope">
+      <value name="InternalID">m3r7he00al7eduqm00000026</value>
+      <idatacodable name="DocType" javaclass="wm.b2b.editn.EDITransactionDocType">
+        <value name="TypeID">WMX12-4060--810---------</value>
+        <value name="TypeName">X12 4060 810</value>
+        <value name="TypeDescription"></value>
+        <idatacodable name="Deleted" javaclass="com.wm.data.MBoolean">          <value name="MBoolean">false</value>
+        </idatacodable>
+        <idatacodable name="Hidden" javaclass="com.wm.data.MBoolean">          <value name="MBoolean">false</value>
+        </idatacodable>
+        <idatacodable name="SenderFromSession" javaclass="com.wm.data.MBoolean">          <value name="MBoolean">false</value>
+        </idatacodable>
+        <value name="LastModified">2016-06-13 21:20:13.093</value>
+        <value name="ValidationSvc">wm.b2b.editn:validateTransaction</value>
+        <record name="PreProcessingFlags" javaclass="com.wm.app.tn.route.PreRoutingFlags">
+          <value name="verify?">no</value>
+          <value name="validate?">no</value>
+          <value name="persist?">yes</value>
+          <value name="unique?">don't care</value>
+          <value name="persistOption?">content, attributes and activity log</value>
+          <null name="dupCheckSvc"/>
+        </record>
+        <null name="Attributes"/>
+        <null name="RequiredAttributes"/>
+        <null name="PipelineMatchIData"/>
+        <idatacodable name="Routing" javaclass="com.wm.data.MBoolean">          <value name="MBoolean">true</value>
+        </idatacodable>
+        <idatacodable name="BAMMonitorableDoctype" javaclass="com.wm.data.MBoolean">          <value name="MBoolean">false</value>
+        </idatacodable>
+        <null name="BAMMonitoringAttributes"/>
+        <null name="BAMEventMap"/>
+        <null name="BAMAction"/>
+        <null name="BAMEventMapName"/>
+        <null name="SubDocTypeID"/>
+        <null name="BAMAttrListEventOption"/>
+        <null name="BAMDocTypeMapping"/>
+        <null name="BAMDocTypeDependency"/>
+        <value name="Type">3</value>
+        <value name="standard">X12</value>
+        <value name="version">4060</value>
+        <value name="transaction">810</value>
+        <value name="VERSION_NO">1.0</value>
+        <null name="iidQuery"/>
+        <record name="queries" javaclass="com.wm.data.ISMemDataImpl">
+        </record>
+        <null name="envelopeIData"/>
+      </idatacodable>
+      <value name="DocTimestamp">2016-06-14 08:33:28.421</value>
+      <value name="LastModified">2016-06-14 08:33:28.421</value>
+      <value name="SenderID">m3r7he009qn3sabh0000000j</value>
+      <value name="ReceiverID">m3r7he009qn3sadj0000000m</value>
+      <null name="DocumentID"/>
+      <null name="GroupID"/>
+      <null name="ConversationID"/>
+      <value name="SystemStatus">DONE</value>
+      <value name="UserStatus">Done</value>
+      <null name="Attributes"/>
+      <null name="Signature"/>
+      <null name="SignedBody"/>
+      <array name="ContentParts" type="record" depth="1">
+        <record javaclass="com.wm.app.tn.doc.BizDocContentPart">
+          <value name="PartName">EDIdata</value>
+          <value name="MimeType">application/EDI</value>
+          <number name="Length" type="java.lang.Integer">303</number>
+          <byte name="Bytes">
+SVNBKjAwKiAgICAgICAgICAqMDAqICAgICAgICAgICowMSoxMjM0NTY3ODkwMDAwICAqMDEqOTg3NjU0MzIxMDExMSAgKjE2MDYxNCowODMzKlUqMDQwNjAqMTEyMzMxNDA4KjAqUCo+fkdTKklOKjEyMzQ1Njc4OTAwMDAgICo5ODc2NTQzMjEwMTExKjIwMTYwNjE0KjA4MzMqMTExMzMxNDA4KlQqMDA0MDYwflNUKjgxMCowLjAwMH5OMSoqKipvbGRtaWd+TjMqaHlkZXJhYmFkKmJoZWx+TjQqUlIqVGVsYW5nYW5hKjUwMjAzMipJTklEQX5GT0IqRFN+Q1RUKjB+U0UqNyowLjAwMH5HRSoxKjExMTMzMTQwOH5JRUEqMSoxMTIzMzE0MDh+          </byte>
+          <number name="PartIndex" type="java.lang.Integer">0</number>
+          <null name="StorageType"/>
+          <null name="StorageRef"/>
+          <idatacodable name="LargePart?" javaclass="com.wm.data.MBoolean">            <value name="MBoolean">false</value>
+          </idatacodable>
+        </record>
+      </array>
+      <null name="Content"/>
+      <value name="Persisted?">true</value>
+      <record name="Errors" javaclass="com.wm.app.tn.doc.BizDocErrorSet">
+        <array name="Processing" type="record" depth="1">
+          <record javaclass="com.wm.app.tn.err.ActivityLogEntry">
+            <value name="EntryTimestamp">2016-06-14 08:33:28.419</value>
+            <value name="EntryType">2</value>
+            <value name="EntryClass">Processing</value>
+            <value name="BriefMessage">Routing rule Inbound810EDI selected</value>
+            <null name="FullMessage"/>
+            <value name="RelatedDocID">m3r7he00al7eduqm00000026</value>
+            <null name="RelatedPartnerID"/>
+            <null name="RelatedInstanceID"/>
+            <null name="RelatedStepID"/>
+            <null name="B2BUser"/>
+            <null name="RelatedDocTypeID"/>
+            <null name="RelatedProcRuleID"/>
+          </record>
+          <record javaclass="com.wm.app.tn.err.ActivityLogEntry">
+            <value name="EntryTimestamp">2016-06-14 08:33:29.388</value>
+            <value name="EntryType">2</value>
+            <value name="EntryClass">Processing</value>
+            <value name="BriefMessage">Service invoke: CGDemo.EDI.Inbound.EDI:inbound810EDI</value>
+            <value name="FullMessage">Invoked the CGDemo.EDI.Inbound.EDI:inbound810EDI service to route this document.  The service completed successfully in 929 ms.</value>
+            <value name="RelatedDocID">m3r7he00al7eduqm00000026</value>
+            <null name="RelatedPartnerID"/>
+            <null name="RelatedInstanceID"/>
+            <null name="RelatedStepID"/>
+            <null name="B2BUser"/>
+            <null name="RelatedDocTypeID"/>
+            <null name="RelatedProcRuleID"/>
+          </record>
+        </array>
+      </record>
+      <null name="Relationships"/>
+      <value name="LargeDocument?">false</value>
+      <value name="VERSION_NO">9.0.1.0</value>
+      <null name="ReceiveSvc"/>
+      <null name="OriginalSenderID"/>
+      <null name="OriginalReceiverID"/>
+      <null name="Comments"/>
+      <null name="MonitoringEnabled"/>
+      <null name="MonitoringDataItems"/>
+      <null name="SetMonitoringAction"/>
+      <null name="RepeatNum"/>
+      <value name="RoutingType"></value>
+      <value name="Duplicate">false</value>
+    </record>
+    <record name="EDIInfo" javaclass="com.wm.data.ISMemDataImpl">
+      <value name="edidata">ISA*00*          *00*          *01*1234567890000  *01*9876543210111  *160614*0833*U*04060*112331408*0*P*&gt;~GS*IN*1234567890000  *9876543210111*20160614*0833*111331408*T*004060~ST*810*0.000~N1****oldmig~N3*hyderabad*bhel~N4*RR*Telangana*502032*INIDA~FOB*DS~CTT*0~SE*7*0.000~GE*1*111331408~IEA*1*112331408~</value>
+      <value name="contentName">EDIdata</value>
+      <value name="contentType">application/EDI</value>
+    </record>
+    <record name="TNInfo" javaclass="com.wm.data.ISMemDataImpl">
+      <value name="tnDocType">X12 4060 810</value>
+      <record name="sender" javaclass="com.wm.data.ISMemDataImpl">
+        <value name="senderId">1234567890000</value>
+        <value name="qualifier">01</value>
+      </record>
+      <record name="receiver" javaclass="com.wm.data.ISMemDataImpl">
+        <value name="receiverId">9876543210111</value>
+        <value name="qualifier">01</value>
+      </record>
+    </record>
+    <value name="sender">1234567890000</value>
+    <value name="receiver">9876543210111</value>
+  </record>
+</IDataXMLCoder>

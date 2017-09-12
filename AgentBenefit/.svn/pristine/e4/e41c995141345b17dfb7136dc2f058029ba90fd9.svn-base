@@ -1,0 +1,63 @@
+<html xmlns:stringutils="xalan://org.apache.tools.ant.util.StringUtils" xmlns:lxslt="http://xml.apache.org/xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Standard Output from BasicTestSuite</title>
+</head>
+<body>
+<pre>2016-08-10 09:50:00 DEBUG ServiceUnitSuiteRunner:43 - testDir: C:\SoftwareAG\IntegrationServer\instances\default\packages\AgentBenefit/test
+2016-08-10 09:50:00 DEBUG ServiceUnitSuiteRunner:46 - sutFiles: importAgentPaymentData.sut;importAgentPaymentDataExtern.sut;parseDate.sut;readAgentListFromFile.sut
+2016-08-10 09:50:00 DEBUG ServiceUnitSuiteRunner:52 - individualTestID: null
+2016-08-10 09:50:00 DEBUG ServiceUnitSuiteRunner:54 - IndividualTestID: null should not be present. Multiple test files are ran.
+2016-08-10 09:50:00 INFO  ServiceUnit4ClassRunner:41 - Runner initialized for test file: C:\SoftwareAG\IntegrationServer\instances\default\packages\AgentBenefit\test\importAgentPaymentData.sut
+2016-08-10 09:50:01 INFO  ServiceUnit4ClassRunner:50 - Runner initialized for test file: C:\SoftwareAG\IntegrationServer\instances\default\packages\AgentBenefit\test\importAgentPaymentData.sut. Individual test: null
+2016-08-10 09:50:01 INFO  ServiceUnit4ClassRunner:41 - Runner initialized for test file: C:\SoftwareAG\IntegrationServer\instances\default\packages\AgentBenefit\test\importAgentPaymentDataExtern.sut
+2016-08-10 09:50:01 INFO  ServiceUnit4ClassRunner:50 - Runner initialized for test file: C:\SoftwareAG\IntegrationServer\instances\default\packages\AgentBenefit\test\importAgentPaymentDataExtern.sut. Individual test: null
+2016-08-10 09:50:01 INFO  ServiceUnit4ClassRunner:41 - Runner initialized for test file: C:\SoftwareAG\IntegrationServer\instances\default\packages\AgentBenefit\test\parseDate.sut
+2016-08-10 09:50:01 INFO  ServiceUnit4ClassRunner:50 - Runner initialized for test file: C:\SoftwareAG\IntegrationServer\instances\default\packages\AgentBenefit\test\parseDate.sut. Individual test: null
+2016-08-10 09:50:01 INFO  ServiceUnit4ClassRunner:41 - Runner initialized for test file: C:\SoftwareAG\IntegrationServer\instances\default\packages\AgentBenefit\test\readAgentListFromFile.sut
+2016-08-10 09:50:01 INFO  ServiceUnit4ClassRunner:50 - Runner initialized for test file: C:\SoftwareAG\IntegrationServer\instances\default\packages\AgentBenefit\test\readAgentListFromFile.sut. Individual test: null
+2016-08-10 09:50:01 WARN  IntegrationServerJUnitAdapter:119 - Initializing connection for: http://localhost:5555
+2016-08-10 09:50:01 INFO  IntegrationServerConnection:66 - Creating new connection for: http://localhost:5555/com.cloudgensys.cate.de.invoke
+2016-08-10 09:50:01 INFO  IntegrationServerConnection:70 - Created connection for server: http://localhost:5555
+2016-08-10 09:50:01 DEBUG IntegrationServerJUnitAdapter:46 - Created new connection to Integration Server
+2016-08-10 09:50:01 WARN  IntegrationServerConnection:79 - Attepting to connect to Integration Server...
+2016-08-10 09:50:01 WARN  IntegrationServerConnection:98 - Connected successfully to Integration Server! Ssnid: c6def5c0bec3149086dcafd2bbe733af
+2016-08-10 09:50:02 DEBUG RunAssertions:38 - Run assertions for service: AgentBenefit.pub:importAgentPaymentData
+2016-08-10 09:50:02 DEBUG RunVerifyNumberOfInvokes:26 - Run verify number of invokes for service: AgentBenefit.pub:importAgentPaymentData
+2016-08-10 09:50:02 DEBUG RunVerifyOrderOfInvokes:31 - Run verify order of invokes for service: AgentBenefit.pub:importAgentPaymentData
+2016-08-10 09:50:02 DEBUG RunAssertions:38 - Run assertions for service: AgentBenefit.pub:importAgentPaymentData
+2016-08-10 09:50:02 DEBUG RunVerifyNumberOfInvokes:26 - Run verify number of invokes for service: AgentBenefit.pub:importAgentPaymentData
+2016-08-10 09:50:02 DEBUG RunVerifyOrderOfInvokes:31 - Run verify order of invokes for service: AgentBenefit.pub:importAgentPaymentData
+2016-08-10 09:50:07 DEBUG RunAssertions:38 - Run assertions for service: AgentBenefit.pub:importAgentPaymentData
+2016-08-10 09:50:07 DEBUG RunVerifyNumberOfInvokes:26 - Run verify number of invokes for service: AgentBenefit.pub:importAgentPaymentData
+2016-08-10 09:50:07 DEBUG RunVerifyOrderOfInvokes:31 - Run verify order of invokes for service: AgentBenefit.pub:importAgentPaymentData
+2016-08-10 09:50:07 DEBUG RunAssertions:38 - Run assertions for service: AgentBenefit.pub:importAgentPaymentData
+2016-08-10 09:50:07 DEBUG RunVerifyNumberOfInvokes:26 - Run verify number of invokes for service: AgentBenefit.pub:importAgentPaymentData
+2016-08-10 09:50:07 DEBUG RunVerifyOrderOfInvokes:31 - Run verify order of invokes for service: AgentBenefit.pub:importAgentPaymentData
+2016-08-10 09:50:08 DEBUG RunAssertions:38 - Run assertions for service: AgentBenefit.pub:importAgentPaymentData
+2016-08-10 09:50:08 DEBUG RunVerifyNumberOfInvokes:26 - Run verify number of invokes for service: AgentBenefit.pub:importAgentPaymentData
+2016-08-10 09:50:08 DEBUG RunVerifyOrderOfInvokes:31 - Run verify order of invokes for service: AgentBenefit.pub:importAgentPaymentData
+2016-08-10 09:50:08 DEBUG RunAssertions:38 - Run assertions for service: AgentBenefit.pub:importAgentPaymentData
+2016-08-10 09:50:08 DEBUG RunVerifyNumberOfInvokes:26 - Run verify number of invokes for service: AgentBenefit.pub:importAgentPaymentData
+2016-08-10 09:50:08 DEBUG RunVerifyOrderOfInvokes:31 - Run verify order of invokes for service: AgentBenefit.pub:importAgentPaymentData
+2016-08-10 09:50:13 DEBUG RunAssertions:38 - Run assertions for service: AgentBenefit.pub:importAgentPaymentData
+2016-08-10 09:50:13 DEBUG RunVerifyNumberOfInvokes:26 - Run verify number of invokes for service: AgentBenefit.pub:importAgentPaymentData
+2016-08-10 09:50:13 DEBUG RunVerifyOrderOfInvokes:31 - Run verify order of invokes for service: AgentBenefit.pub:importAgentPaymentData
+2016-08-10 09:50:14 DEBUG RunAssertions:38 - Run assertions for service: AgentBenefit.pub:importAgentPaymentData
+2016-08-10 09:50:14 DEBUG RunVerifyNumberOfInvokes:26 - Run verify number of invokes for service: AgentBenefit.pub:importAgentPaymentData
+2016-08-10 09:50:14 DEBUG RunVerifyOrderOfInvokes:31 - Run verify order of invokes for service: AgentBenefit.pub:importAgentPaymentData
+2016-08-10 09:50:14 DEBUG RunAssertions:38 - Run assertions for service: AgentBenefit.util:parseDate
+2016-08-10 09:50:14 DEBUG RunVerifyNumberOfInvokes:26 - Run verify number of invokes for service: AgentBenefit.util:parseDate
+2016-08-10 09:50:14 DEBUG RunVerifyOrderOfInvokes:31 - Run verify order of invokes for service: AgentBenefit.util:parseDate
+2016-08-10 09:50:14 DEBUG RunAssertions:38 - Run assertions for service: AgentBenefit.util:parseDate
+2016-08-10 09:50:14 DEBUG RunVerifyNumberOfInvokes:26 - Run verify number of invokes for service: AgentBenefit.util:parseDate
+2016-08-10 09:50:14 DEBUG RunVerifyOrderOfInvokes:31 - Run verify order of invokes for service: AgentBenefit.util:parseDate
+2016-08-10 09:50:15 DEBUG RunAssertions:38 - Run assertions for service: AgentBenefit.util:readAgentListFromFile
+2016-08-10 09:50:15 DEBUG RunVerifyNumberOfInvokes:26 - Run verify number of invokes for service: AgentBenefit.util:readAgentListFromFile
+2016-08-10 09:50:15 DEBUG RunVerifyOrderOfInvokes:31 - Run verify order of invokes for service: AgentBenefit.util:readAgentListFromFile
+2016-08-10 09:50:15 DEBUG RunAssertions:38 - Run assertions for service: AgentBenefit.util:readAgentListFromFile
+2016-08-10 09:50:15 DEBUG RunVerifyNumberOfInvokes:26 - Run verify number of invokes for service: AgentBenefit.util:readAgentListFromFile
+2016-08-10 09:50:15 DEBUG RunVerifyOrderOfInvokes:31 - Run verify order of invokes for service: AgentBenefit.util:readAgentListFromFile
+</pre>
+</body>
+</html>

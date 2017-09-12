@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<IDataXMLCoder version="1.0">
+  <record javaclass="com.wm.data.ISMemDataImpl">
+    <record name="Employee" javaclass="com.wm.data.ISMemDataImpl">
+      <value name="Name">hari</value>
+      <value name="Designation">Degree</value>
+      <value name="Id">8578</value>
+      <record name="Address" javaclass="com.wm.data.ISMemDataImpl">
+        <value name="City">Hyderabad</value>
+        <value name="State">Telangana</value>
+        <value name="Zip">500032</value>
+      </record>
+    </record>
+  </record>
+</IDataXMLCoder>
