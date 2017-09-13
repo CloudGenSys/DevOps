@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jmeterTestPlan version="1.2" properties="2.7" jmeter="2.12 r1636949">
+<jmeterTestPlan version="1.2" properties="2.9" jmeter="3.1-SNAPSHOT.20160907">
   <hashTree>
     <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan" enabled="true">
       <stringProp name="TestPlan.comments"></stringProp>
@@ -37,7 +37,7 @@
         <stringProp name="ThreadGroup.delay"></stringProp>
       </ThreadGroup>
       <hashTree>
-        <WmServiceInvokeSampler guiclass="WmServiceInvokeSamplerGui" testclass="WmServiceInvokeSampler" testname="8313ab11-982c-4bcf-84fc-5dde90ea9f51--20160614-084101646-00000001.input.xml" enabled="true">
+        <WmServiceInvokeSampler guiclass="WmServiceInvokeSamplerGui" testclass="WmServiceInvokeSampler" testname="CGDemo.purchaseOrder:svcProcessPOFlow" enabled="true">
           <stringProp name="TestPlan.comments">WebMethods Service Invocation</stringProp>
           <stringProp name="HTTPSampler.proxyHost">${__P(hostname,localhost)}</stringProp>
           <stringProp name="HTTPSampler.domain">${__P(hostname,localhost)}</stringProp>
@@ -56,7 +56,7 @@
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
             <collectionProp name="Arguments.arguments">
               <elementProp name="fileContent" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <boolProp name="HTTPArgument.always_encode">true</boolProp>
                 <stringProp name="Argument.name">fileContent</stringProp>
                 <stringProp name="Argument.value">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 
@@ -91,7 +91,7 @@
               <elementProp name="uuid" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">true</boolProp>
                 <stringProp name="Argument.name">uuid</stringProp>
-                <stringProp name="Argument.value">56-00-00-0D-90-0E</stringProp>
+                <stringProp name="Argument.value">74-E6-E2-28-DA-AD:4C-BB-58-3F-F5-B1</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
             </collectionProp>
